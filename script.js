@@ -91,3 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("spotify").style.display = "block";  // Mostrar solo Spotify
     document.querySelector(".tab-link").classList.add("active"); // Marcar la pestaña de Spotify como activa
 });
+
+// Función para abrir y cerrar el menú hamburguesa en móviles
+function toggleMenu() {
+    document.querySelector("nav").classList.toggle("active");
+}
