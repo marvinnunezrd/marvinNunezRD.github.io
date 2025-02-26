@@ -203,6 +203,16 @@ header nav ul li a {
     margin-bottom: 20px;
 }
 
+/* Ocultar todas las pestañas de contenido por defecto */
+.tab-content {
+    display: none;
+}
+
+/* Mostrar solo la pestaña activa */
+.tab-content.active {
+    display: block;
+}
+
 /* Página de Contacto */
 .contacto-page {
     background: #111;

@@ -35,11 +35,11 @@ async function cargarEventos() {
             item.href = evento.htmlLink;
             item.target = "_blank";
             item.classList.add("evento");
-        
+
             const fechaObj = new Date(evento.start.dateTime || evento.start.date);
             const mes = fechaObj.toLocaleDateString("es-ES", { month: "short" }).toUpperCase();
             const dia = fechaObj.toLocaleDateString("es-ES", { day: "2-digit" });
-        
+
             item.innerHTML = `
                 <div class="evento-contenedor">
                     <div class="evento-fecha">
@@ -49,7 +49,7 @@ async function cargarEventos() {
                     <div class="evento-titulo">${evento.summary}</div>
                 </div>
             `;
-        
+
             listaEventos.appendChild(item);
         });
 
@@ -60,26 +60,34 @@ async function cargarEventos() {
 }
 
 // ================== FUNCIONALIDAD PARA LAS PESTAÑAS DE LA SECCIÓN MÚSICA ==================
-function openTab(event, platform) {
-    // Ocultar todo el contenido de las pestañas
-    var tabContent = document.getElementsByClassName('tab-content');
-    for (var i = 0; i < tabContent.length; i++) {
-        tabContent[i].style.display = 'none';
-    }
 
-    // Remover la clase 'active' de todos los botones de pestañas
-    var tabLinks = document.getElementsByClassName('tab-link');
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].classList.remove('active');
-    }
+function openTab(event, tabId) {
+    // Ocultar todas las pestañas
+    document.querySelectorAll(".tab-content").forEach(tab => {
+        tab.style.display = "none";  // Ahora todas las pestañas estarán ocultas
+    });
 
-    // Mostrar el contenido de la pestaña seleccionada
-    document.getElementById(platform).style.display = 'block';
-    // Añadir la clase 'active' al botón de la pestaña seleccionada
-    event.currentTarget.classList.add('active');
+    // Quitar la clase activa de todos los botones
+    document.querySelectorAll(".tab-link").forEach(button => {
+        button.classList.remove("active");
+    });
+
+    // Mostrar la pestaña seleccionada
+    document.getElementById(tabId).style.display = "block";
+
+    // Agregar la clase activa al botón seleccionado
+    event.currentTarget.classList.add("active");
 }
 
 // ================== INICIALIZAR FUNCIONES AL CARGAR LA PÁGINA ==================
 document.addEventListener("DOMContentLoaded", () => {
     cargarEventos();  // Cargar eventos de Google Calendar
+
+    // Asegurar que solo el reproductor de Spotify esté visible al inicio
+    document.querySelectorAll(".tab-content").forEach(tab => {
+        tab.style.display = "none";  // Ocultar todos los reproductores
+    });
+
+    document.getElementById("spotify").style.display = "block";  // Mostrar solo Spotify
+    document.querySelector(".tab-link").classList.add("active"); // Marcar la pestaña de Spotify como activa
 });
