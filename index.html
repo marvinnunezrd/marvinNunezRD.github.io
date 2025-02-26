@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvin Núñez - Cantautor Católico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="assets/LogoMarvinNunezRDBlanco.png" alt="Logo Marvin Núñez">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#musica">Música</a></li>
+                <li><a href="redesycontactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="redes">
+            <a href="https://www.instagram.com/marvinnunezrd" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank">
+                <img src="assets/spotify.png" alt="Spotify">
+            </a>
+            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank">
+                <img src="assets/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="hero" id="inicio">
+        <div class="hero-texto">
+            <h1>Marvin Núñez</h1>
+            <p>Cantautor Católico Dominicano</p>
+        </div>
+    </section>
+
+    <!-- Sección de Eventos -->
+    <section id="eventos">
+        <h2>Próximos Eventos</h2>
+        <ul id="lista-eventos"></ul>
+        <a href="https://calendar.google.com/calendar/embed?src=je8uubih156f9ut71p2jjrle74@group.calendar.google.com" target="_blank" class="ver-todos-eventos">
+            Ver todos los eventos
+        </a>
+    </section>
+
+    <!-- Sección de Música -->
+    <section id="musica">
+        <h2>Música</h2>
+        <div class="tabs">
+            <button class="tab-link active" onclick="openTab(event, 'spotify')">Spotify</button>
+            <button class="tab-link" onclick="openTab(event, 'appleMusic')">Apple Music</button>
+            <button class="tab-link" onclick="openTab(event, 'youtube')">YouTube</button>
+        </div>
+        <div id="spotify" class="tab-content" style="display: block;">
+            <!-- Reproductor de Spotify -->
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0vheEY20pbheuQIwpVD3RR" width="100%" height="380" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div id="appleMusic" class="tab-content">
+            <!-- Reproductor de Apple Music -->
+            <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%; max-width:660px; overflow:hidden; border-radius:12px;" src="https://embed.music.apple.com/us/album/jesús-the-álbum/1340977146"></iframe>
+        </div>
+        <div id="youtube" class="tab-content">
+            <!-- Reproductor de YouTube -->
+            <iframe width="100%" height="380" src="https://www.youtube.com/embed/3w4l6__7lNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 Marvin Núñez - Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Script de Google Calendar -->
+    <script src="script.js"></script>
+
+</body>
+</html>
