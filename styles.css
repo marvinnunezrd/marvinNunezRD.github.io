@@ -228,7 +228,7 @@ header nav ul li a {
     color: white;
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
 /* Tarjeta de Presentación */
