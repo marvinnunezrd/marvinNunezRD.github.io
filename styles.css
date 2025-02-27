@@ -52,20 +52,54 @@ header {
 
 /* ======================== DISEÑO RESPONSIVO ======================== */
 @media screen and (max-width: 768px) {
-    /* Mover el menú hamburguesa al extremo derecho */
+    /* ================== MENÚ HAMBURGUESA ================== */
     .menu-toggle {
         display: block;
         position: absolute;
-        right: 20px; /* Lo alinea al extremo derecho */
-        top: 15px; /* Ajusta su altura */
+        right: 20px; /* Mover al extremo derecho */
+        top: 15px; /* Ajuste superior */
         font-size: 28px;
         cursor: pointer;
     }
 
-    /* Ajustar el texto del hero en la versión móvil */
+    /* Asegurar que el menú hamburguesa aparezca en columna */
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Cambia de horizontal a vertical */
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        display: block; /* Asegurar que cada opción ocupe su propia línea */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Menú de navegación desplegable */
+    nav {
+        position: absolute;
+        top: 90px; /* Ajuste de la posición debajo del header */
+        left: 0;
+        width: 100%;
+        background: #222;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    /* Mostrar el menú cuando se active */
+    nav.active {
+        display: flex;
+    }
+
+    /* ================== TEXTO DEL HERO (AJUSTE PARA MÓVIL) ================== */
     .hero-texto {
         position: absolute;
-        top: 30px; /* Ajuste superior */
+        top: 30px; /* Más abajo para no cubrir el rostro */
         right: 20px; /* Alinear completamente a la derecha */
         text-align: right;
         font-size: 14px; /* Reducir tamaño al 50% */
@@ -82,7 +116,7 @@ header {
         margin: 5px 0 0;
     }
 
-    /* Hacer que los íconos de redes sociales estén en una línea debajo del menú */
+    /* ================== REDES SOCIALES (AJUSTES PARA MÓVIL) ================== */
     .redes {
         display: flex;
         justify-content: center;
@@ -97,31 +131,12 @@ header {
         height: 24px;
     }
 
-    /* Ajustar el espacio del header para incluir los íconos debajo */
+    /* ================== ENCABEZADO (HEADER) ================== */
     header {
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
         text-align: center;
-    }
-
-    /* Hacer que el menú de navegación aparezca debajo de los íconos */
-    nav {
-        position: absolute;
-        top: 90px; /* Ajusta la posición para dar espacio a los íconos */
-        left: 0;
-        width: 100%;
-        background: #222;
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        padding: 10px 0;
-        z-index: 1000;
-    }
-
-    /* Mostrar el menú cuando se active */
-    nav.active {
-        display: flex;
     }
 }
 
