@@ -50,15 +50,65 @@ header {
     cursor: pointer;
 }
 
-/* Estilos específicos para móviles */
+/* ======================== DISEÑO RESPONSIVO ======================== */
 @media screen and (max-width: 768px) {
+    /* Mover el menú hamburguesa al extremo derecho */
     .menu-toggle {
         display: block;
+        position: absolute;
+        right: 20px; /* Lo alinea al extremo derecho */
+        top: 15px; /* Ajusta su altura */
+        font-size: 28px;
+        cursor: pointer;
     }
 
+    /* Ajustar el texto del hero en la versión móvil */
+    .hero-texto {
+        position: absolute;
+        top: 30px; /* Ajuste superior */
+        right: 20px; /* Alinear completamente a la derecha */
+        text-align: right;
+        font-size: 14px; /* Reducir tamaño al 50% */
+        max-width: 50%;
+    }
+
+    .hero-texto h1 {
+        font-size: 24px; /* Reducir tamaño del nombre */
+        margin: 0;
+    }
+
+    .hero-texto p {
+        font-size: 14px; /* Reducir tamaño del subtítulo */
+        margin: 5px 0 0;
+    }
+
+    /* Hacer que los íconos de redes sociales estén en una línea debajo del menú */
+    .redes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px; /* Espacio entre la barra y los íconos */
+    }
+
+    /* Reducir el tamaño de los íconos de redes sociales */
+    .redes a img {
+        width: 24px; /* Reduce en un 20% */
+        height: 24px;
+    }
+
+    /* Ajustar el espacio del header para incluir los íconos debajo */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* Hacer que el menú de navegación aparezca debajo de los íconos */
     nav {
         position: absolute;
-        top: 60px;
+        top: 90px; /* Ajusta la posición para dar espacio a los íconos */
         left: 0;
         width: 100%;
         background: #222;
@@ -66,17 +116,7 @@ header {
         flex-direction: column;
         text-align: center;
         padding: 10px 0;
-        z-index: 1000; /* Evita que quede detrás del banner */
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .nav-links li {
-        display: block;
-        padding: 10px 0;
+        z-index: 1000;
     }
 
     /* Mostrar el menú cuando se active */
