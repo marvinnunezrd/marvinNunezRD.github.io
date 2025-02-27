@@ -7,18 +7,6 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://www.marvinnunezrd.com/#eventos</loc>
-        <lastmod>2024-02-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.marvinnunezrd.com/#musica</loc>
-        <lastmod>2024-02-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://www.marvinnunezrd.com/redesycontacto/</loc>
         <lastmod>2024-02-27</lastmod>
         <changefreq>monthly</changefreq>
