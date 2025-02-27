@@ -138,6 +138,12 @@ header {
         padding: 10px 0;
         text-align: center;
     }
+    .evento {
+        width: 100%; /* Ocupará todo el ancho disponible */
+        max-width: 660px; /* El mismo ancho máximo que el reproductor de Spotify */
+        margin: 10px auto; /* Centra la caja y mantiene espacio arriba y abajo */
+        padding: 20px; /* Ajuste del padding interno */
+    }
 }
 
 /* ======================== SECCIÓN PRINCIPAL (HERO) ======================== */
@@ -188,7 +194,7 @@ header {
 /* ======================== SECCIÓN DE EVENTOS ======================== */
 #eventos {
     background: white;
-    padding: 40px;
+    padding: 1px;
 }
 
 /* Restaurando el diseño original de las cajas de eventos */
@@ -250,9 +256,12 @@ header {
     flex-grow: 1;
     text-align: left;
     font-size: 20px;
-    white-space: nowrap;
+    white-space: normal; /* Permite que el texto haga saltos de línea */
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Máximo 2 líneas */
+    -webkit-box-orient: vertical;
 }
 
 /* ======================== BOTÓN "VER TODOS LOS EVENTOS" ======================== */
