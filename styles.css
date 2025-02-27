@@ -380,7 +380,7 @@ header {
     font-size: 24px;
     font-weight: bold;
     color: #222;
-    margin-bottom: -60px;
+    margin-bottom: -40px;
 }
 
 /* Información de Contacto */
@@ -397,6 +397,27 @@ header {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.contact-info a.download-btn {
+    display: inline-flex; /* Asegura que el botón respete dimensiones */
+    justify-content: center;
+    align-items: center;
+    background: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 12px 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: bold;
+    text-decoration: none; /* Quitar subrayado */
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: 2px solid black; /* Asegura bordes definidos */
+    width: fit-content; /* Ajusta el ancho según el contenido */
+}
+
+.contact-info a.download-btn:hover {
+    background: #333; /* Cambio de color al pasar el mouse */
+    border-color: #333;
+    transform: scale(1.05); /* Efecto de leve agrandamiento */
 }
 
 /* Redes Sociales */
