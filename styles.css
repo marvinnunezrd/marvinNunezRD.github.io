@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* ======================== ESTILOS GENERALES ======================== */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
@@ -7,57 +7,24 @@ body {
     padding: 0;
 }
 
-/* Encabezado */
+/* ======================== ENCABEZADO Y NAVEGACIÓN ======================== */
 header {
     background-color: #222;
     color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo img {
-    height: 60px; /* Ajusta la altura según el tamaño del logo */
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Estilos para la barra de navegación */
-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background-color: #222;
-    color: white;
     position: relative;
+    z-index: 1000; /* Asegura que esté por encima del banner */
 }
 
-/* Ocultar menú hamburguesa en pantallas grandes */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
+/* Logo */
+.logo img {
+    height: 60px;
 }
 
-/* Estilo del menú de navegación */
+/* Menú de navegación */
 .nav-links {
     list-style: none;
     display: flex;
@@ -76,10 +43,17 @@ header {
     font-weight: bold;
 }
 
-/* Diseño responsivo: Menú hamburguesa en pantallas pequeñas */
+/* ======================== MENÚ HAMBURGUESA RESPONSIVO ======================== */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos específicos para móviles */
 @media screen and (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Mostrar icono ☰ */
+        display: block;
     }
 
     nav {
@@ -88,10 +62,11 @@ header {
         left: 0;
         width: 100%;
         background: #222;
-        display: none; /* Ocultar menú al inicio */
+        display: none;
         flex-direction: column;
         text-align: center;
         padding: 10px 0;
+        z-index: 1000; /* Evita que quede detrás del banner */
     }
 
     .nav-links {
@@ -101,6 +76,7 @@ header {
 
     .nav-links li {
         display: block;
+        padding: 10px 0;
     }
 
     /* Mostrar el menú cuando se active */
@@ -109,18 +85,7 @@ header {
     }
 }
 
-/* Redes sociales */
-.redes {
-    display: flex;
-    gap: 10px;
-}
-
-.redes a img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Sección Principal (Hero) con Imagen de Fondo */
+/* ======================== SECCIÓN PRINCIPAL (HERO) ======================== */
 .hero {
     background: url('assets/marvin-nunez-banner.jpg') no-repeat center center/cover;
     width: 100%;
@@ -133,7 +98,7 @@ header {
     position: relative;
 }
 
-/* Capa de oscurecimiento */
+/* Oscurecimiento de fondo */
 .hero::before {
     content: "";
     position: absolute;
@@ -144,7 +109,7 @@ header {
     background: rgba(0, 0, 0, 0.4);
 }
 
-/* Posicionamiento del texto en la esquina superior derecha */
+/* Texto del hero */
 .hero-texto {
     position: absolute;
     top: 50px;
@@ -165,13 +130,13 @@ header {
     margin: 5px 0 0;
 }
 
-/* Sección de Eventos */
+/* ======================== SECCIÓN DE EVENTOS ======================== */
 #eventos {
     background: white;
     padding: 40px;
 }
 
-/* Estilo de cada evento */
+/* Restaurando el diseño original de las cajas de eventos */
 .evento {
     display: flex;
     align-items: center;
@@ -235,7 +200,7 @@ header {
     text-overflow: ellipsis;
 }
 
-/* Botón "Ver todos los eventos" */
+/* ======================== BOTÓN "VER TODOS LOS EVENTOS" ======================== */
 .ver-todos-eventos {
     display: inline-block;
     background: black;
@@ -252,7 +217,7 @@ header {
     background: #333;
 }
 
-/* Sección de Música */
+/* ======================== SECCIÓN DE MÚSICA ======================== */
 #musica {
     background: black;
     color: white;
@@ -283,7 +248,7 @@ header {
     display: block;
 }
 
-/* Página de Contacto */
+/* ======================== PÁGINA DE CONTACTO ======================== */
 .contacto-page {
     background: #111;
     display: flex;
@@ -296,7 +261,7 @@ header {
 /* Imagen de Fondo en la Parte Superior de la Tarjeta */
 .top-background {
     width: 100%;
-    height: 160px; /* Ahora solo ocupa el 30% de la tarjeta */
+    height: 160px;
     background: url('assets/topbusinesscard.jpg') no-repeat center center/cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -354,13 +319,6 @@ header {
     margin-bottom: -60px;
 }
 
-/* Subtítulo */
-.subtitulo {
-    font-size: 18px;
-    color: #555;
-    margin-top: 50px;
-}
-
 /* Información de Contacto */
 .contact-info p {
     margin: 10px 0;
@@ -396,21 +354,4 @@ header {
 
 .redes a img:hover {
     transform: scale(1.2);
-}
-
-/* Botón de WhatsApp */
-.whatsapp-btn {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 12px 20px;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-top: 15px;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.whatsapp-btn:hover {
-    background: #1da851;
 }
