@@ -147,6 +147,22 @@ header {
 }
 
 /* ======================== SECCIÓN PRINCIPAL (HERO) ======================== */
+/* Imagen en formato WebP si el navegador lo soporta */
+@supports (background-image: url('assets/marvin-nunez-concierto-musica-catolica.webp')) {
+    .hero {
+        background: url('assets/marvin-nunez-concierto-musica-catolica.webp') no-repeat center center/cover;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+}
+
+/* Imagen en formato JPG como fallback */
 .hero {
     background: url('assets/marvin-nunez-concierto-musica-catolica.jpg') no-repeat center center/cover;
     width: 100%;
