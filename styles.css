@@ -488,18 +488,21 @@ body {
     color: white; /* Texto en color blanco */
 }
 
-.bio-texto h1, .bio-texto h2, .bio-texto h3 {
-    color: white; /* Asegurar que los títulos sean blancos */
-}
-
 .bio-texto h1 {
-    text-transform: uppercase;
+    color: white; /* Asegurar que el título sea blanco */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    font-size: 28px; /* Ajustar tamaño del título */
+    font-weight: bold;
 }
 
 .bio-texto h2 {
     color: white; /* Asegurar que el título sea blanco */
     font-size: 20px; /* Reducir el tamaño */
     font-style: italic; /* Convertirlo en cursiva */
+}
+
+.bio-texto h2, .bio-texto h3 {
+    color: white; /* Asegurar que los títulos sean blancos */
 }
 
 .bio-texto p {
@@ -518,4 +521,26 @@ body {
     height: auto;
     max-height: 110vh;
     object-fit: contain;
+}
+
+/* ======================== RESPONSIVE DESIGN ======================== */
+@media screen and (max-width: 768px) {
+    .bio {
+        flex-direction: column; /* Poner la imagen arriba y el texto abajo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .bio-texto, .bio-imagen {
+        width: 90%; /* Ocupar más espacio en pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .bio-texto h1 {
+        font-size: 24px;
+    }
+
+    .bio-texto p {
+        font-size: 14px;
+    }
 }
