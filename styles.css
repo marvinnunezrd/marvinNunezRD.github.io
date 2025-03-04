@@ -456,3 +456,66 @@ header {
 .redes a img:hover {
     transform: scale(1.2);
 }
+
+/* ======================== ESTILOS GENERALES ======================== */
+body {
+    background-color: black; /* Fondo negro para toda la página */
+    color: white; /* Texto en color blanco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================== ESTILOS BIO ======================== */
+.bio {
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: black; /* Fondo negro para toda la sección */
+    color: white; /* Texto en color blanco */
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.bio-texto {
+    width: 45%;
+    padding: 30px;
+    text-align: left;
+    font-size: 16px;
+    background-color: black; /* Fondo negro para la sección de texto */
+    color: white; /* Texto en color blanco */
+}
+
+.bio-texto h1, .bio-texto h2, .bio-texto h3 {
+    color: white; /* Asegurar que los títulos sean blancos */
+}
+
+.bio-texto h1 {
+    text-transform: uppercase;
+}
+
+.bio-texto h2 {
+    color: white; /* Asegurar que el título sea blanco */
+    font-size: 20px; /* Reducir el tamaño */
+    font-style: italic; /* Convertirlo en cursiva */
+}
+
+.bio-texto p {
+    color: white;
+    line-height: 1.4;
+}
+
+.bio-imagen {
+    width: 45%;
+    height: auto;
+    background-color: black; /* Asegurar que el fondo detrás de la imagen también sea negro */
+}
+
+.bio-imagen img {
+    width: 110%;
+    height: auto;
+    max-height: 110vh;
+    object-fit: contain;
+}
