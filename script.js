@@ -97,48 +97,6 @@ function toggleMenu() {
     document.querySelector("nav").classList.toggle("active");
 }
 
-// ================== CARGAR EL EVANGELIO DEL DÍA DESDE VATICAN NEWS ==================
-async function obtenerEvangelioDesdeVaticanNews() {
-    try {
-        console.log("📖 Cargando Evangelio del Día desde Vatican News...");
-
-        // URL de la página de Vatican News donde está el evangelio
-        const url = "https://www.vaticannews.va/es/evangelio-de-hoy.html";
-
-        // Hacemos una petición para obtener la página HTML
-        const response = await fetch(url);
-        const html = await response.text();
-
-        // Creamos un DOMParser para extraer el contenido
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(html, "text/html");
-
-        // Buscamos el texto del evangelio dentro de la página
-        const evangelioElement = doc.querySelector(".evangelio p"); // Ajustar si cambia la estructura de la web
-
-        // Extraemos el texto y la fuente
-        if (evangelioElement) {
-            document.getElementById("texto-evangelio").textContent = evangelioElement.textContent;
-            document.getElementById("fuente-evangelio").href = url;
-        } else {
-            throw new Error("⚠️ No se pudo encontrar el evangelio en la página.");
-        }
-
-        console.log("✅ Evangelio cargado correctamente.");
-    } catch (error) {
-        console.error("❌ Error al obtener el evangelio:", error);
-        document.getElementById("texto-evangelio").textContent = "No se pudo cargar el evangelio.";
-        document.getElementById("fuente-evangelio").href = "#";
-    }
-}
-
-// ================== INICIALIZAR AL CARGAR LA PÁGINA ==================
-document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById("texto-evangelio")) {
-        obtenerEvangelioDesdeVaticanNews();
-    }
-});
-
 // ================== SUSCRIPCIÓN AL EVANGELIO ==================
 document.getElementById("form-suscripcion").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -153,11 +111,4 @@ document.getElementById("form-suscripcion").addEventListener("submit", function(
 
     // Redirigir a página de confirmación (opcional)
     // window.location.href = "/gracias/";
-});
-
-// ================== INICIALIZAR AL CARGAR LA PÁGINA ==================
-document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById("texto-evangelio")) {
-        obtenerEvangelio();
-    }
 });

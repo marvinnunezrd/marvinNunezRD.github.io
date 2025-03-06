@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evangelio del Día | Marvin Núñez</title>
+    
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Lee el Evangelio del Día y recibe inspiración para tu jornada con la Palabra de Dios. Suscríbete y recíbelo en tu correo diariamente.">
     <meta name="keywords" content="evangelio del día, palabra de Dios, evangelio católico, evangelio diario">
     <meta property="og:title" content="Evangelio del Día | Marvin Núñez">
@@ -11,6 +13,8 @@
     <meta property="og:image" content="https://www.marvinnunezrd.com/assets/evangelio.jpg">
     <meta property="og:url" content="https://www.marvinnunezrd.com/evangelio-de-hoy/">
     <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -50,12 +54,22 @@
         </div>
     </header>
 
-    <!-- Sección Evangelio -->
-    <section id="evangelio">
-        <h1>Evangelio del Día</h1>
-        <p id="texto-evangelio">Cargando el evangelio...</p>
-        <a id="fuente-evangelio" href="#" target="_blank">Leer más</a>
-    </section>
+    <!-- Sección del Evangelio Diario -->
+    <main>
+        <section id="evangelio">
+            <h1>Evangelio del Día</h1>
+            <p>Lee y medita el Evangelio de hoy con una reflexión para tu vida.</p>
+
+            <!-- Integración de Evangeli.net -->
+            <iframe frameborder="0" width="100%" height="600px" src="https://evangeli.net/evangelio/widget/web"></iframe>
+            <p>
+                <a href="https://evangeli.net/evangelio" title="Contemplar el Evangelio de hoy - homilías católicas del Evangelio del día" target="_blank">Contemplar el Evangelio de hoy - homilías católicas del Evangelio del día</a>
+            </p>
+            <p>
+                <a href="https://evangeli.net/evangelio/" title="Contemplar el Evangelio de hoy - Suscríbase" target="_blank">Suscribirse al Evangelio diario</a>
+            </p>
+        </section>
+    </main>
 
     <!-- Sección de Suscripción -->
     <section id="suscripcion">
@@ -72,6 +86,7 @@
         <p>© 2024 Marvin Núñez - Todos los derechos reservados</p>
     </footer>
 
+    <!-- Scripts -->
     <script src="../script.js"></script>
 </body>
 </html>
