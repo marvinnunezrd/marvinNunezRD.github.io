@@ -544,3 +544,127 @@ body {
         font-size: 14px;
     }
 }
+
+/* ================== SECCIÓN EVANGELIO ================== */
+#evangelio {
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#evangelio h1 {
+    color: #222;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#texto-evangelio {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#fuente-evangelio {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#fuente-evangelio:hover {
+    background: #0056b3;
+}
+
+/* ================== SECCIÓN SUSCRIPCIÓN ================== */
+#suscripcion {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#suscripcion h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#form-suscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-suscripcion input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-suscripcion button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#form-suscripcion button:hover {
+    background: #0056b3;
+}
+
+#mensaje {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+@media screen and (max-width: 768px) {
+    #evangelio,
+    #suscripcion {
+        width: 90%;
+        padding: 30px 15px;
+    }
+
+    #texto-evangelio {
+        font-size: 16px;
+    }
+
+    #suscripcion h2 {
+        font-size: 24px;
+    }
+
+    #form-suscripcion input {
+        width: 100%;
+    }
+
+    #form-suscripcion button {
+        width: 100%;
+    }
+}
