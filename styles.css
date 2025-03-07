@@ -572,85 +572,40 @@ body {
     margin-top: 20px;
 }
 
-/* ================== SECCIÓN SUSCRIPCIÓN ================== */
-#suscripcion {
-    background: #f4f4f4;
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 40px auto;
+/* ================== SECCIÓN SUSCRIPCIÓN - MAILCHIMP ================== */
+#mc_embed_signup {
+    background: #fff; /* Fondo blanco */
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
 }
 
-#suscripcion h2 {
-    color: #333;
-    font-size: 28px;
+#mc_embed_signup label {
+    color: #333; /* Letras en color oscuro */
     font-weight: bold;
-    margin-bottom: 20px;
 }
 
-#form-suscripcion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#form-suscripcion input {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 10px 0;
+#mc_embed_signup input {
+    width: 100%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-#form-suscripcion button {
+#mc_embed_signup .button {
     background: #007BFF;
     color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 12px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s ease;
 }
 
-#form-suscripcion button:hover {
+#mc_embed_signup .button:hover {
     background: #0056b3;
 }
-
-#mensaje {
-    margin-top: 15px;
-    color: green;
-    font-weight: bold;
-    font-size: 16px;
-}
-
-/* ================== RESPONSIVE DESIGN ================== */
-@media screen and (max-width: 768px) {
-    #evangelio,
-    #suscripcion {
-        width: 90%;
-        padding: 30px 15px;
-    }
-
-    #suscripcion h2 {
-        font-size: 24px;
-    }
-
-    #form-suscripcion input {
-        width: 100%;
-    }
-
-    #form-suscripcion button {
-        width: 100%;
-    }
-
-    #evangelio iframe {
-        height: 500px; /* Ajuste para pantallas más pequeñas */
-    }
-}
-
