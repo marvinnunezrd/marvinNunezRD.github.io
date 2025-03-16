@@ -138,7 +138,7 @@ header {
         padding: 10px 0;
         text-align: center;
     }
-    .evento {
+    .agenda {
         width: 100%; /* Ocupará todo el ancho disponible */
         max-width: 660px; /* El mismo ancho máximo que el reproductor de Spotify */
         margin: 10px auto; /* Centra la caja y mantiene espacio arriba y abajo */
@@ -214,7 +214,7 @@ header {
 }
 
 /* Restaurando el diseño original de las cajas de eventos */
-.evento {
+.agenda {
     display: flex;
     align-items: center;
     background: black;
@@ -230,11 +230,11 @@ header {
     cursor: pointer;
 }
 
-.evento:hover {
+.agenda:hover {
     background: #333;
 }
 
-.evento-contenedor {
+.agenda-contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,7 +242,7 @@ header {
 }
 
 /* Fecha del evento */
-.evento-fecha {
+.agenda-fecha {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,18 +257,18 @@ header {
     margin-right: 15px;
 }
 
-.evento-fecha .mes {
+.agenda-fecha .mes {
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.evento-fecha .dia {
+.agenda-fecha .dia {
     font-size: 26px;
     font-weight: bold;
 }
 
 /* Título del evento */
-.evento-titulo {
+.agenda-titulo {
     flex-grow: 1;
     text-align: left;
     font-size: 20px;
@@ -328,17 +328,146 @@ header {
     display: block;
 }
 
-/* ======================== PÁGINA DE CONTACTO ======================== */
+/* ======================== ESTILOS GENERALES ======================== */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================== DISEÑO DE LA SECCIÓN CONTACTO ======================== */
 .contacto-page {
     background: #111;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px 0;
 }
 
-/* Imagen de Fondo en la Parte Superior de la Tarjeta */
+.contacto-page header {
+    width: 100%;
+    position: fixed; /* O absolute si prefieres */
+    top: 0;
+    left: 0;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    z-index: 1000; /* Para mantenerlo encima de otros elementos */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+/* Contenedor de la página de contacto */
+.contact-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto 5px;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* ================== FORMULARIO DE INVITACIÓN ================== */
+.invitation-form-container {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation-form-container h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.invitation-form-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.invitation-form-container form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.invitation-form-container label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+}
+
+.invitation-form-container input,
+.invitation-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.invitation-form-container button {
+    background: black;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.invitation-form-container button:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+.invitation-form-container label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    color: #222; /* Asegurar color oscuro */
+    font-size: 16px; /* Ajustar tamaño para mejor lectura */
+}
+
+/* ================== TARJETA DE PRESENTACIÓN ================== */
+.business-card {
+    flex: 1;
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #ddd;
+    position: relative; /* Permite posicionar elementos internos */
+    overflow: visible;
+}
+
+/* ================== IMAGEN DE PERFIL EN LA TARJETA ================== */
 .top-background {
     width: 100%;
     height: 160px;
@@ -347,59 +476,47 @@ header {
     border-top-right-radius: 15px;
 }
 
-/* Título "Contacto" */
-.contact-title {
-    font-size: 36px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
-}
-
-/* Tarjeta de Presentación */
-.business-card {
-    background: white;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    border: 2px solid #ddd;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Imagen de Marvin Núñez superpuesta */
+/* Corrección: La imagen de perfil está dentro de la .business-card */
 .profile-image {
     position: absolute;
-    top: 100px;
+    top: calc(160px - 75px); /* 50% dentro del fondo, 50% fuera */
     left: 50%;
     transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    background: white;
 }
 
 .profile-image img {
-    width: 120px;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Nombre destacado en la tarjeta */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================== TEXTO DE LA TARJETA ================== */
 .nombre-contacto {
     font-size: 24px;
     font-weight: bold;
     color: #222;
-    margin-bottom: -40px;
+    margin-top: 90px;
 }
 
-/* Información de Contacto */
+.subtitulo {
+    font-size: 18px;
+    color: #555;
+    margin-top: -10px;
+}
+
+/* ================== INFORMACIÓN DE CONTACTO ================== */
 .contact-info p {
     margin: 10px 0;
     font-size: 16px;
@@ -415,28 +532,29 @@ header {
     text-decoration: underline;
 }
 
+/* Botón de "Guardar Contacto" */
 .contact-info a.download-btn {
-    display: inline-flex; /* Asegura que el botón respete dimensiones */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    padding: 12px 20px; /* Espaciado interno */
-    border-radius: 8px; /* Bordes redondeados */
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
     font-weight: bold;
-    text-decoration: none; /* Quitar subrayado */
+    text-decoration: none;
     transition: background 0.3s ease, transform 0.2s ease;
-    border: 2px solid black; /* Asegura bordes definidos */
-    width: fit-content; /* Ajusta el ancho según el contenido */
+    border: 2px solid black;
+    width: fit-content;
 }
 
 .contact-info a.download-btn:hover {
-    background: #333; /* Cambio de color al pasar el mouse */
+    background: #333;
     border-color: #333;
-    transform: scale(1.05); /* Efecto de leve agrandamiento */
+    transform: scale(1.05);
 }
 
-/* Redes Sociales */
+/* ================== REDES SOCIALES EN TARJETA ================== */
 .redes {
     display: flex;
     flex-direction: row;
@@ -456,6 +574,78 @@ header {
 .redes a img:hover {
     transform: scale(1.2);
 }
+
+/* ================== FOOTER ================== */
+footer {
+    margin-top: 5px;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ================== DISEÑO RESPONSIVO ================== */
+@media screen and (max-width: 768px) {
+    /* Ajustar el diseño en móviles */
+    .contact-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .invitation-form-container {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 1px;
+    }
+
+    .business-card {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    /* Menú hamburguesa */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: flex;
+    }
+}
+
 
 /* ======================== ESTILOS GENERALES ======================== */
 body {
@@ -608,4 +798,98 @@ body {
 
 #mc_embed_signup .button:hover {
     background: #0056b3;
+}
+
+/* ======================== ESTILOS PARA LA PÁGINA DE AGENDA ======================== */
+#agenda {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#agenda h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+#agenda p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Lista de eventos */
+#lista-agenda {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+.evento {
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.evento:hover {
+    background: #333;
+}
+
+.evento-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Fecha del evento */
+.evento-fecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #555;
+    padding: 10px;
+    width: 80px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.evento-fecha .mes {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.evento-fecha .dia {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Título del evento */
+.evento-titulo {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 20px;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

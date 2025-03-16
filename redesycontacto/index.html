@@ -18,50 +18,113 @@
 </head>
 <body class="contacto-page">
 
-    <!-- Título Contacto Fuera de la Tarjeta -->
-    <h1 class="contact-title">Contacto</h1>
-
-    <div class="business-card">
-        <!-- Imagen de Encabezado DENTRO de la Tarjeta -->
-        <div class="top-background"></div>
-
-        <!-- Imagen superpuesta de Marvin Núñez -->
-        <div class="profile-image">
-            <img src="../assets/marvinnunezbusinesscard.png" alt="Marvin Núñez">
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="../assets/LogoMarvinNunezRDBlanco.png" alt="Logo oficial de Marvin Núñez - Cantautor católico">
         </div>
 
-        <h2 class="nombre-contacto">Marvin Núñez</h2>
-        <p class="subtitulo">Cantautor Católico Dominicano</p>        
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-        <div class="contact-info">
-            <p>🌐 <a href="https://www.marvinnunezrd.com">www.marvinnunezrd.com</a></p>
-            <p>📞 <a href="tel:+19295308974">+1 (929) 530-8974</a></p>
-            <p>✉️ <a href="mailto:marvinnunezrd@gmail.com">marvinnunezrd@gmail.com</a></p>
-            <p> </p>
-            <p><a href="https://vcard.link/card/DB3Y.vcf" class="download-btn">Guardar el contacto</a></p>
-        </div>  
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../bio/index.html">Bio</a></li>
+                <li><a href="../agenda/index.html">Agenda</a></li>
+                <li><a href="../index.html#musica">Música</a></li>
+                <li><a href="../evangelio-de-hoy/">Evangelio de Hoy</a></li>
+                <li><a href="../redesycontacto/">Contacto</a></li>
+            </ul>
+        </nav>
 
         <div class="redes">
-            <a href="https://www.instagram.com/marvinnunezrd" target="_blank" alt="Instagram oficial de Marvin Nunez - Cantautor Catolico">
-                <img src="../assets/isntagramlogonegro.png" alt="Instagram">
+            <a href="https://www.instagram.com/marvinnunezrd" target="_blank">
+                <img src="../assets/instagram.png" alt="Instagram">
             </a>
-            <a href="https://www.facebook.com/marvinnunezrd" target="_blank" alt="Pagina de Facebook oficial de Marvin Nunez - Cantautor Catolico">
-                <img src="../assets/facebooklogonegro.png" alt="Facebook">
+            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank">
+                <img src="../assets/spotify.png" alt="Spotify">
             </a>
-            <a href="https://wa.me/19295308974" target="_blank" class="_blank">
-                <img src="../assets/whatsapplogonegro.png" alt="Facebook">
-            </a>
-            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank" alt="Spotiy Oficial de Marvin Nunez - Cantautor Catolico">
-                <img src="../assets/spotifylogonegro.png" alt="Spotify">
-            </a>
-            <a href="https://music.apple.com/us/artist/marvin-n%C3%BA%C3%B1ez/996812382" target="_blank" alt="Apple Music Oficial de Marvin Nunez - Cantautor Catolico">
-                <img src="../assets/AppleMusiclogonegro.png" alt="Apple Music">
-            </a>
-            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank" alt="Este es el canal de YouTube oficial de Marvin Nunez - Cantautor Catolico">
-                <img src="../assets/youtubelogonegro.png" alt="YouTube">
+            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank">
+                <img src="../assets/youtube.png" alt="YouTube">
             </a>
         </div>
+    </header>
+
+    <!-- Contenedor principal de contacto -->
+    <div class="contact-container">
+        
+        <!-- Formulario de Invitación -->
+        <div class="invitation-form-container">
+            <h2>Formulario de Invitación</h2>
+            <p>Rellena el formulario para invitarme a tu evento.</p>
+            <form action="https://formspree.io/f/xzzebvaj" method="POST">
+                <input type="hidden" name="_subject" value="Nueva invitación desde la web">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+        
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+        
+                <label for="evento">Detalles del Evento:</label>
+                <textarea id="evento" name="evento" rows="4" required></textarea>
+        
+                <button type="submit">Enviar Invitación</button>
+            </form>
+
+        </div>
+
+        <!-- Tarjeta de Presentación -->
+        <div class="business-card">
+            <div class="top-background"></div>
+
+            <div class="profile-image">
+                <img src="../assets/marvinnunezbusinesscard.png" alt="Marvin Núñez">
+            </div>
+
+            <h2 class="nombre-contacto">Marvin Núñez</h2>
+            <p class="subtitulo">Cantautor Católico Dominicano</p>        
+
+            <div class="contact-info">
+                <p>🌐 <a href="https://www.marvinnunezrd.com">www.marvinnunezrd.com</a></p>
+                <p>📞 <a href="tel:+19295308974">+1 (929) 530-8974</a></p>
+                <p>✉️ <a href="mailto:marvinnunezrd@gmail.com">marvinnunezrd@gmail.com</a></p>
+                <p><a href="https://vcard.link/card/DB3Y.vcf" class="download-btn">Guardar el contacto</a></p>
+            </div>  
+
+            <!-- Redes Sociales -->
+            <div class="redes">
+                <a href="https://www.instagram.com/marvinnunezrd" target="_blank">
+                    <img src="../assets/isntagramlogonegro.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/marvinnunezrd" target="_blank">
+                    <img src="../assets/facebooklogonegro.png" alt="Facebook">
+                </a>
+                <a href="https://wa.me/19295308974" target="_blank">
+                    <img src="../assets/whatsapplogonegro.png" alt="WhatsApp">
+                </a>
+                <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank">
+                    <img src="../assets/spotifylogonegro.png" alt="Spotify">
+                </a>
+                <a href="https://music.apple.com/us/artist/marvin-n%C3%BA%C3%B1ez/996812382" target="_blank">
+                    <img src="../assets/AppleMusiclogonegro.png" alt="Apple Music">
+                </a>
+                <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank">
+                    <img src="../assets/youtubelogonegro.png" alt="YouTube">
+                </a>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Marvin Núñez - Todos los derechos reservados</p>
+    </footer>
 
 </body>
 </html>

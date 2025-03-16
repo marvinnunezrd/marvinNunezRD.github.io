@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Eventos - Marvin Núñez</title>
+    <meta name="description" content="Consulta la agenda de eventos de Marvin Núñez y descubre los próximos conciertos, retiros y encuentros de evangelización.">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <!--Logo superior izquierdo-->
+        <div class="logo">
+            <img src="../assets/LogoMarvinNunezRDBlanco.png" alt="Logo oficial de Marvin Núñez - Cantautor catolico">
+        </div>
+
+        <!-- Icono del menú hamburguesa -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <!--Barra de navegacion supeior central-->
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../bio/index.html">Bio</a></li>
+                <li><a href="../agenda/index.html">Agenda</a></li>
+                <li><a href="../index.html#musica">Música</a></li>
+                <li><a href="../evangelio-de-hoy/">Evangelio de Hoy</a></li>
+                <li><a href="../redesycontacto/">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--Logo de redes sociales superior derecha-->
+        <div class="redes">
+            <a href="https://www.instagram.com/marvinnunezrd" target="_blank" alt="Instagram oficial de Marvin Nunez - Cantautor Catolico">
+                <img src="../assets/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank" alt="Spotiy Oficial de Marvin Nunez - Cantautor Catolico">
+                <img src="../assets/spotify.png" alt="Spotify">
+            </a>
+            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank" alt="Este es el canal de YouTube oficial de Marvin Nunez - Cantautor Catolico">
+                <img src="../assets/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección de Agenda -->
+    <section id="agenda">
+        <h1>Próximos Eventos</h1>
+        <p>Consulta los próximos eventos y acompáñanos en cada encuentro.</p>
+        <ul id="lista-agenda"></ul>
+        <a href="https://calendar.google.com/calendar/embed?src=je8uubih156f9ut71p2jjrle74@group.calendar.google.com" target="_blank" class="ver-todos-eventos">
+            Ver todos los eventos
+        </a>
+    </section>
+
+    <footer>
+        <p>© 2024 Marvin Núñez - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
