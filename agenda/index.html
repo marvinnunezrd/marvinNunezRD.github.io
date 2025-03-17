@@ -7,20 +7,33 @@
     <meta name="description" content="Consulta la agenda de eventos de Marvin Núñez y descubre los próximos conciertos, retiros y encuentros de evangelización.">
     <link rel="stylesheet" href="../styles.css">
     <script src="../script.js" defer></script>
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn, Telegram, Reddit, Instagram) -->
+    <meta property="og:title" content="Agenda de Eventos - Marvin Núñez">
+    <meta property="og:description" content="Consulta los próximos eventos de Marvin Núñez. Conciertos, retiros y encuentros de evangelización.">
+    <meta property="og:image" content="https://www.marvinnunezrd.com/assets/agenda-eventos-marvin-nunez.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://www.marvinnunezrd.com/agenda/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agenda de Eventos - Marvin Núñez">
+    <meta name="twitter:description" content="Descubre los próximos eventos de Marvin Núñez. Conciertos, retiros y encuentros de evangelización.">
+    <meta name="twitter:image" content="https://www.marvinnunezrd.com/assets/agenda-eventos-marvin-nunez.jpg">
+    <meta name="twitter:site" content="@marvinnunezrd">
+    <meta name="twitter:creator" content="@marvinnunezrd">
 </head>
 <body>
 
     <!-- Encabezado -->
     <header>
-        <!--Logo superior izquierdo-->
         <div class="logo">
-            <img src="../assets/LogoMarvinNunezRDBlanco.png" alt="Logo oficial de Marvin Núñez - Cantautor catolico">
+            <img src="../assets/LogoMarvinNunezRDBlanco.png" alt="Logo oficial de Marvin Núñez - Cantautor católico">
         </div>
-
-        <!-- Icono del menú hamburguesa -->
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-
-        <!--Barra de navegacion supeior central-->
         <nav>
             <ul class="nav-links">
                 <li><a href="../index.html">Inicio</a></li>
@@ -31,16 +44,14 @@
                 <li><a href="../redesycontacto/">Contacto</a></li>
             </ul>
         </nav>
-
-        <!--Logo de redes sociales superior derecha-->
         <div class="redes">
-            <a href="https://www.instagram.com/marvinnunezrd" target="_blank" alt="Instagram oficial de Marvin Nunez - Cantautor Catolico">
+            <a href="https://www.instagram.com/marvinnunezrd" target="_blank">
                 <img src="../assets/instagram.png" alt="Instagram">
             </a>
-            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank" alt="Spotiy Oficial de Marvin Nunez - Cantautor Catolico">
+            <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank">
                 <img src="../assets/spotify.png" alt="Spotify">
             </a>
-            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank" alt="Este es el canal de YouTube oficial de Marvin Nunez - Cantautor Catolico">
+            <a href="https://www.youtube.com/c/marvinnunezrd" target="_blank">
                 <img src="../assets/youtube.png" alt="YouTube">
             </a>
         </div>
@@ -56,9 +67,39 @@
         </a>
     </section>
 
+    <!-- Contenedor principal de la agenda -->
+    <div class="agenda-container">
+        <!-- Formulario de Invitación en Agenda -->
+        <div class="invitation-form-container agenda-form">
+            <h2>Invitación a Eventos</h2>
+            <p>Rellena el formulario para invitarme a tu evento.</p>
+            <form action="https://formspree.io/f/xzzebvaj" method="POST">
+                <input type="hidden" name="_subject" value="Nueva invitación desde la web">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="evento">Detalles del Evento:</label>
+                <textarea id="evento" name="evento" rows="4" required></textarea>
+
+                <button type="submit">Enviar Invitación</button>
+            </form>
+        </div>
+    </div>
+
     <footer>
         <p>© 2024 Marvin Núñez - Todos los derechos reservados</p>
     </footer>
+
+    <script src="../script.js"></script>
 
 </body>
 </html>

@@ -408,6 +408,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 
 .invitation-form-container label {
@@ -601,7 +602,7 @@ footer {
     .business-card {
         width: 90%;
         max-width: 400px;
-        margin-top: 20px;
+        margin-top: 65px;
     }
 
     /* Menú hamburguesa */
@@ -645,7 +646,6 @@ footer {
         display: flex;
     }
 }
-
 
 /* ======================== ESTILOS GENERALES ======================== */
 body {
@@ -800,7 +800,7 @@ body {
     background: #0056b3;
 }
 
-/* ======================== ESTILOS PARA LA PÁGINA DE AGENDA ======================== */
+/* ======================== ESTILOS GENERALES DE LA SECCIÓN AGENDA ======================== */
 #agenda {
     background: white;
     padding: 50px 20px;
@@ -821,7 +821,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Lista de eventos */
+/* ======================== LISTA DE EVENTOS ======================== */
 #lista-agenda {
     list-style: none;
     padding: 0;
@@ -829,13 +829,14 @@ body {
     margin: auto;
 }
 
+/* ======================== ESTILOS DE LOS EVENTOS ======================== */
 .evento {
     display: flex;
     align-items: center;
     background: black;
     color: white;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     margin: 10px auto;
     width: 90%;
     max-width: 600px;
@@ -855,33 +856,40 @@ body {
     width: 100%;
 }
 
-/* Fecha del evento */
+/* ======================== FECHA DEL EVENTO ======================== */
 .evento-fecha {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: #555;
-    padding: 10px;
-    width: 80px;
+    width: 74px;
+    height: 66px;
+    min-width: 74px;
+    min-height: 66px;
+    max-width: 74px;
+    max-height: 66px;
     text-align: center;
     border-radius: 5px;
     font-size: 18px;
     font-weight: bold;
     margin-right: 15px;
+    flex-shrink: 0;
 }
 
 .evento-fecha .mes {
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 1;
 }
 
 .evento-fecha .dia {
     font-size: 26px;
     font-weight: bold;
+    line-height: 1;
 }
 
-/* Título del evento */
+/* ======================== TÍTULO DEL EVENTO ======================== */
 .evento-titulo {
     flex-grow: 1;
     text-align: left;
@@ -890,6 +898,118 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3; /* Máximo 3 líneas */
     -webkit-box-orient: vertical;
+}
+
+/* ======================== BOTÓN "VER TODOS LOS EVENTOS" ======================== */
+.ver-todos-eventos {
+    display: inline-block;
+    background: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.ver-todos-eventos:hover {
+    background: #333;
+}
+
+/* ======================== FORMULARIO DE INVITACIÓN ======================== */
+.agenda-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Contenedor del formulario en la página de agenda */
+.agenda-form {
+    width: 80%;
+    max-width: 700px;
+    background: black;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.agenda-form h2 {
+    color: white;
+    font-size: 24px;
+}
+
+.agenda-form p {
+    font-size: 14px;
+    color: white;
+}
+
+.agenda-form input,
+.agenda-form textarea {
+    border: 2px solid #ddd;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    display: block;
+}
+
+.agenda-form label {
+    color: white;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ======================== BOTÓN DEL FORMULARIO ======================== */
+.agenda-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.agenda-form button:hover {
+    background: #444;
+    color: white;
+}
+
+/* ======================== DISEÑO RESPONSIVO ======================== */
+@media screen and (max-width: 768px) {
+    /* Ajustar el formulario en móviles */
+    .agenda-form {
+        width: 90%;
+    }
+
+    /* Ajustar la lista de eventos */
+    .evento {
+        padding: 3px;
+    }
+
+    /* Asegurar que el título pueda tener hasta 3 líneas */
+    .evento-titulo {
+        font-size: 14px;
+        -webkit-line-clamp: 3;
+    }
+
+    /* Tamaño fijo de fecha en móviles */
+    .evento-fecha {
+        width: 74px;
+        height: 66px;
+    }
 }
