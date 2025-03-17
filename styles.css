@@ -650,7 +650,7 @@ footer {
 /* ======================== ESTILOS GENERALES ======================== */
 body {
     background-color: black; /* Fondo negro para toda la página */
-    color: white; /* Texto en color blanco */
+    color: black; /* Texto en color blanco */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
