@@ -1,3 +1,4 @@
+console.log("🔑 API Token:", process.env.API_TOKEN);
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
