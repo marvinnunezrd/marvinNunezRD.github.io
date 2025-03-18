@@ -9,12 +9,17 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 10000;
 
-app.use(cors());
+// Habilitar CORS
+app.use(cors({
+    origin: "*", // Permitir solicitudes desde cualquier origen
+    methods: ["GET"], // Solo permitimos GET
+    allowedHeaders: ["Content-Type", "Authorization"]
+}));
 app.use(express.json());
 
 app.get("/api/products", async (req, res) => {
     try {
-        const response = await fetch("https://api.printful.com/store/products", {
+        const response = await fetch("https://api.printful.com/sync/products", {
             headers: {
                 "Authorization": `Bearer ${process.env.API_TOKEN}`
             }
@@ -27,11 +32,12 @@ app.get("/api/products", async (req, res) => {
         const data = await response.json();
         res.json(data);
     } catch (error) {
-        console.error("Error al obtener productos:", error);
+        console.error("❌ Error al obtener productos:", error);
         res.status(500).json({ error: "Error al obtener productos" });
     }
 });
 
+// Iniciar servidor
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`✅ Servidor corriendo en http://localhost:${PORT}`);
 });

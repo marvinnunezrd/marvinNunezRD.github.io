@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     try {
         // Hacemos la petición al backend en lugar de Printful directamente
-        const response = await fetch("http://localhost:3000/api/products");
+        const response = await fetch("https://printful-api-proxy.onrender.com/api/products");
 
         if (!response.ok) {
             throw new Error(`❌ Error en la API: ${response.statusText}`);
