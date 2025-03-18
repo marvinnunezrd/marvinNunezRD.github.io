@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     try {
-        // Hacemos la petición al backend en lugar de Printful directamente
+        // Ahora llamamos al backend en Render en lugar de localhost
         const response = await fetch("https://printful-api-proxy.onrender.com/api/products");
 
         if (!response.ok) {
@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", async function () {
         data.result.forEach(product => {
             productsHTML += `
                 <div class="product">
-                    <img src="${product.sync_product.thumbnail_url}" alt="${product.sync_product.name}">
-                    <h3>${product.sync_product.name}</h3>
-                    <p>Precio: $${product.sync_variants[0].retail_price}</p>
-                    <a href="https://www.printful.com/dashboard/store/products/${product.id}" target="_blank" class="buy-button">Comprar</a>
+                    <img src="${product.thumbnail_url}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <a href="https://www.printful.com/dashboard/store/products/${product.id}" target="_blank" class="buy-button">Ver Producto</a>
                 </div>
             `;
         });
