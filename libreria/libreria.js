@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
-    const storeContainer = document.getElementById("product-list");
+    const storeContainer = document.getElementById("productos-container"); // ID corregido
 
     if (!storeContainer) {
         console.error("❌ No se encontró el contenedor de productos.");
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
 
     try {
-        // Ahora llamamos al backend en Render en lugar de localhost
+        // Llamamos al backend en Render
         const response = await fetch("https://printful-api-proxy.onrender.com/api/products");
 
         if (!response.ok) {
