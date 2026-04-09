@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Mil Motivos | Marvin Núñez</title>
+  <meta name="description" content="Escucha Mil Motivos de Marvin Núñez en tu plataforma favorita."/>
+
+  <link rel="icon" href="../favicon.ico" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1100px;
+      width: 100%;
+      padding: 20px;
+      background: #111;
+      border-radius: 20px;
+      box-shadow: 0 0 60px rgba(255,255,255,0.03);
+      align-items: stretch; /* 🔥 clave */
+    }
+
+    .cover img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(255,255,255,0.05);
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .content h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+
+    .content h3 {
+      margin-top: 5px;
+      color: #bbb;
+    }
+
+    .content p {
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px;
+      background: #1c1c1c;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      transition: 0.25s;
+      border: 1px solid transparent;
+    }
+
+    .btn:hover {
+      background: #2a2a2a;
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    /* Spotify destacado */
+    .btn:first-child {
+      border: 1px solid #1DB954;
+    }
+
+    .btn img {
+      width: 28px;
+    }
+
+    /* 🔥 Footer alineado abajo */
+    .footer-link {
+      margin-top: auto;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .footer-link a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-link a:hover {
+      text-decoration: underline;
+    }
+
+    @media(max-width: 768px){
+      .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .buttons {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-link {
+        margin-top: 20px; /* evita que quede pegado en móvil */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- COVER -->
+  <div class="cover">
+    <picture>
+      <source srcset="../assets/cover/marvin-nunez-mil-motivos-cover.webp" type="image/webp">
+      <img src="../assets/cover/marvin-nunez-mil-motivos-cover.jpg" alt="Mil Motivos - Marvin Núñez">
+    </picture>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="content">
+    <h1>Mil Motivos</h1>
+    <h3>Marvin Núñez</h3>
+
+    <p>
+      Escucha <strong>Mil Motivos</strong> en tu plataforma favorita y compártela con alguien que necesite una canción de fe, esperanza y gratitud.
+    </p>
+
+    <div class="buttons">
+
+      <!-- SPOTIFY -->
+      <a class="btn" href="https://open.spotify.com/track/6KeN3VTs0j6s7PajAYzGC4" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-spotify-icono.svg">
+        Spotify
+      </a>
+
+      <!-- APPLE -->
+      <a class="btn" href="https://music.apple.com/us/song/mil-motivos/1886495011" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-apple-music-icono.svg">
+        Apple Music
+      </a>
+
+      <!-- YOUTUBE -->
+      <a class="btn" href="https://music.youtube.com/watch?v=FVjpuJ1xx9M" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-youtube-music-icono.svg">
+        YouTube Music
+      </a>
+
+      <!-- AMAZON -->
+      <a class="btn" href="https://music.amazon.com/albums/B0GT66YHS5" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-amazon-music-icono.svg">
+        Amazon Music
+      </a>
+
+      <!-- TIDAL -->
+      <a class="btn" href="https://tidal.com/track/508476983" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-tidal-icono.svg">
+        TIDAL
+      </a>
+
+      <!-- DEEZER -->
+      <a class="btn" href="https://link.deezer.com/s/32WMBJXF0gUzzXqGCjRMh" target="_blank">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-deezer-icono.svg">
+        Deezer
+      </a>
+
+    </div>
+
+    <!-- 🔥 FOOTER ABAJO PERFECTO -->
+    <p class="footer-link">
+      Más música y contenido en 
+      <a href="https://www.marvinnunezrd.com" target="_blank">
+        marvinnunezrd.com
+      </a>
+    </p>
+
+  </div>
+
+</div>
+
+</body>
+</html>
