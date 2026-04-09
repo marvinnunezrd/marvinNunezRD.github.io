@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Mil Motivos | Marvin Núñez</title>
-  <meta name="description" content="Escucha Mil Motivos de Marvin Núñez en tu plataforma favorita."/>
+  <meta name="description" content="Escucha Mil Motivos de Marvin Núñez en tu plataforma favorita y mira el video lyric oficial." />
+  <meta name="author" content="Marvin Núñez" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.marvinnunezrd.com/milmotivos/" />
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:locale" content="es_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mil Motivos | Marvin Núñez" />
+  <meta property="og:description" content="Escucha Mil Motivos de Marvin Núñez en tu plataforma favorita y mira el video lyric oficial." />
+  <meta property="og:url" content="https://www.marvinnunezrd.com/milmotivos/" />
+  <meta property="og:site_name" content="Marvin Núñez" />
+  <meta property="og:image" content="https://www.marvinnunezrd.com/assets/cover/marvin-nunez-mil-motivos-og-image.jpg" />
+  <meta property="og:image:secure_url" content="https://www.marvinnunezrd.com/assets/cover/marvin-nunez-mil-motivos-og-image.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mil Motivos de Marvin Núñez - imagen oficial para compartir" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mil Motivos | Marvin Núñez" />
+  <meta name="twitter:description" content="Escucha Mil Motivos de Marvin Núñez en tu plataforma favorita y mira el video lyric oficial." />
+  <meta name="twitter:image" content="https://www.marvinnunezrd.com/assets/cover/marvin-nunez-mil-motivos-og-image.jpg" />
+  <meta name="twitter:image:alt" content="Mil Motivos de Marvin Núñez - imagen oficial para compartir" />
 
   <link rel="icon" href="../favicon.ico" />
 
@@ -17,33 +41,45 @@
       color: white;
       display: flex;
       justify-content: center;
-      align-items: center;
       min-height: 100vh;
+      padding: 30px 20px;
+      box-sizing: border-box;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 1100px;
     }
 
     .container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      max-width: 1100px;
       width: 100%;
       padding: 20px;
       background: #111;
       border-radius: 20px;
       box-shadow: 0 0 60px rgba(255,255,255,0.03);
-      align-items: stretch; /* 🔥 clave */
+      align-items: stretch;
     }
 
     .cover img {
       width: 100%;
       border-radius: 20px;
       box-shadow: 0 0 40px rgba(255,255,255,0.05);
+      display: block;
     }
 
     .content {
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
       height: 100%;
+    }
+
+    .top-content {
+      display: flex;
+      flex-direction: column;
     }
 
     .content h1 {
@@ -54,11 +90,13 @@
     .content h3 {
       margin-top: 5px;
       color: #bbb;
+      margin-bottom: 20px;
     }
 
     .content p {
       color: #ccc;
       line-height: 1.5;
+      margin-top: 0;
     }
 
     .buttons {
@@ -87,18 +125,19 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
-    /* Spotify destacado */
     .btn:first-child {
       border: 1px solid #1DB954;
     }
 
     .btn img {
       width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
 
-    /* 🔥 Footer alineado abajo */
     .footer-link {
-      margin-top: auto;
+      margin-top: 20px;
       color: #aaa;
       font-size: 14px;
     }
@@ -113,6 +152,75 @@
       text-decoration: underline;
     }
 
+    .video-section {
+      margin-top: 24px;
+      background: #111;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 60px rgba(255,255,255,0.03);
+    }
+
+    .video-header {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .video-header a {
+      transition: transform 0.2s ease;
+    }
+
+    .video-header a:hover {
+      transform: scale(1.05);
+    }
+
+    .video-header img {
+      width: 220px;
+      max-width: 80%;
+    }
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .video-wrap iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .social-section {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      transition: transform 0.25s ease;
+    }
+
+    .social-icons a:hover {
+      transform: translateY(-4px) scale(1.1);
+    }
+
+    .social-icons img {
+      width: 38px;
+      height: 38px;
+    }
+
     @media(max-width: 768px){
       .container {
         grid-template-columns: 1fr;
@@ -123,8 +231,8 @@
         grid-template-columns: 1fr;
       }
 
-      .footer-link {
-        margin-top: 20px; /* evita que quede pegado en móvil */
+      .content h1 {
+        font-size: 40px;
       }
     }
   </style>
@@ -132,74 +240,107 @@
 
 <body>
 
-<div class="container">
+<div class="page">
 
-  <!-- COVER -->
-  <div class="cover">
-    <picture>
-      <source srcset="../assets/cover/marvin-nunez-mil-motivos-cover.webp" type="image/webp">
-      <img src="../assets/cover/marvin-nunez-mil-motivos-cover.jpg" alt="Mil Motivos - Marvin Núñez">
-    </picture>
-  </div>
+  <div class="container">
 
-  <!-- CONTENIDO -->
-  <div class="content">
-    <h1>Mil Motivos</h1>
-    <h3>Marvin Núñez</h3>
+    <div class="cover">
+      <picture>
+        <source srcset="../assets/cover/marvin-nunez-mil-motivos-cover.webp" type="image/webp">
+        <img src="../assets/cover/marvin-nunez-mil-motivos-cover.jpg" alt="Portada oficial de Mil Motivos de Marvin Núñez">
+      </picture>
+    </div>
 
-    <p>
-      Escucha <strong>Mil Motivos</strong> en tu plataforma favorita y compártela con alguien que necesite una canción de fe, esperanza y gratitud.
-    </p>
+    <div class="content">
 
-    <div class="buttons">
+      <div class="top-content">
+        <h1>Mil Motivos</h1>
+        <h3>Marvin Núñez</h3>
 
-      <!-- SPOTIFY -->
-      <a class="btn" href="https://open.spotify.com/track/6KeN3VTs0j6s7PajAYzGC4" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-spotify-icono.svg">
-        Spotify
-      </a>
+        <p>
+          Escucha <strong>Mil Motivos</strong> en tu plataforma favorita y compártela con alguien que necesite una canción de fe, esperanza y gratitud.
+        </p>
 
-      <!-- APPLE -->
-      <a class="btn" href="https://music.apple.com/us/song/mil-motivos/1886495011" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-apple-music-icono.svg">
-        Apple Music
-      </a>
+        <div class="buttons">
+          <a class="btn" href="https://open.spotify.com/track/6KeN3VTs0j6s7PajAYzGC4" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-spotify-icono.svg" alt="Spotify"> Spotify
+          </a>
 
-      <!-- YOUTUBE -->
-      <a class="btn" href="https://music.youtube.com/watch?v=FVjpuJ1xx9M" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-youtube-music-icono.svg">
-        YouTube Music
-      </a>
+          <a class="btn" href="https://music.apple.com/us/song/mil-motivos/1886495011" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-apple-music-icono.svg" alt="Apple Music"> Apple Music
+          </a>
 
-      <!-- AMAZON -->
-      <a class="btn" href="https://music.amazon.com/albums/B0GT66YHS5" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-amazon-music-icono.svg">
-        Amazon Music
-      </a>
+          <a class="btn" href="https://music.youtube.com/watch?v=FVjpuJ1xx9M" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-youtube-music-icono.svg" alt="YouTube Music"> YouTube Music
+          </a>
 
-      <!-- TIDAL -->
-      <a class="btn" href="https://tidal.com/track/508476983" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-tidal-icono.svg">
-        TIDAL
-      </a>
+          <a class="btn" href="https://music.amazon.com/albums/B0GT66YHS5" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-amazon-music-icono.svg" alt="Amazon Music"> Amazon Music
+          </a>
 
-      <!-- DEEZER -->
-      <a class="btn" href="https://link.deezer.com/s/32WMBJXF0gUzzXqGCjRMh" target="_blank">
-        <img src="../assets/streaming/marvin-nunez-mil-motivos-deezer-icono.svg">
-        Deezer
-      </a>
+          <a class="btn" href="https://tidal.com/track/508476983" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-tidal-icono.svg" alt="TIDAL"> TIDAL
+          </a>
+
+          <a class="btn" href="https://link.deezer.com/s/32WMBJXF0gUzzXqGCjRMh" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/streaming/marvin-nunez-mil-motivos-deezer-icono.svg" alt="Deezer"> Deezer
+          </a>
+        </div>
+      </div>
+
+      <p class="footer-link">
+        Más música y contenido en 
+        <a href="https://www.marvinnunezrd.com" target="_blank" rel="noopener noreferrer">
+          marvinnunezrd.com
+        </a>
+      </p>
 
     </div>
 
-    <!-- 🔥 FOOTER ABAJO PERFECTO -->
-    <p class="footer-link">
-      Más música y contenido en 
-      <a href="https://www.marvinnunezrd.com" target="_blank">
-        marvinnunezrd.com
-      </a>
-    </p>
-
   </div>
+
+  <section class="video-section">
+    <div class="video-header">
+      <a href="https://www.youtube.com/@marvinnunezrd" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-youtube-icono.svg" alt="Canal de YouTube de Marvin Núñez">
+      </a>
+    </div>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/N-95Eq4yhBE"
+        title="Mil Motivos - Video Lyric"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <section class="social-section">
+    <div class="social-icons">
+
+      <a href="https://www.youtube.com/@marvinnunezrd" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-youtube-redondo-icono.svg" alt="YouTube">
+      </a>
+
+      <a href="https://www.instagram.com/marvinnunezrd" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-instagram-icono.svg" alt="Instagram">
+      </a>
+
+      <a href="https://www.tiktok.com/@marvinnunezrd" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-tiktok-icono.svg" alt="TikTok">
+      </a>
+
+      <a href="https://www.facebook.com/marvinnunezrd/" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-facebook-icono.svg" alt="Facebook">
+      </a>
+
+      <a href="https://wa.me/19295308974" target="_blank" rel="noopener noreferrer">
+        <img src="../assets/streaming/marvin-nunez-mil-motivos-whatsapp-icono.svg" alt="WhatsApp">
+      </a>
+
+    </div>
+  </section>
 
 </div>
 
