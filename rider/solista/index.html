@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rider Técnico | Marvin Núñez RD</title>
+  <meta name="description" content="Rider técnico oficial de Marvin Núñez RD para formato solista. Input list, stage plot, monitoreo, proyección y requerimientos de sonido." />
+  <link rel="canonical" href="https://www.marvinnunezrd.com/rider/solista/" />
+  <link rel="icon" href="../../favicon.ico" />
+
+  <meta property="og:title" content="Rider Técnico | Marvin Núñez RD" />
+  <meta property="og:description" content="Input list, stage plot y requerimientos técnicos para producción de sonido." />
+  <meta property="og:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.marvinnunezrd.com/rider/solista/" />
+
+  <style>
+    :root {
+      --black: #080808;
+      --charcoal: #141414;
+      --panel: #1e1e1e;
+      --panel-soft: #f7f4ed;
+      --white: #ffffff;
+      --text: #f4f1eb;
+      --muted: #b9b2a7;
+      --ink: #1f1f1f;
+      --gold: #c9a96a;
+      --gold-soft: #f1dfb6;
+      --red: #c93434;
+      --green: #2f8f5b;
+      --blue: #2d6cdf;
+      --border: rgba(255,255,255,.14);
+      --shadow: 0 24px 70px rgba(0,0,0,.35);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(201,169,106,.22), transparent 32rem),
+        linear-gradient(135deg, #050505 0%, #161616 48%, #080808 100%);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background: rgba(8,8,8,.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      min-height: 76px;
+      padding: 14px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 58px;
+      height: auto;
+      display: block;
+    }
+
+    .brand-text strong {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .brand-text span {
+      display: block;
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-actions a,
+    .nav-actions button {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 14px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: .86rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .nav-actions a:hover,
+    .nav-actions button:hover {
+      background: rgba(255,255,255,.12);
+    }
+
+    .nav-actions .primary {
+      background: var(--gold);
+      color: #111;
+      border-color: var(--gold);
+    }
+
+    .nav-actions .primary:hover {
+      background: var(--gold-soft);
+    }
+
+    .hero {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 54px 22px 28px;
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .hero-card {
+      background:
+        linear-gradient(rgba(0,0,0,.68), rgba(0,0,0,.76)),
+        url("../../assets/marvin-nunez-concierto-musica-catolica.jpg") center/cover;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 38px;
+      min-height: 430px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .eyebrow {
+      color: var(--gold-soft);
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: .82rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2.4rem, 6vw, 5.3rem);
+      line-height: .92;
+      margin: 0 0 16px;
+      letter-spacing: -.05em;
+    }
+
+    .hero-card p {
+      max-width: 720px;
+      color: #eee8dc;
+      font-size: 1.12rem;
+      margin: 0;
+    }
+
+    .status-card {
+      background: var(--panel-soft);
+      color: var(--ink);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 22px;
+    }
+
+    .status-card h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      color: #111;
+    }
+
+    .status-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .status-list li {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,.11);
+    }
+
+    .status-list b {
+      color: #111;
+    }
+
+    .status-list span {
+      color: #4c463c;
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px;
+    }
+
+    .section {
+      margin: 28px 0;
+      background: rgba(255,255,255,.065);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 16px 44px rgba(0,0,0,.22);
+      scroll-margin-top: 96px;
+    }
+
+    .section.light {
+      background: var(--panel-soft);
+      color: var(--ink);
+    }
+
+    .section-header {
+      padding: 26px 28px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .light .section-header { border-bottom-color: rgba(0,0,0,.12); }
+
+    .section-header h2 {
+      margin: 0 0 6px;
+      font-size: clamp(1.45rem, 3vw, 2.25rem);
+      letter-spacing: -.03em;
+    }
+
+    .section-header p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .light .section-header p { color: #5e574d; }
+
+    .section-body { padding: 28px; }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .quick-item {
+      background: rgba(255,255,255,.08);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .quick-item strong {
+      display: block;
+      color: var(--gold-soft);
+      font-size: 1.65rem;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .quick-item span {
+      color: #ddd7ca;
+      font-size: .92rem;
+    }
+
+    .alert-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .alert {
+      display: grid;
+      grid-template-columns: 42px 1fr;
+      gap: 14px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 16px;
+      background: #fff;
+      color: #181818;
+      border-left: 7px solid var(--gold);
+    }
+
+    .alert.danger { border-left-color: var(--red); }
+    .alert.ok { border-left-color: var(--green); }
+    .alert.info { border-left-color: var(--blue); }
+
+    .alert-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #f1eee8;
+      font-size: 1.2rem;
+    }
+
+    .alert strong {
+      color: #111;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 16px;
+      border: 1px solid rgba(0,0,0,.12);
+      background: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 920px;
+      color: #1b1b1b;
+      background: #fff;
+    }
+
+    th {
+      background: #111;
+      color: #fff;
+      text-align: left;
+      font-size: .78rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: 13px 12px;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 14px 12px;
+      border-bottom: 1px solid #e5e0d7;
+      vertical-align: top;
+      font-size: .94rem;
+    }
+
+    tr:nth-child(even) td { background: #faf7f1; }
+
+    .ch {
+      display: inline-block;
+      min-width: 54px;
+      text-align: center;
+      border-radius: 999px;
+      background: #111;
+      color: #fff;
+      padding: 4px 9px;
+      font-weight: 800;
+      font-size: .82rem;
+    }
+
+    .tag {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-weight: 800;
+      font-size: .75rem;
+      color: #111;
+      background: var(--gold-soft);
+      margin: 1px 2px 1px 0;
+      white-space: nowrap;
+    }
+
+    .tag.red { background: #ffd6d6; color: #7e1111; }
+    .tag.green { background: #d8f2e4; color: #145a35; }
+    .tag.blue { background: #dce8ff; color: #123f91; }
+    .tag.gray { background: #eeeeee; color: #444; }
+
+    .mix-grid,
+    .requirements-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .mix-card,
+    .req-card {
+      background: #fff;
+      color: #1b1b1b;
+      border-radius: 18px;
+      padding: 22px;
+      border: 1px solid rgba(0,0,0,.12);
+    }
+
+    .mix-card h3,
+    .req-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.15rem;
+    }
+
+    .mix-card ul,
+    .req-card ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .mix-card li,
+    .req-card li {
+      margin: 6px 0;
+    }
+
+    .no-click {
+      color: var(--red);
+      font-weight: 800;
+    }
+
+    .plot-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .stage {
+      background:
+        linear-gradient(180deg, #2a2a2a, #111);
+      border-radius: 20px;
+      border: 1px solid rgba(255,255,255,.14);
+      padding: 20px;
+      min-height: 520px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stage::before {
+      content: "BACK OF STAGE";
+      position: absolute;
+      top: 14px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: rgba(255,255,255,.26);
+      font-weight: 900;
+      letter-spacing: .24em;
+      font-size: .75rem;
+    }
+
+    .front-label {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 12px;
+      text-align: center;
+      color: var(--gold-soft);
+      font-weight: 900;
+      letter-spacing: .2em;
+      font-size: .78rem;
+    }
+
+    .stage-item {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background: #fff;
+      color: #111;
+      border-radius: 16px;
+      padding: 12px 14px;
+      text-align: center;
+      min-width: 128px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.32);
+      border: 3px solid var(--gold);
+      font-weight: 800;
+    }
+
+    .stage-item small {
+      display: block;
+      font-weight: 600;
+      color: #555;
+      margin-top: 3px;
+    }
+
+    .artist { left: 50%; top: 48%; }
+    .floor { left: 50%; top: 73%; border-color: #7f6ad9; }
+    .pedal { left: 30%; top: 54%; border-color: #2f8f5b; }
+    .interface { left: 72%; top: 54%; border-color: #2d6cdf; }
+    .iem { left: 72%; top: 33%; border-color: #d34ba8; }
+    .power { left: 22%; top: 33%; border-color: #f0b441; }
+    .hdmi { left: 50%; top: 23%; border-color: #35b6d4; }
+
+    .legend {
+      background: rgba(255,255,255,.08);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .legend h3 {
+      margin: 0 0 14px;
+      font-size: 1.25rem;
+    }
+
+    .legend-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 12px;
+    }
+
+    .legend-list li {
+      display: grid;
+      grid-template-columns: 24px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: #eee8dc;
+    }
+
+    .dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 999px;
+      margin-top: 4px;
+      background: var(--gold);
+    }
+
+    .contact-strip {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      background: var(--gold);
+      color: #111;
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 28px 0 60px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-strip h2 {
+      margin: 0 0 4px;
+    }
+
+    .contact-strip p {
+      margin: 0;
+      color: #3f3320;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .contact-buttons a {
+      background: #111;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 999px;
+      padding: 12px 16px;
+      white-space: nowrap;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 22px 40px;
+      text-align: center;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    @media (max-width: 920px) {
+      .hero,
+      .plot-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .mix-grid,
+      .requirements-grid,
+      .contact-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-buttons {
+        justify-content: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .topbar-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-actions {
+        justify-content: flex-start;
+      }
+
+      .nav-actions a,
+      .nav-actions button {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .hero-card,
+      .section-body,
+      .section-header {
+        padding: 22px;
+      }
+
+      .hero-card {
+        min-height: 360px;
+      }
+
+      .quick-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .status-list li {
+        grid-template-columns: 1fr;
+      }
+
+      .stage {
+        min-height: 620px;
+      }
+
+      .stage-item {
+        min-width: 112px;
+        font-size: .82rem;
+      }
+
+      .artist { left: 50%; top: 47%; }
+      .floor { left: 50%; top: 78%; }
+      .pedal { left: 27%; top: 58%; }
+      .interface { left: 73%; top: 58%; }
+      .iem { left: 73%; top: 33%; }
+      .power { left: 27%; top: 33%; }
+      .hdmi { left: 50%; top: 20%; }
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+        color: #111 !important;
+        font-size: 11px;
+      }
+
+      .topbar,
+      .nav-actions,
+      .contact-buttons {
+        display: none !important;
+      }
+
+      .hero,
+      .container {
+        max-width: none;
+        padding: 0;
+      }
+
+      .hero {
+        display: block;
+      }
+
+      .hero-card,
+      .status-card,
+      .section,
+      .contact-strip {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        break-inside: avoid;
+        margin: 12px 0;
+      }
+
+      .hero-card {
+        min-height: auto;
+        background: #111 !important;
+        padding: 24px;
+      }
+
+      .section-body,
+      .section-header {
+        padding: 16px;
+      }
+
+      .quick-grid,
+      .mix-grid,
+      .requirements-grid,
+      .plot-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      table {
+        min-width: 0;
+        font-size: 9px;
+      }
+
+      th,
+      td {
+        padding: 7px;
+      }
+
+      .stage {
+        min-height: 420px;
+      }
+
+      footer {
+        padding: 12px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../index.html" aria-label="Volver al inicio">
+        <img src="../../assets/LogoMarvinNunezRDBlanco.png" alt="Logo Marvin Núñez RD">
+        <div class="brand-text">
+          <strong>Marvin Núñez RD</strong>
+          <span>Rider técnico oficial · Formato solista</span>
+        </div>
+      </a>
+
+      <nav class="nav-actions" aria-label="Navegación del rider">
+        <a href="#input-list">Input List</a>
+        <a href="#stage-plot">Stage Plot</a>
+        <a href="#monitores">Monitores</a>
+        <a href="../">Todos los Riders</a>
+        <button class="primary" type="button" onclick="window.print()">Imprimir / Guardar PDF</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">Rider Técnico · Formato Solista · 2026</div>
+        <h1>Stage &amp; Audio Rider</h1>
+        <p>
+          Documento preparado para producción, FOH, monitores y stage manager.
+          Incluye input list, requerimientos de escenario, mezcla de monitores,
+          proyección visual y notas críticas de operación.
+        </p>
+      </div>
+
+      <aside class="status-card" aria-label="Resumen técnico">
+        <div>
+          <h2>Resumen rápido para producción</h2>
+          <ul class="status-list">
+            <li><b>Artista</b><span>Marvin Núñez RD</span></li>
+            <li><b>Formato</b><span>Solista con voz, guitarra, secuencias y bajo de apoyo</span></li>
+            <li><b>Entradas</b><span>8 canales máximos</span></li>
+            <li><b>Monitoreo</b><span>IEM prioritario + 1 monitor de piso recomendado</span></li>
+            <li><b>Contacto</b><span>+1 (929) 530-8974<br>marvinnunezrd@gmail.com</span></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <div class="container">
+      <section class="section">
+        <div class="section-header">
+          <h2>Vista general del setup</h2>
+          <p>Lo más importante antes de cablear.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="quick-grid">
+            <div class="quick-item">
+              <strong>8</strong>
+              <span>Canales requeridos en consola</span>
+            </div>
+            <div class="quick-item">
+              <strong>2 DI</strong>
+              <span>Para bajo y click desde interface</span>
+            </div>
+            <div class="quick-item">
+              <strong>IEM</strong>
+              <span>Mezcla privada para el artista</span>
+            </div>
+            <div class="quick-item">
+              <strong>HDMI</strong>
+              <span>Solo si hay pantallas/proyección</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light">
+        <div class="section-header">
+          <h2>Notas críticas para el técnico</h2>
+          <p>Leer antes de iniciar el soundcheck.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="alert-stack">
+            <div class="alert danger">
+              <div class="alert-icon">🚫</div>
+              <div>
+                <strong>CH 8 — Click Track: nunca enviarlo al PA ni al monitor de piso.</strong><br>
+                Este canal contiene el metrónomo de guía. Debe ir exclusivamente al mix privado de IEM del artista.
+              </div>
+            </div>
+
+            <div class="alert">
+              <div class="alert-icon">⚠️</div>
+              <div>
+                <strong>CH 7 y CH 8 no deben linkearse como par estéreo.</strong><br>
+                Aunque salen del mismo interface, son canales mono independientes con destinos distintos.
+              </div>
+            </div>
+
+            <div class="alert">
+              <div class="alert-icon">🎚️</div>
+              <div>
+                <strong>Linkear solo los pares CH 3–4 y CH 5–6.</strong><br>
+                CH 3–4 = HeadRush L/R. CH 5–6 = Secuencias L/R. Estándar: impar = L, par = R.
+              </div>
+            </div>
+
+            <div class="alert ok">
+              <div class="alert-icon">✅</div>
+              <div>
+                <strong>Confirmar sistema IEM antes del evento.</strong><br>
+                Si producción no suple transmisor/receptor IEM, avisar con anticipación para que el artista lleve su propio sistema.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="input-list">
+        <div class="section-header">
+          <h2>Input List</h2>
+          <p>8 entradas · Pares estéreo estándar: impar = L / par = R.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>CH</th>
+                  <th>Fuente</th>
+                  <th>Equipo / Salida</th>
+                  <th>Conector</th>
+                  <th>DI</th>
+                  <th>Destino</th>
+                  <th>Notas</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><span class="ch">1</span></td>
+                  <td><strong>Voz principal</strong></td>
+                  <td>Micrófono dinámico suministrado por producción</td>
+                  <td><span class="tag">XLR</span></td>
+                  <td>No</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Preferible inalámbrico. Stand tipo boom. Canal mono.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">2</span></td>
+                  <td><strong>Libre / reserva</strong></td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>Canal reservado por si producción necesita ajuste.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">3</span></td>
+                  <td><strong>HeadRush L</strong></td>
+                  <td>Guitarra + percusión tropical</td>
+                  <td><span class="tag">XLR</span></td>
+                  <td>No</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Linkear con CH 4 como par estéreo.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">4</span></td>
+                  <td><strong>HeadRush R</strong></td>
+                  <td>Guitarra + percusión tropical</td>
+                  <td><span class="tag">XLR</span></td>
+                  <td>No</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Par estéreo con CH 3. Pan L/R.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">5</span></td>
+                  <td><strong>Secuencias L</strong></td>
+                  <td>BackTracks / laptop / interface</td>
+                  <td><span class="tag">XLR / línea</span></td>
+                  <td>Según salida disponible</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Linkear con CH 6 como par estéreo.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">6</span></td>
+                  <td><strong>Secuencias R</strong></td>
+                  <td>BackTracks / laptop / interface</td>
+                  <td><span class="tag">XLR / línea</span></td>
+                  <td>Según salida disponible</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Par estéreo con CH 5. Pan L/R.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">7</span></td>
+                  <td><strong>Bajo de apoyo</strong></td>
+                  <td>Salida 1/4&quot; TRS desde Behringer UMC404HD</td>
+                  <td><span class="tag">1/4&quot; → DI → XLR</span></td>
+                  <td>Sí</td>
+                  <td><span class="tag green">FOH</span> <span class="tag blue">IEM</span> <span class="tag gray">Piso</span></td>
+                  <td>Canal mono independiente. No linkear con CH 8.</td>
+                </tr>
+
+                <tr>
+                  <td><span class="ch">8</span></td>
+                  <td><strong>Click Track</strong></td>
+                  <td>Salida 1/4&quot; TRS desde Behringer UMC404HD</td>
+                  <td><span class="tag">1/4&quot; → DI → XLR</span></td>
+                  <td>Sí</td>
+                  <td><span class="tag red">Solo IEM</span></td>
+                  <td><strong>Nunca al PA. Nunca al monitor de piso.</strong></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light" id="monitores">
+        <div class="section-header">
+          <h2>Mezclas de monitor</h2>
+          <p>Prioridad: que el artista escuche voz, guitarra, secuencias, bajo y click de forma clara.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="mix-grid">
+            <div class="mix-card">
+              <h3>AUX 1 — IEM Mix del artista</h3>
+              <ul>
+                <li>CH 1 Voz principal — prominente</li>
+                <li>CH 3–4 HeadRush L/R</li>
+                <li>CH 5–6 Secuencias L/R</li>
+                <li>CH 7 Bajo</li>
+                <li><strong>CH 8 Click Track — solo aquí</strong></li>
+              </ul>
+            </div>
+
+            <div class="mix-card">
+              <h3>AUX 2 — Monitor de piso</h3>
+              <ul>
+                <li>CH 1 Voz principal</li>
+                <li>CH 3–4 HeadRush L/R</li>
+                <li>CH 5–6 Secuencias L/R</li>
+                <li>CH 7 Bajo</li>
+                <li class="no-click">CH 8 Click Track — nunca aquí</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section light">
+        <div class="section-header">
+          <h2>Requerimientos de escenario</h2>
+          <p>Checklist para producción antes del evento.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="requirements-grid">
+            <div class="req-card">
+              <h3>Audio</h3>
+              <ul>
+                <li>Consola con mínimo 8 canales disponibles.</li>
+                <li>2 DI boxes para CH 7 y CH 8.</li>
+                <li>Micrófono dinámico para voz, preferible inalámbrico.</li>
+                <li>Stand tipo boom para micrófono vocal.</li>
+              </ul>
+            </div>
+
+            <div class="req-card">
+              <h3>Monitoreo</h3>
+              <ul>
+                <li>1 mezcla IEM dedicada para el artista.</li>
+                <li>1 monitor de piso recomendado como respaldo.</li>
+                <li>Confirmar si producción provee sistema IEM.</li>
+                <li>Click track exclusivamente en IEM.</li>
+              </ul>
+            </div>
+
+            <div class="req-card">
+              <h3>Escenario</h3>
+              <ul>
+                <li>Posición central para artista.</li>
+                <li>4+ tomas A/C 110V disponibles en escenario.</li>
+                <li>Tiempo recomendado de soundcheck: 1 hora.</li>
+                <li>Técnico presente durante prueba y evento.</li>
+              </ul>
+            </div>
+
+            <div class="req-card">
+              <h3>Proyección visual</h3>
+              <ul>
+                <li>HDMI disponible si el evento tiene pantallas.</li>
+                <li>Uso para letras/lyrics desde laptop del artista.</li>
+                <li>Resolución mínima recomendada: 1280×720.</li>
+                <li>Si no hay HDMI, notificar con anticipación.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="stage-plot">
+        <div class="section-header">
+          <h2>Stage Plot</h2>
+          <p>Distribución sugerida para formato solista.</p>
+        </div>
+
+        <div class="section-body">
+          <div class="plot-grid">
+            <div class="stage" aria-label="Stage plot visual">
+              <div class="stage-item hdmi">HDMI / Pantallas<small>Si aplica</small></div>
+              <div class="stage-item power">A/C 110V<small>4+ tomas</small></div>
+              <div class="stage-item iem">IEM TX<small>AUX 1</small></div>
+              <div class="stage-item pedal">HeadRush<small>CH 3–4</small></div>
+              <div class="stage-item artist">Marvin + Voz<small>CH 1</small></div>
+              <div class="stage-item interface">Laptop / Interface<small>CH 5–8</small></div>
+              <div class="stage-item floor">Monitor Piso<small>AUX 2</small></div>
+              <div class="front-label">FRONT OF STAGE / PÚBLICO</div>
+            </div>
+
+            <aside class="legend">
+              <h3>Leyenda técnica</h3>
+              <ul class="legend-list">
+                <li><span class="dot" style="background:#ffffff"></span><span><strong>CH 1:</strong> Voz principal por XLR hacia FOH, IEM y piso.</span></li>
+                <li><span class="dot" style="background:#2f8f5b"></span><span><strong>CH 3–4:</strong> HeadRush L/R. Link estéreo.</span></li>
+                <li><span class="dot" style="background:#2d6cdf"></span><span><strong>CH 5–6:</strong> Secuencias L/R. Link estéreo.</span></li>
+                <li><span class="dot" style="background:#c9a96a"></span><span><strong>CH 7:</strong> Bajo de apoyo. Mono vía DI.</span></li>
+                <li><span class="dot" style="background:#c93434"></span><span><strong>CH 8:</strong> Click track. Solo IEM.</span></li>
+                <li><span class="dot" style="background:#35b6d4"></span><span><strong>HDMI:</strong> Laptop a proyección si el venue lo permite.</span></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-strip">
+        <div>
+          <h2>Contacto técnico / producción</h2>
+          <p>Para confirmar disponibilidad de IEM, DI boxes, HDMI o cambios del setup, comunicarse antes del evento.</p>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="tel:+19295308974">Llamar</a>
+          <a href="mailto:marvinnunezrd@gmail.com">Email</a>
+          <a href="../../agenda/">Agenda</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Marvin Núñez RD · Cantautor Católico · marvinnunezrd.com
+  </footer>
+</body>
+</html>

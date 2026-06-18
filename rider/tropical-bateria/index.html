@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rider Técnico | Banda Tropical con Batería | Marvin Núñez</title>
+  <meta name="description" content="Rider técnico oficial de Marvin Núñez para formato Banda Tropical con batería. Input list, stage plot, monitores y requerimientos técnicos." />
+
+  <link rel="canonical" href="https://www.marvinnunezrd.com/rider/tropical-bateria/" />
+  <link rel="icon" href="../../favicon.ico" />
+
+  <meta property="og:title" content="Rider Técnico | Banda Tropical con Batería | Marvin Núñez" />
+  <meta property="og:description" content="Input list, stage plot, monitoreo y requerimientos técnicos para el formato Banda Tropical con batería." />
+  <meta property="og:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg" />
+  <meta property="og:url" content="https://www.marvinnunezrd.com/rider/tropical-bateria/" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --dark: #111111;
+      --soft-dark: #1a1a1a;
+      --cream: #f7f4ee;
+      --white: #ffffff;
+      --black: #050505;
+      --text: #151515;
+      --muted: #5b5b5b;
+      --gold: #d9bf73;
+      --gold-soft: #efe4bd;
+      --blue-soft: #dfe7ff;
+      --green-soft: #ddf4e4;
+      --gray-soft: #ececec;
+      --line: #dedbd4;
+      --danger: #b91c1c;
+      --ok: #166534;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        linear-gradient(rgba(0, 0, 0, .86), rgba(0, 0, 0, .9)),
+        url("../../assets/marvin-nunez-concierto-musica-catolica.jpg") center/cover fixed;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, .94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+
+    .topbar-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: white;
+    }
+
+    .brand img {
+      width: 82px;
+      height: auto;
+      display: block;
+    }
+
+    .brand-title {
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: 20px;
+      line-height: 1.1;
+    }
+
+    .brand-subtitle {
+      color: #cfcfcf;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .pill-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 14px;
+      color: white;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.18);
+      cursor: pointer;
+    }
+
+    .pill-btn.gold {
+      background: var(--gold);
+      color: #111;
+      border-color: var(--gold);
+    }
+
+    .page {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: var(--cream);
+      min-height: 100vh;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 520px;
+      color: white;
+      display: flex;
+      align-items: flex-end;
+      padding: 48px 42px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.48), rgba(0,0,0,.88)),
+        url("../../assets/marvin-nunez-concierto-musica-catolica.jpg") center/cover;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 980px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(217,191,115,.14);
+      border: 1px solid rgba(217,191,115,.55);
+      color: var(--gold);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 86px);
+      line-height: .9;
+      text-transform: uppercase;
+      letter-spacing: -3px;
+    }
+
+    .hero h2 {
+      margin: 14px 0 0;
+      color: var(--gold);
+      font-size: clamp(24px, 4.5vw, 44px);
+      line-height: 1.1;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .hero p {
+      max-width: 860px;
+      color: #e8e8e8;
+      font-size: 18px;
+      margin: 20px 0 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .hero-btn {
+      text-decoration: none;
+      border: 0;
+      border-radius: 14px;
+      padding: 13px 18px;
+      font-weight: 900;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+    }
+
+    .hero-btn.primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .hero-btn.secondary {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      color: white;
+    }
+
+    .content {
+      padding: 0;
+    }
+
+    .section {
+      padding: 34px 38px;
+      border-bottom: 1px solid var(--line);
+      scroll-margin-top: 96px;
+    }
+
+    .section-header {
+      margin-bottom: 22px;
+    }
+
+    .section h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1;
+      color: #111;
+      letter-spacing: -1px;
+    }
+
+    .section .lead {
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .quick-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    }
+
+    .quick-card strong {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .quick-card span {
+      display: block;
+      font-size: 21px;
+      font-weight: 900;
+      color: #111;
+      line-height: 1.2;
+    }
+
+    .alerts {
+      display: grid;
+      gap: 12px;
+    }
+
+    .alert {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-left: 7px solid var(--danger);
+      border-radius: 18px;
+      padding: 17px 18px;
+      color: #111;
+      font-weight: 800;
+      box-shadow: 0 10px 26px rgba(0,0,0,.05);
+    }
+
+    .alert.ok {
+      border-left-color: var(--ok);
+    }
+
+    .band-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .member {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 20px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    }
+
+    .member-icon {
+      width: 54px;
+      height: 54px;
+      min-width: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: #111;
+      color: var(--gold);
+      font-size: 28px;
+    }
+
+    .member strong {
+      display: block;
+      color: #111;
+      font-size: 18px;
+      line-height: 1.1;
+    }
+
+    .member span {
+      display: block;
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    .table-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 18px 45px rgba(0,0,0,.08);
+    }
+
+    .table-scroll {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      min-width: 1120px;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th {
+      background: #111;
+      color: white;
+      text-align: left;
+      padding: 16px 14px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 16px 14px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      font-size: 16px;
+      color: #111;
+    }
+
+    tr:nth-child(even) td {
+      background: #f4f1eb;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .channel {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 48px;
+      height: 30px;
+      padding: 0 12px;
+      border-radius: 999px;
+      background: #111;
+      color: white;
+      font-weight: 900;
+    }
+
+    .source {
+      font-weight: 900;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6px 9px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      margin: 2px 4px 2px 0;
+      white-space: nowrap;
+    }
+
+    .badge.xlr {
+      background: var(--gold-soft);
+      color: #111;
+    }
+
+    .badge.foh {
+      background: var(--green-soft);
+      color: #14532d;
+    }
+
+    .badge.iem {
+      background: var(--blue-soft);
+      color: #1e3a8a;
+    }
+
+    .badge.floor {
+      background: var(--gray-soft);
+      color: #333;
+    }
+
+    .stage-card {
+      background: #0b0b0b;
+      border-radius: 28px;
+      padding: 24px;
+      color: white;
+      box-shadow: 0 18px 45px rgba(0,0,0,.18);
+    }
+
+    .stage-inner {
+      background: #f8f8f8;
+      color: #111;
+      border: 4px solid #111;
+      border-radius: 22px;
+      padding: 22px;
+    }
+
+    .stage-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #111;
+      margin-bottom: 24px;
+    }
+
+    .stage-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      align-items: end;
+    }
+
+    .stage-grid.back {
+      grid-template-columns: 1fr 1.4fr 1fr;
+      max-width: 640px;
+      margin: 0 auto 18px;
+    }
+
+    .position {
+      background: white;
+      border: 2px solid #d8d8d8;
+      border-radius: 18px;
+      padding: 16px 10px;
+      text-align: center;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    }
+
+    .position.main {
+      background: #111;
+      color: white;
+      border-color: var(--gold);
+      transform: translateY(16px);
+    }
+
+    .position .emoji {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .position strong {
+      display: block;
+      font-size: 13px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .position span {
+      display: block;
+      font-size: 12px;
+      color: #555;
+      margin-top: 6px;
+      line-height: 1.3;
+    }
+
+    .position.main span {
+      color: #d6d6d6;
+    }
+
+    .audience {
+      margin-top: 36px;
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 13px;
+      border-radius: 16px;
+      font-weight: 900;
+      letter-spacing: .18em;
+    }
+
+    .notes-box {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 22px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    }
+
+    .notes-box ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .notes-box li {
+      margin-bottom: 10px;
+      color: #222;
+      font-size: 16px;
+    }
+
+    footer {
+      background: #111;
+      color: #d8d8d8;
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 950px) {
+      .quick-grid,
+      .band-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .stage-grid,
+      .stage-grid.back {
+        grid-template-columns: 1fr;
+        max-width: none;
+      }
+
+      .position.main {
+        transform: none;
+      }
+
+      .hero {
+        min-height: 460px;
+        padding: 38px 26px;
+      }
+
+      .section {
+        padding: 30px 22px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .quick-grid,
+      .band-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar-inner {
+        padding: 14px;
+      }
+
+      .top-actions {
+        width: 100%;
+      }
+
+      .pill-btn {
+        flex: 1;
+        min-width: 130px;
+      }
+
+      .brand-title {
+        font-size: 17px;
+      }
+
+      .brand img {
+        width: 64px;
+      }
+
+      .hero {
+        min-height: 430px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .topbar,
+      .hero-actions {
+        display: none;
+      }
+
+      .page {
+        max-width: none;
+        background: white;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 30px;
+        background: #111 !important;
+        color: white;
+        break-inside: avoid;
+      }
+
+      .section {
+        padding: 22px;
+        break-inside: avoid;
+      }
+
+      .table-card,
+      .quick-card,
+      .member,
+      .notes-box,
+      .stage-card {
+        box-shadow: none;
+      }
+
+      th {
+        background: #111 !important;
+        color: white !important;
+      }
+
+      tr:nth-child(even) td {
+        background: #f4f4f4 !important;
+      }
+
+      footer {
+        background: white;
+        color: black;
+        border-top: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="../../">
+        <img src="../../assets/LogoMarvinNunezRDBlanco.png" alt="Logo Marvin Núñez">
+        <div>
+          <div class="brand-title">Marvin Núñez RD</div>
+          <div class="brand-subtitle">Rider técnico oficial</div>
+        </div>
+      </a>
+
+      <nav class="top-actions" aria-label="Navegación del rider">
+        <a class="pill-btn" href="#input-list">Input List</a>
+        <a class="pill-btn" href="#stage-plot">Stage Plot</a>
+        <a class="pill-btn" href="#monitores">Monitores</a>
+        <a class="pill-btn" href="../">Todos los Riders</a>
+        <button class="pill-btn gold" onclick="window.print()">Imprimir / Guardar PDF</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Rider Técnico Oficial</div>
+        <h1>Marvin Núñez</h1>
+        <h2>Banda Tropical con Batería</h2>
+        <p>
+          Formato acústico/tropical con batería completa, tambora, güira, piano, bajo,
+          guitarra, voz principal y secuencias. Este rider está preparado para técnicos de sonido,
+          FOH, monitores y producción general del evento.
+        </p>
+
+        <div class="hero-actions">
+          <a class="hero-btn primary" href="#input-list">Ver Input List</a>
+          <a class="hero-btn secondary" href="#stage-plot">Ver Stage Plot</a>
+          <a class="hero-btn secondary" href="../">Ver todos los riders</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resumen">
+      <div class="section-header">
+        <h2>Resumen rápido</h2>
+        <p class="lead">Información esencial para producción y sonido.</p>
+      </div>
+
+      <div class="quick-grid">
+        <div class="quick-card">
+          <strong>Formato</strong>
+          <span>Tropical con batería</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Entradas</strong>
+          <span>18 canales</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Monitores</strong>
+          <span>6 AUX / IEM</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>PA</strong>
+          <span>Click nunca al PA</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="alertas">
+      <div class="section-header">
+        <h2>Notas críticas</h2>
+        <p class="lead">Leer antes del montaje y prueba de sonido.</p>
+      </div>
+
+      <div class="alerts">
+        <div class="alert">
+          El Click Track es exclusivamente para monitoreo interno. No debe enviarse al sistema principal PA.
+        </div>
+
+        <div class="alert">
+          El bajo de secuencia se utiliza como apoyo o refuerzo del bajo eléctrico cuando la producción lo requiera.
+        </div>
+
+        <div class="alert ok">
+          Se recomiendan side fills laterales para ambiente y sensación sonora en tarima.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <div class="section-header">
+        <h2>Formación en tarima</h2>
+        <p class="lead">Músicos y fuentes principales.</p>
+      </div>
+
+      <div class="band-grid">
+        <div class="member">
+          <div class="member-icon">🎤</div>
+          <div>
+            <strong>Marvin Núñez</strong>
+            <span>Voz principal / Guitarra</span>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member-icon">🥁</div>
+          <div>
+            <strong>Miguel Muñoz</strong>
+            <span>Batería completa</span>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member-icon">🪘</div>
+          <div>
+            <strong>Francis Mercedes</strong>
+            <span>Tambora</span>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member-icon">🪇</div>
+          <div>
+            <strong>Alexis Mayoral</strong>
+            <span>Güira / Percusión menor</span>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member-icon">🎹</div>
+          <div>
+            <strong>Starlyn Veloz</strong>
+            <span>Piano / Coros</span>
+          </div>
+        </div>
+
+        <div class="member">
+          <div class="member-icon">🎸</div>
+          <div>
+            <strong>Alfonso Fernández</strong>
+            <span>Bajo eléctrico</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="input-list">
+      <div class="section-header">
+        <h2>Input List</h2>
+        <p class="lead">18 entradas · Pares estéreo estándar: impar = L / par = R.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>CH</th>
+                <th>Fuente</th>
+                <th>Equipo / Salida</th>
+                <th>Conector</th>
+                <th>DI</th>
+                <th>Destino</th>
+                <th>Notas</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><span class="channel">1</span></td>
+                <td class="source">Kick</td>
+                <td>Batería</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Micrófono para bombo.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">2</span></td>
+                <td class="source">Snare</td>
+                <td>Batería</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Micrófono para redoblante.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">3</span></td>
+                <td class="source">Tom</td>
+                <td>Batería</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Tom principal.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">4</span></td>
+                <td class="source">Overhead L</td>
+                <td>Batería</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Overhead izquierdo.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">5</span></td>
+                <td class="source">Overhead R</td>
+                <td>Batería</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Overhead derecho.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">6</span></td>
+                <td class="source">Güira</td>
+                <td>Micrófono</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Alexis Mayoral. Güira / percusión menor.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">7</span></td>
+                <td class="source">Tambora - Lado 1</td>
+                <td>Micrófono</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Francis Mercedes. Lado palo.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">8</span></td>
+                <td class="source">Tambora - Lado 2</td>
+                <td>Micrófono</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Francis Mercedes. Lado parche / palma.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">9</span></td>
+                <td class="source">Bajo eléctrico</td>
+                <td>DI o salida del amplificador</td>
+                <td><span class="badge xlr">XLR / línea</span></td>
+                <td>Sí</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Alfonso Fernández.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">10</span></td>
+                <td class="source">Piano</td>
+                <td>Teclado</td>
+                <td><span class="badge xlr">DI mono</span></td>
+                <td>Sí</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Starlyn Veloz.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">11</span></td>
+                <td class="source">Guitarra L</td>
+                <td>Pedalera Headrush Core</td>
+                <td><span class="badge xlr">XLR / DI</span></td>
+                <td>Según salida</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Linkear con CH 12 como par estéreo.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">12</span></td>
+                <td class="source">Guitarra R</td>
+                <td>Pedalera Headrush Core</td>
+                <td><span class="badge xlr">XLR / DI</span></td>
+                <td>Según salida</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Par estéreo con CH 11. Pan L/R.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">13</span></td>
+                <td class="source">Secuencia L</td>
+                <td>Interface de audio</td>
+                <td><span class="badge xlr">XLR / línea</span></td>
+                <td>Según salida</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Linkear con CH 14 como par estéreo.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">14</span></td>
+                <td class="source">Secuencia R</td>
+                <td>Interface de audio</td>
+                <td><span class="badge xlr">XLR / línea</span></td>
+                <td>Según salida</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Par estéreo con CH 13. Pan L/R.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">15</span></td>
+                <td class="source">Bajo Secuencia</td>
+                <td>Interface de audio</td>
+                <td><span class="badge xlr">XLR / línea</span></td>
+                <td>Según salida</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Refuerzo / sub-bajo cuando aplique.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">16</span></td>
+                <td class="source">Coro Piano</td>
+                <td>Micrófono vocal</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span></td>
+                <td>Starlyn Veloz. Coro / apoyo vocal.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">17</span></td>
+                <td class="source">Voz Principal</td>
+                <td>Micrófono vocal</td>
+                <td><span class="badge xlr">XLR</span></td>
+                <td>No</td>
+                <td><span class="badge foh">FOH</span><span class="badge iem">IEM</span><span class="badge floor">Piso</span></td>
+                <td>Marvin Núñez. Preferible inalámbrico. Stand tipo boom.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">18</span></td>
+                <td class="source">Click Track</td>
+                <td>Interface de audio</td>
+                <td><span class="badge xlr">XLR / línea</span></td>
+                <td>Según salida</td>
+                <td><span class="badge iem">IEM</span></td>
+                <td>Solo monitoreo interno. No enviar a PA.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stage-plot">
+      <div class="section-header">
+        <h2>Stage Plot</h2>
+        <p class="lead">Vista desde el público hacia la tarima.</p>
+      </div>
+
+      <div class="stage-card">
+        <div class="stage-inner">
+          <div class="stage-title">Stage Plot</div>
+
+          <div class="stage-grid back">
+            <div class="position">
+              <div class="emoji">🪘</div>
+              <strong>Francis Mercedes</strong>
+              <span>Tambora<br>AUX 5 / IEM</span>
+            </div>
+
+            <div class="position">
+              <div class="emoji">🥁</div>
+              <strong>Miguel Muñoz</strong>
+              <span>Batería completa<br>AUX 6 / IEM</span>
+            </div>
+
+            <div class="position">
+              <div class="emoji">🪇</div>
+              <strong>Alexis Mayoral</strong>
+              <span>Güira / Percusión menor<br>AUX 4 / IEM</span>
+            </div>
+          </div>
+
+          <div class="stage-grid">
+            <div class="position">
+              <div class="emoji">🔊</div>
+              <strong>Side Fill L</strong>
+              <span>Monitor lateral izquierdo</span>
+            </div>
+
+            <div class="position">
+              <div class="emoji">🎹</div>
+              <strong>Starlyn Veloz</strong>
+              <span>Piano / Coros<br>AUX 2 / IEM</span>
+            </div>
+
+            <div class="position main">
+              <div class="emoji">🎤</div>
+              <strong>Marvin Núñez</strong>
+              <span>Voz / Guitarra<br>AUX 1 / IEM</span>
+            </div>
+
+            <div class="position">
+              <div class="emoji">🎸</div>
+              <strong>Alfonso Fernández</strong>
+              <span>Bajo eléctrico<br>AUX 3 / IEM</span>
+            </div>
+
+            <div class="position">
+              <div class="emoji">🔊</div>
+              <strong>Side Fill R</strong>
+              <span>Monitor lateral derecho</span>
+            </div>
+          </div>
+
+          <div class="audience">AUDIENCIA</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="monitores">
+      <div class="section-header">
+        <h2>Monitor Sends / Aux Sends</h2>
+        <p class="lead">Preferiblemente IEM para todos los músicos.</p>
+      </div>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>AUX</th>
+                <th>Destino</th>
+                <th>Tipo</th>
+                <th>Contenido recomendado</th>
+                <th>Notas</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><span class="channel">AUX 1</span></td>
+                <td class="source">Marvin Núñez</td>
+                <td>IEM</td>
+                <td>Voz, guitarra, banda, secuencias, click y guía</td>
+                <td>Mezcla principal del artista.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">AUX 2</span></td>
+                <td class="source">Starlyn Veloz</td>
+                <td>IEM</td>
+                <td>Piano, voz líder, bajo, batería, percusión y click</td>
+                <td>Piano / coros.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">AUX 3</span></td>
+                <td class="source">Alfonso Fernández</td>
+                <td>IEM</td>
+                <td>Bajo, kick, batería, piano, voz líder y click</td>
+                <td>Bajo eléctrico.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">AUX 4</span></td>
+                <td class="source">Alexis Mayoral</td>
+                <td>IEM</td>
+                <td>Güira, tambora, batería, voz líder, bajo y click</td>
+                <td>Güira / percusión menor.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">AUX 5</span></td>
+                <td class="source">Francis Mercedes</td>
+                <td>IEM</td>
+                <td>Tambora, batería, güira, voz líder, bajo y click</td>
+                <td>Tambora.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">AUX 6</span></td>
+                <td class="source">Miguel Muñoz</td>
+                <td>IEM</td>
+                <td>Batería, bajo, percusión, secuencias, voz líder y click</td>
+                <td>Batería.</td>
+              </tr>
+
+              <tr>
+                <td><span class="channel">Side Fill</span></td>
+                <td class="source">Escenario</td>
+                <td>Monitor lateral</td>
+                <td>Mezcla general de banda</td>
+                <td>Recomendados para soporte general de tarima.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requerimientos">
+      <div class="section-header">
+        <h2>Requerimientos del venue</h2>
+        <p class="lead">Condiciones mínimas recomendadas para montaje.</p>
+      </div>
+
+      <div class="notes-box">
+        <ul>
+          <li>Consola digital con mínimo 20 canales disponibles.</li>
+          <li>18 canales de input disponibles para el formato completo.</li>
+          <li>6 envíos auxiliares independientes para monitoreo IEM.</li>
+          <li>Micrófonos completos para batería, percusión y voces.</li>
+          <li>DI boxes para piano, bajo, guitarra y secuencias.</li>
+          <li>2 side fills laterales recomendados para tarimas medianas o grandes.</li>
+          <li>2 monitores de piso frente al cantante si el venue los tiene disponibles.</li>
+          <li>PA adecuado al tamaño del recinto y correctamente ecualizado antes del soundcheck.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="notas">
+      <div class="section-header">
+        <h2>Notas de producción</h2>
+        <p class="lead">Indicaciones importantes para FOH y monitores.</p>
+      </div>
+
+      <div class="notes-box">
+        <ul>
+          <li>El canal de Click Track es exclusivamente para monitoreo interno de la banda.</li>
+          <li>El Click Track nunca debe ser enviado al sistema principal de sonido PA.</li>
+          <li>El bajo de secuencia se utiliza como apoyo o refuerzo del bajo eléctrico cuando el arreglo lo requiera.</li>
+          <li>La tambora y la güira deben tener presencia clara en el PA, sin competir con la batería.</li>
+          <li>Se recomienda realizar prueba de sonido completa antes del evento.</li>
+          <li>Confirmar con anticipación si el venue provee batería, micrófonos, stands, DI boxes y sistema de monitoreo.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        Marvin Núñez · Cantautor Católico · Rider Técnico Oficial<br>
+        www.marvinnunezrd.com · Formato Banda Tropical con Batería · Última actualización: Junio 2026
+      </p>
+    </footer>
+  </main>
+</body>
+</html>

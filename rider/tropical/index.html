@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rider Técnico | Banda Tropical sin Batería | Marvin Núñez</title>
+  <meta
+    name="description"
+    content="Rider técnico oficial de Marvin Núñez para formato Banda Tropical sin batería. Input list, stage plot, monitoreo y requerimientos técnicos."
+  />
+
+  <link rel="canonical" href="https://www.marvinnunezrd.com/rider/tropical/" />
+  <link rel="icon" href="../../favicon.ico" />
+
+  <meta property="og:title" content="Rider Técnico | Banda Tropical sin Batería | Marvin Núñez" />
+  <meta property="og:description" content="Input list, stage plot, monitoreo y requerimientos técnicos para el formato Banda Tropical sin batería." />
+  <meta property="og:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg" />
+  <meta property="og:url" content="https://www.marvinnunezrd.com/rider/tropical/" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #080b10;
+      --card: #111827;
+      --card-2: #172033;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --gold: #f5c542;
+      --accent: #38bdf8;
+      --danger: #ef4444;
+      --ok: #22c55e;
+      --line: rgba(255,255,255,.12);
+      --white: #ffffff;
+      --black: #050505;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #1e293b 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 60px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 36px 28px;
+      background:
+        linear-gradient(rgba(5,8,15,.72), rgba(5,8,15,.9)),
+        url("../../assets/marvin-nunez-concierto-musica-catolica.jpg") center/cover;
+      box-shadow: 0 25px 80px rgba(0,0,0,.35);
+      overflow: hidden;
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 34px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand img {
+      width: 150px;
+      max-width: 48vw;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid rgba(245,197,66,.45);
+      border-radius: 999px;
+      color: var(--gold);
+      background: rgba(245,197,66,.08);
+      font-weight: 700;
+      letter-spacing: .03em;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 7vw, 72px);
+      line-height: .95;
+      margin: 0;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      font-size: clamp(22px, 4vw, 40px);
+      margin: 12px 0 0;
+      color: var(--gold);
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .hero p {
+      max-width: 850px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .actions,
+    .section-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .section-nav {
+      margin-top: 18px;
+    }
+
+    .btn,
+    .nav-btn {
+      border: 0;
+      border-radius: 14px;
+      padding: 13px 18px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111827;
+    }
+
+    .btn-secondary,
+    .nav-btn {
+      background: rgba(255,255,255,.1);
+      border: 1px solid var(--line);
+      color: var(--white);
+    }
+
+    .nav-btn {
+      padding: 10px 13px;
+      font-size: 13px;
+    }
+
+    .section {
+      margin-top: 24px;
+      background: rgba(17,24,39,.92);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 24px;
+      box-shadow: 0 18px 45px rgba(0,0,0,.24);
+      scroll-margin-top: 20px;
+    }
+
+    .section h2 {
+      margin: 0 0 16px;
+      font-size: 26px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quick-card {
+      background: var(--card-2);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .quick-card strong {
+      display: block;
+      color: var(--white);
+      font-size: 15px;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+    }
+
+    .quick-card span {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .alert {
+      border-left: 6px solid var(--danger);
+      background: rgba(239,68,68,.12);
+      padding: 16px 18px;
+      border-radius: 16px;
+      color: #fee2e2;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .alert.ok {
+      border-left-color: var(--ok);
+      background: rgba(34,197,94,.12);
+      color: #dcfce7;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 1050px;
+      background: #0f172a;
+    }
+
+    th {
+      background: #020617;
+      color: var(--gold);
+      text-align: left;
+      padding: 14px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      border-bottom: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    td:first-child {
+      font-weight: 800;
+      color: var(--accent);
+      width: 72px;
+    }
+
+    .stage {
+      background: #f8fafc;
+      color: #0f172a;
+      border-radius: 22px;
+      padding: 22px;
+      border: 4px solid #020617;
+    }
+
+    .stage-title {
+      text-align: center;
+      font-weight: 900;
+      color: #020617;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .stage-area {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      align-items: end;
+    }
+
+    .musician {
+      background: white;
+      border: 2px solid #cbd5e1;
+      border-radius: 16px;
+      padding: 14px 10px;
+      text-align: center;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0 8px 18px rgba(15,23,42,.12);
+    }
+
+    .musician.main {
+      background: #020617;
+      color: white;
+      border-color: var(--gold);
+      transform: translateY(18px);
+    }
+
+    .musician .icon {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .musician strong {
+      font-size: 14px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .musician span {
+      font-size: 12px;
+      color: #475569;
+    }
+
+    .musician.main span {
+      color: #cbd5e1;
+    }
+
+    .audience {
+      margin-top: 34px;
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      border-radius: 14px;
+      font-weight: 900;
+      letter-spacing: .18em;
+    }
+
+    .notes ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .notes li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 850px) {
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .stage-area {
+        grid-template-columns: 1fr;
+      }
+
+      .musician.main {
+        transform: none;
+      }
+
+      .hero {
+        padding: 28px 20px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+
+      .page {
+        max-width: none;
+        padding: 0;
+      }
+
+      .hero,
+      .section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        break-inside: avoid;
+      }
+
+      .hero {
+        background: #111827 !important;
+        color: white;
+      }
+
+      .actions,
+      .section-nav {
+        display: none;
+      }
+
+      .section {
+        background: white;
+        color: black;
+      }
+
+      .section h2 {
+        color: #111827;
+      }
+
+      table {
+        background: white;
+        color: black;
+      }
+
+      th {
+        background: #111827;
+        color: white;
+      }
+
+      td {
+        color: black;
+      }
+
+      footer {
+        color: black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <section class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <img src="../../assets/LogoMarvinNunezRDBlanco.png" alt="Logo Marvin Núñez">
+        </div>
+
+        <div class="badge">Rider Técnico Oficial</div>
+      </div>
+
+      <h1>Marvin Núñez</h1>
+      <h2>Banda Tropical sin Batería</h2>
+
+      <p>
+        Formato tropical/acústico para eventos, congresos, asambleas y conciertos.
+        Esta versión no utiliza batería completa. La base rítmica será cubierta por tambora,
+        cajón acústico, güira y percusión menor.
+      </p>
+
+      <div class="actions">
+        <button class="btn btn-primary" onclick="window.print()">Imprimir / Guardar PDF</button>
+        <a class="btn btn-secondary" href="../">Ver todos los riders</a>
+        <a class="btn btn-secondary" href="../../">Volver al sitio principal</a>
+      </div>
+
+      <div class="section-nav" aria-label="Navegación del rider">
+        <a class="nav-btn" href="#resumen">Resumen</a>
+        <a class="nav-btn" href="#alertas">Alertas</a>
+        <a class="nav-btn" href="#formacion">Formación</a>
+        <a class="nav-btn" href="#stage-plot">Stage Plot</a>
+        <a class="nav-btn" href="#input-list">Input List</a>
+        <a class="nav-btn" href="#monitores">Monitores</a>
+        <a class="nav-btn" href="#requerimientos">Requerimientos</a>
+        <a class="nav-btn" href="#notas">Notas</a>
+      </div>
+    </section>
+
+    <section class="section" id="resumen">
+      <h2>Resumen rápido</h2>
+
+      <div class="grid grid-3">
+        <div class="quick-card">
+          <strong>Formato</strong>
+          <span>Banda Tropical sin batería</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Canales requeridos</strong>
+          <span>14 canales de entrada</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Monitoreo</strong>
+          <span>5 mezclas IEM + 2 side fills recomendados</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="alertas">
+      <h2>Notas críticas para sonido</h2>
+
+      <div class="alert">
+        El Click Track es exclusivamente para monitoreo interno. Nunca debe enviarse al sistema principal PA.
+      </div>
+
+      <div class="alert">
+        No hay batería acústica completa en este formato. La percusión principal será tambora, cajón acústico, güira y percusión menor.
+      </div>
+
+      <div class="alert ok">
+        El bajo de secuencia puede ser usado como apoyo o refuerzo del bajo eléctrico cuando la producción lo requiera.
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <h2>Formación en tarima</h2>
+
+      <div class="grid grid-2">
+        <div class="quick-card">
+          <strong>Marvin Núñez</strong>
+          <span>Voz líder / Guitarra / Headrush Core</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Starlyn Veloz</strong>
+          <span>Piano / Coros</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Alfonso Fernández</strong>
+          <span>Bajo eléctrico</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Francis Mercedes</strong>
+          <span>Tambora / Cajón acústico / Percusión menor</span>
+        </div>
+
+        <div class="quick-card">
+          <strong>Alexis Mayoral</strong>
+          <span>Güira / Shaker / Egg Shaker / Percusión menor</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stage-plot">
+      <h2>Stage Plot</h2>
+
+      <div class="stage">
+        <div class="stage-title">Tarima / Vista desde el público</div>
+
+        <div class="stage-area">
+          <div class="musician">
+            <div class="icon">🪇</div>
+            <strong>Alexis Mayoral</strong>
+            <span>Güira / Shakers / Percusión menor<br>AUX 4 / IEM</span>
+          </div>
+
+          <div class="musician">
+            <div class="icon">🪘</div>
+            <strong>Francis Mercedes</strong>
+            <span>Tambora / Cajón acústico<br>AUX 5 / IEM</span>
+          </div>
+
+          <div class="musician main">
+            <div class="icon">🎤</div>
+            <strong>Marvin Núñez</strong>
+            <span>Voz líder / Guitarra<br>AUX 1 / IEM</span>
+          </div>
+
+          <div class="musician">
+            <div class="icon">🎹</div>
+            <strong>Starlyn Veloz</strong>
+            <span>Piano / Coros<br>AUX 2 / IEM</span>
+          </div>
+
+          <div class="musician">
+            <div class="icon">🎸</div>
+            <strong>Alfonso Fernández</strong>
+            <span>Bajo eléctrico<br>AUX 3 / IEM</span>
+          </div>
+        </div>
+
+        <div class="audience">AUDIENCIA</div>
+      </div>
+    </section>
+
+    <section class="section" id="input-list">
+      <h2>Input List</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>CH</th>
+              <th>Fuente</th>
+              <th>Músico</th>
+              <th>Conexión</th>
+              <th>Stand / Soporte</th>
+              <th>Enviar a PA</th>
+              <th>Observaciones</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Güira</td>
+              <td>Alexis Mayoral</td>
+              <td>Micrófono</td>
+              <td>Boom stand</td>
+              <td>Sí</td>
+              <td>Güira y percusión menor cercana.</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Tambora - Palo</td>
+              <td>Francis Mercedes</td>
+              <td>Micrófono</td>
+              <td>Boom stand</td>
+              <td>Sí</td>
+              <td>Captura del golpe de palo de la tambora.</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Tambora - Parche / Palma</td>
+              <td>Francis Mercedes</td>
+              <td>Micrófono</td>
+              <td>Boom stand</td>
+              <td>Sí</td>
+              <td>Captura del parche/palma de la tambora.</td>
+            </tr>
+
+            <tr>
+              <td>4</td>
+              <td>Cajón acústico</td>
+              <td>Francis Mercedes</td>
+              <td>Micrófono</td>
+              <td>Boom bajo o stand corto</td>
+              <td>Sí</td>
+              <td>Usado como base rítmica en sustitución de batería.</td>
+            </tr>
+
+            <tr>
+              <td>5</td>
+              <td>Piano</td>
+              <td>Starlyn Veloz</td>
+              <td>DI mono</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Teclado principal.</td>
+            </tr>
+
+            <tr>
+              <td>6</td>
+              <td>Coro Piano</td>
+              <td>Starlyn Veloz</td>
+              <td>Micrófono vocal</td>
+              <td>Boom stand</td>
+              <td>Sí</td>
+              <td>Coro / apoyo vocal.</td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>Bajo eléctrico</td>
+              <td>Alfonso Fernández</td>
+              <td>DI</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Bajo eléctrico principal.</td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>Voz principal</td>
+              <td>Marvin Núñez</td>
+              <td>Micrófono vocal</td>
+              <td>Boom stand</td>
+              <td>Sí</td>
+              <td>Voz líder.</td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>Guitarra L</td>
+              <td>Marvin Núñez</td>
+              <td>DI / XLR</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Salida izquierda desde Headrush Core.</td>
+            </tr>
+
+            <tr>
+              <td>10</td>
+              <td>Guitarra R</td>
+              <td>Marvin Núñez</td>
+              <td>DI / XLR</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Salida derecha desde Headrush Core.</td>
+            </tr>
+
+            <tr>
+              <td>11</td>
+              <td>Secuencia L</td>
+              <td>Playback</td>
+              <td>Interface de audio</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Playback estéreo, canal izquierdo.</td>
+            </tr>
+
+            <tr>
+              <td>12</td>
+              <td>Secuencia R</td>
+              <td>Playback</td>
+              <td>Interface de audio</td>
+              <td>N/A</td>
+              <td>Sí</td>
+              <td>Playback estéreo, canal derecho.</td>
+            </tr>
+
+            <tr>
+              <td>13</td>
+              <td>Bajo de secuencia</td>
+              <td>Playback</td>
+              <td>Interface de audio</td>
+              <td>N/A</td>
+              <td>Sí, si aplica</td>
+              <td>Refuerzo / sub-bajo cuando la producción lo requiera.</td>
+            </tr>
+
+            <tr>
+              <td>14</td>
+              <td>Click Track</td>
+              <td>Playback</td>
+              <td>Interface de audio</td>
+              <td>N/A</td>
+              <td>No</td>
+              <td>Solo monitoreo interno. Nunca enviar a PA.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="monitores">
+      <h2>Monitor Sends / Aux Sends</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>AUX</th>
+              <th>Destino</th>
+              <th>Tipo</th>
+              <th>Contenido recomendado</th>
+              <th>Notas</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>AUX 1</td>
+              <td>Marvin Núñez</td>
+              <td>IEM</td>
+              <td>Voz, guitarra, banda, secuencias, click y guía</td>
+              <td>Mezcla principal del artista.</td>
+            </tr>
+
+            <tr>
+              <td>AUX 2</td>
+              <td>Starlyn Veloz</td>
+              <td>IEM</td>
+              <td>Piano, voz líder, bajo, percusión y click</td>
+              <td>Piano / coros.</td>
+            </tr>
+
+            <tr>
+              <td>AUX 3</td>
+              <td>Alfonso Fernández</td>
+              <td>IEM</td>
+              <td>Bajo, voz líder, piano, percusión y click</td>
+              <td>Bajo eléctrico.</td>
+            </tr>
+
+            <tr>
+              <td>AUX 4</td>
+              <td>Alexis Mayoral</td>
+              <td>IEM</td>
+              <td>Güira, tambora, cajón, voz líder, bajo y click</td>
+              <td>Güira y percusión menor.</td>
+            </tr>
+
+            <tr>
+              <td>AUX 5</td>
+              <td>Francis Mercedes</td>
+              <td>IEM</td>
+              <td>Tambora, cajón, güira, voz líder, bajo y click</td>
+              <td>Tambora / cajón acústico.</td>
+            </tr>
+
+            <tr>
+              <td>Side Fill L/R</td>
+              <td>Escenario</td>
+              <td>Monitores laterales</td>
+              <td>Mezcla general de banda</td>
+              <td>Recomendados para soporte general de tarima.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section notes" id="requerimientos">
+      <h2>Requerimientos mínimos del venue</h2>
+
+      <ul>
+        <li>Consola digital o análoga con mínimo 16 canales disponibles.</li>
+        <li>Mínimo 5 envíos auxiliares independientes para monitoreo IEM.</li>
+        <li>2 side fills laterales recomendados para tarimas medianas o grandes.</li>
+        <li>Micrófonos disponibles para tambora, cajón, güira, percusión menor y voces.</li>
+        <li>DI boxes para piano, bajo, guitarra L/R y salidas de secuencia.</li>
+        <li>PA adecuado al tamaño del recinto y correctamente ecualizado antes del soundcheck.</li>
+        <li>El Click Track debe permanecer exclusivamente en monitores internos.</li>
+      </ul>
+    </section>
+
+    <section class="section notes" id="notas">
+      <h2>Notas de producción</h2>
+
+      <ul>
+        <li>Este formato está diseñado para sonar tropical, ágil y completo sin necesidad de batería acústica.</li>
+        <li>Francis Mercedes alterna entre tambora y cajón acústico según el arreglo musical.</li>
+        <li>La percusión menor puede incluir shaker, egg shaker, campana u otros elementos similares.</li>
+        <li>Confirmar con anticipación si el venue provee micrófonos, stands, DI boxes y sistema de monitoreo.</li>
+        <li>Recomendamos realizar prueba de sonido completa antes del evento.</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>
+        Marvin Núñez · Cantautor Católico · Rider Técnico Oficial<br>
+        www.marvinnunezrd.com · Última actualización: Junio 2026
+      </p>
+    </footer>
+
+  </main>
+</body>
+</html>
