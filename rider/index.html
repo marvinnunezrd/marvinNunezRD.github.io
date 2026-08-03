@@ -1,466 +1,214 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Riders Técnicos Oficiales | Marvin Núñez</title>
-  <meta name="description" content="Riders técnicos oficiales de Marvin Núñez. Selecciona el formato contratado: solista, tropical sin batería, tropical con batería o banda full." />
-
-  <link rel="canonical" href="https://www.marvinnunezrd.com/rider/" />
-  <link rel="icon" href="../favicon.ico" />
-
-  <meta property="og:title" content="Riders Técnicos Oficiales | Marvin Núñez" />
-  <meta property="og:description" content="Selecciona el rider técnico correspondiente al formato contratado de Marvin Núñez." />
-  <meta property="og:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg" />
-  <meta property="og:url" content="https://www.marvinnunezrd.com/rider/" />
-  <meta property="og:type" content="website" />
-
-  <style>
-    :root {
-      --black: #0b0b0b;
-      --dark: #141414;
-      --cream: #f7f4ee;
-      --white: #ffffff;
-      --text: #151515;
-      --muted: #6a6a6a;
-      --gold: #d9bf73;
-      --line: #e2ded4;
-      --soft: #fffaf0;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--cream);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    a {
-      color: inherit;
-    }
-
-    .hero {
-      min-height: 520px;
-      padding: 34px 22px 56px;
-      color: var(--white);
-      background:
-        linear-gradient(rgba(0,0,0,.78), rgba(0,0,0,.84)),
-        url("../assets/marvin-nunez-concierto-musica-catolica.jpg") center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .hero-inner {
-      width: 100%;
-      max-width: 980px;
-    }
-
-    .logo {
-      width: 155px;
-      max-width: 55vw;
-      margin-bottom: 26px;
-    }
-
-    .badge {
-      display: inline-block;
-      color: var(--gold);
-      border: 1px solid rgba(217,191,115,.55);
-      background: rgba(217,191,115,.12);
-      padding: 10px 16px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 22px;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(44px, 8vw, 88px);
-      line-height: .9;
-      text-transform: uppercase;
-      letter-spacing: -3px;
-    }
-
-    .subtitle {
-      max-width: 760px;
-      margin: 20px auto 0;
-      color: #e6e6e6;
-      font-size: 19px;
-      line-height: 1.6;
-    }
-
-    .hero-actions {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .hero-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 13px 20px;
-      border-radius: 999px;
-      text-decoration: none;
-      font-weight: 900;
-      border: 1px solid rgba(255,255,255,.18);
-    }
-
-    .hero-btn.primary {
-      background: var(--gold);
-      color: #111;
-      border-color: var(--gold);
-    }
-
-    .hero-btn.secondary {
-      background: rgba(255,255,255,.1);
-      color: white;
-    }
-
-    .main {
-      max-width: 1180px;
-      margin: -72px auto 0;
-      padding: 0 20px 60px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 26px;
-      min-height: 330px;
-      text-decoration: none;
-      box-shadow: 0 18px 45px rgba(0,0,0,.09);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-7px);
-      border-color: var(--gold);
-      box-shadow: 0 26px 70px rgba(0,0,0,.14);
-    }
-
-    .card-top {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .icon {
-      width: 58px;
-      height: 58px;
-      border-radius: 20px;
-      background: var(--black);
-      color: var(--gold);
-      display: grid;
-      place-items: center;
-      font-size: 30px;
-    }
-
-    .format {
-      color: var(--gold);
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-    }
-
-    .card h2 {
-      margin: 0;
-      font-size: 27px;
-      line-height: 1;
-      text-transform: uppercase;
-      letter-spacing: -1px;
-    }
-
-    .card p {
-      color: var(--muted);
-      font-size: 15px;
-      margin: 0;
-    }
-
-    .specs {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 18px;
-    }
-
-    .spec {
-      background: var(--soft);
-      border: 1px solid var(--line);
-      padding: 7px 10px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 900;
-      color: #222;
-    }
-
-    .card-button {
-      margin-top: 24px;
-      min-height: 46px;
-      border-radius: 999px;
-      background: var(--black);
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-    }
-
-    .card.available .card-button {
-      background: var(--gold);
-      color: #111;
-    }
-
-    .card.pending {
-      opacity: .78;
-    }
-
-    .info-strip {
-      margin-top: 24px;
-      background: var(--black);
-      color: white;
-      border-radius: 28px;
-      padding: 24px;
-      display: grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap: 18px;
-      align-items: center;
-    }
-
-    .info-strip h2 {
-      margin: 0;
-      font-size: 28px;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: -1px;
-    }
-
-    .info-strip p {
-      margin: 10px 0 0;
-      color: #d7d7d7;
-    }
-
-    .info-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .info-btn {
-      text-decoration: none;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: 900;
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.16);
-      color: white;
-    }
-
-    .info-btn.gold {
-      background: var(--gold);
-      border-color: var(--gold);
-      color: #111;
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 14px;
-      margin-top: 34px;
-    }
-
-    @media (max-width: 1100px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 720px) {
-      .hero {
-        min-height: 500px;
-        padding-top: 28px;
-      }
-
-      .main {
-        margin-top: -54px;
-        padding-left: 16px;
-        padding-right: 16px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .card {
-        min-height: 290px;
-      }
-
-      .info-strip {
-        grid-template-columns: 1fr;
-      }
-
-      .info-actions {
-        justify-content: stretch;
-      }
-
-      .info-btn,
-      .hero-btn {
-        width: 100%;
-        text-align: center;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rider Técnico | Marvin Núñez</title>
+<meta name="description" content="Requerimientos técnicos de sonido y escenario para presentaciones de Marvin Núñez: solista, tropical, tropical con batería y banda completa.">
+<link rel="canonical" href="https://www.marvinnunezrd.com/rider/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Marvin Núñez">
+<meta property="og:title" content="Rider Técnico | Marvin Núñez">
+<meta property="og:description" content="Requerimientos técnicos de sonido y escenario para presentaciones de Marvin Núñez: solista, tropical, tropical con batería y banda completa.">
+<meta property="og:url" content="https://www.marvinnunezrd.com/rider/">
+<meta property="og:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marvin Núñez, cantautor católico dominicano">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rider Técnico | Marvin Núñez">
+<meta name="twitter:description" content="Requerimientos técnicos de sonido y escenario para presentaciones de Marvin Núñez: solista, tropical, tropical con batería y banda completa.">
+<meta name="twitter:image" content="https://www.marvinnunezrd.com/assets/marvin-nunez-concierto-musica-catolica.jpg">
+<meta name="theme-color" content="#0B0B0D">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="../assets/icons/app/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJMDZVV24X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DJMDZVV24X');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Rider Técnico | Marvin Núñez",
+  "description": "Requerimientos técnicos de sonido y escenario para presentaciones de Marvin Núñez: solista, tropical, tropical con batería y banda completa.",
+  "url": "https://www.marvinnunezrd.com/rider/",
+  "inLanguage": "es",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Marvin Núñez",
+    "url": "https://www.marvinnunezrd.com"
+  }
+}
+</script>
 </head>
-
 <body>
-  <section class="hero">
-    <div class="hero-inner">
-      <img class="logo" src="../assets/LogoMarvinNunezRDBlanco.png" alt="Logo Marvin Núñez" />
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="../" aria-label="Marvin Núñez — Inicio">
+      <img src="../assets/img/LogoMarvinNunezRDBlanco.png" alt="Marvin Núñez" width="140" height="34">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="../" data-i18n="nav.home">Inicio</a>
+      <a href="../bio/" data-i18n="nav.bio">Bio</a>
+      <a href="../musica/" data-i18n="nav.music">Música</a>
+      <a href="../agenda/" data-i18n="nav.agenda">Agenda</a>
+      <a href="../recursos/" data-i18n="nav.resources">Recursos</a>
+      <a href="../evangelio-de-hoy/" data-i18n="nav.gospel">Evangelio</a>
+      <a href="../blog/" data-i18n="nav.blog">Blog</a>
+      <a href="../invitacion/" data-i18n="nav.invite">Invitación</a>
+    </nav>
+    <div class="header-tools">
+      <div class="social-row">
+        <a href="https://www.instagram.com/marvinnunezrd" target="_blank" rel="noopener" aria-label="Instagram"><i class="ico ico-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="YouTube"><i class="ico ico-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="TikTok"><i class="ico ico-tiktok" aria-hidden="true"></i></a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu" aria-label="Menú">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
-      <div class="badge">Riders Técnicos Oficiales</div>
+<div class="mobile-menu" id="mobile-menu">
+  <nav aria-label="Móvil">
+    <a href="../" data-i18n="nav.home">Inicio</a>
+    <a href="../bio/" data-i18n="nav.bio">Bio</a>
+    <a href="../musica/" data-i18n="nav.music">Música</a>
+    <a href="../agenda/" data-i18n="nav.agenda">Agenda</a>
+    <a href="../recursos/" data-i18n="nav.resources">Recursos</a>
+    <a href="../evangelio-de-hoy/" data-i18n="nav.gospel">Evangelio</a>
+    <a href="../blog/" data-i18n="nav.blog">Blog</a>
+    <a href="../kit-de-prensa/" data-i18n="nav.press">Kit de Prensa</a>
+    <a href="../invitacion/" data-i18n="nav.invite">Invitación</a>
+  </nav>
+  <div class="social-row">
+      <a href="https://www.instagram.com/marvinnunezrd" target="_blank" rel="noopener" aria-label="Instagram"><i class="ico ico-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="YouTube"><i class="ico ico-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.tiktok.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="TikTok"><i class="ico ico-tiktok" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/marvinnunezrd" target="_blank" rel="noopener" aria-label="Facebook"><i class="ico ico-facebook" aria-hidden="true"></i></a>
+      <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank" rel="noopener" aria-label="Spotify"><i class="ico ico-spotify" aria-hidden="true"></i></a>
+      <a href="https://wa.me/19295308974" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ico ico-whatsapp" aria-hidden="true"></i></a>
+    </div>
+</div>
+<section class="page-head">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Migas"><a href="../" data-i18n="nav.home">Inicio</a> <span>/</span> <span>Rider Técnico</span></nav>
+    <p class="eyebrow mt-3" data-i18n="nav.rider">Producción</p>
+    <h1>Rider Técnico</h1>
+    <p class="lead">Elige el formato contratado y comparte el documento con tu equipo de sonido. Si tienes dudas sobre cuál enviar, escríbeme y lo definimos juntos.</p>
+  </div>
+</section>
 
-      <h1>Marvin Núñez</h1>
+<main>
+<section class="section">
+  <div class="wrap">
+    <div class="card-grid reveal">
+      <article class="card card--link">
+        <span class="card__num">01</span>
+        <h3>Solista</h3>
+        <p>Voz y guitarra. El formato más sencillo: ideal para misas, retiros y espacios íntimos.</p>
+        <a class="link-arrow" href="solista/">Ver rider</a>
+      </article>
+      <article class="card card--link">
+        <span class="card__num">02</span>
+        <h3>Tropical sin batería</h3>
+        <p>Formato de banda tropical con percusión, sin batería completa. Para salones parroquiales y espacios medianos.</p>
+        <a class="link-arrow" href="tropical/">Ver rider</a>
+      </article>
+      <article class="card card--link">
+        <span class="card__num">03</span>
+        <h3>Tropical con batería</h3>
+        <p>Banda tropical completa con batería. Para conciertos y congresos.</p>
+        <a class="link-arrow" href="tropical-bateria/">Ver rider</a>
+      </article>
+      <article class="card card--link">
+        <span class="card__num">04</span>
+        <h3>Banda Full</h3>
+        <p>Formato completo. Para eventos grandes, festivales y producciones con transmisión.</p>
+        <a class="link-arrow" href="banda-full/">Ver rider</a>
+      </article>
+    </div>
 
-      <p class="subtitle">
-        Selecciona el formato contratado para ver el rider técnico correspondiente.
-        Cada versión contiene la información necesaria para producción, FOH, monitores,
-        stage plot e input list.
-      </p>
-
-      <div class="hero-actions">
-        <a class="hero-btn primary" href="#riders">Ver formatos</a>
-        <a class="hero-btn secondary" href="../redesycontacto/">Contacto</a>
+    <div class="card mt-4 reveal">
+      <h3>¿No sabes cuál enviar?</h3>
+      <p>Escríbeme con los detalles del evento (aforo, espacio, presupuesto) y te indico el formato que mejor funciona.</p>
+      <div class="btn-row" style="margin-top:1rem">
+        <a class="btn btn--gold" href="../invitacion/" data-i18n="invite.form">Formulario de invitación</a>
+        <a class="btn" href="https://wa.me/19295308974" target="_blank" rel="noopener"><i class="ico ico-whatsapp" aria-hidden="true"></i> WhatsApp</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+</main>
 
-  <main class="main" id="riders">
-    <section class="grid" aria-label="Riders técnicos disponibles">
-      <a class="card available" href="solista/">
-        <div class="card-top">
-          <div class="icon">🎤</div>
-          <div class="format">Formato 01</div>
-          <h2>Solista</h2>
-          <p>
-            Voz principal, guitarra, pedalera, secuencias y configuración compacta
-            para eventos pequeños, parroquias y presentaciones íntimas.
-          </p>
-          <div class="specs">
-            <span class="spec">Compacto</span>
-            <span class="spec">Rápido montaje</span>
-            <span class="spec">Disponible</span>
-          </div>
-        </div>
-        <div class="card-button">Ver Rider</div>
-      </a>
-
-      <a class="card available" href="tropical/">
-        <div class="card-top">
-          <div class="icon">🪘</div>
-          <div class="format">Formato 02</div>
-          <h2>Tropical sin Batería</h2>
-          <p>
-            Formato tropical/acústico con tambora, cajón, güira, piano, bajo,
-            guitarra, voz y secuencias.
-          </p>
-          <div class="specs">
-            <span class="spec">14 canales</span>
-            <span class="spec">Sin batería</span>
-            <span class="spec">Disponible</span>
-          </div>
-        </div>
-        <div class="card-button">Ver Rider</div>
-      </a>
-
-      <a class="card available" href="tropical-bateria/">
-        <div class="card-top">
-          <div class="icon">🥁</div>
-          <div class="format">Formato 03</div>
-          <h2>Tropical con Batería</h2>
-          <p>
-            Banda tropical con batería completa, tambora, güira, piano, bajo,
-            guitarra, voz principal y secuencias.
-          </p>
-          <div class="specs">
-            <span class="spec">18 canales</span>
-            <span class="spec">Batería completa</span>
-            <span class="spec">Disponible</span>
-          </div>
-        </div>
-        <div class="card-button">Ver Rider</div>
-      </a>
-
-      <a class="card pending" href="banda-full/">
-        <div class="card-top">
-          <div class="icon">🚀</div>
-          <div class="format">Formato 04</div>
-          <h2>Banda Full</h2>
-          <p>
-            Formato expandido para producciones grandes, congresos, festivales
-            y eventos especiales.
-          </p>
-          <div class="specs">
-            <span class="spec">Producción grande</span>
-            <span class="spec">Próximamente</span>
-          </div>
-        </div>
-        <div class="card-button">Próximamente</div>
-      </a>
-    </section>
-
-    <section class="info-strip">
-      <div>
-        <h2>¿No sabes cuál enviar?</h2>
-        <p>
-          Envía esta página principal al equipo de producción para que puedan seleccionar
-          el formato exacto contratado.
-        </p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="../assets/img/LogoMarvinNunezRDBlanco.png" alt="Marvin Núñez" width="180" height="44" loading="lazy">
+        <p data-i18n="hero.sub">Música que lleva el Evangelio a donde el corazón lo necesita.</p>
+        <div class="social-row mt-3">
+      <a href="https://www.instagram.com/marvinnunezrd" target="_blank" rel="noopener" aria-label="Instagram"><i class="ico ico-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="YouTube"><i class="ico ico-youtube" aria-hidden="true"></i></a>
+      <a href="https://www.tiktok.com/@marvinnunezrd" target="_blank" rel="noopener" aria-label="TikTok"><i class="ico ico-tiktok" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/marvinnunezrd" target="_blank" rel="noopener" aria-label="Facebook"><i class="ico ico-facebook" aria-hidden="true"></i></a>
+      <a href="https://open.spotify.com/artist/0vheEY20pbheuQIwpVD3RR" target="_blank" rel="noopener" aria-label="Spotify"><i class="ico ico-spotify" aria-hidden="true"></i></a>
+      <a href="https://wa.me/19295308974" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="ico ico-whatsapp" aria-hidden="true"></i></a>
+    </div>
       </div>
-
-      <div class="info-actions">
-        <a class="info-btn gold" href="../">Sitio principal</a>
-        <a class="info-btn" href="../agenda/">Agenda</a>
+      <div class="footer-col">
+        <h4 data-i18n="common.explore">Explorar</h4>
+        <ul>
+          <li><a href="../bio/" data-i18n="nav.bio">Bio</a></li>
+          <li><a href="../musica/" data-i18n="nav.music">Música</a></li>
+          <li><a href="../agenda/" data-i18n="nav.agenda">Agenda</a></li>
+          <li><a href="../blog/" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="../libreria/" data-i18n="nav.store">Librería</a></li>
+        </ul>
       </div>
-    </section>
+      <div class="footer-col">
+        <h4 data-i18n="common.ministry">Ministerio</h4>
+        <ul>
+          <li><a href="../evangelio-de-hoy/" data-i18n="nav.gospel">Evangelio</a></li>
+          <li><a href="../recursos/" data-i18n="nav.resources">Recursos</a></li>
+          <li><a href="../kit-de-prensa/" data-i18n="nav.press">Kit de Prensa</a></li>
+          <li><a href="../rider/" data-i18n="nav.rider">Rider Técnico</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="nav.contact">Contacto</h4>
+        <ul>
+          <li><a href="../invitacion/" data-i18n="nav.invite">Invitación</a></li>
+          <li><a href="mailto:marvinnunezrd@gmail.com">marvinnunezrd@gmail.com</a></li>
+          <li><a href="tel:+19295308974">+1 (929) 530-8974</a></li>
+          <li><a href="https://wa.me/19295308974" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span> Marvin Núñez — <span data-i18n="common.rights">Todos los derechos reservados</span></p>
+      <p class="dim">Santiago, R.D. · New York, NY</p>
+    </div>
+  </div>
+</footer>
 
-    <footer>
-      Marvin Núñez · Cantautor Católico · Riders Técnicos Oficiales<br />
-      www.marvinnunezrd.com
-    </footer>
-  </main>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
