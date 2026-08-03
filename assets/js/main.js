@@ -18,8 +18,9 @@
   function detectLang() {
     var saved = store.get('mn-lang');
     if (saved && LANGS.indexOf(saved) > -1) return saved;
-    var nav = (navigator.language || 'es').slice(0, 2).toLowerCase();
-    return nav === 'en' ? 'en' : 'es';
+    // El español es siempre el idioma de entrada. El inglés es una opción
+    // manual del visitante, nunca se detecta automáticamente del dispositivo.
+    return 'es';
   }
 
   function applyLang(lang) {
@@ -42,7 +43,10 @@
     });
 
     // Bloques exclusivos de un idioma: data-lang="es" / data-lang="en"
+    // (se excluyen los botones del propio interruptor .lang-switch, que
+    // reutilizan data-lang para otro fin y no deben ocultarse nunca)
     document.querySelectorAll('[data-lang]').forEach(function (el) {
+      if (el.closest('.lang-switch')) return;
       el.setAttribute('data-lang-hide', el.getAttribute('data-lang') !== lang ? 'true' : 'false');
     });
 
@@ -61,6 +65,14 @@
     document.addEventListener('click', function (e) {
       var btn = e.target.closest('.lang-switch button');
       if (btn && btn.dataset.lang) applyLang(btn.dataset.lang);
+    });
+    // Un bloque .reveal que empieza oculto por idioma nunca cruza el
+    // IntersectionObserver, así que al cambiar de idioma y mostrarlo
+    // quedaría transparente para siempre. Lo revelamos a mano.
+    document.addEventListener('langchange', function () {
+      document.querySelectorAll('.reveal:not(.is-visible)').forEach(function (el) {
+        if (getComputedStyle(el).display !== 'none') el.classList.add('is-visible');
+      });
     });
   }
 
