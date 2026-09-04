@@ -1,0 +1,1256 @@
+# ===================================================================
+# LETRAS — Marvin Núñez
+# ===================================================================
+#
+# COMO USARLO
+#   1. Pega la letra de cada cancion debajo de su titulo.
+#   2. Guarda el archivo.
+#   3. Dime "ya lleno el archivo de letras" y yo publico las paginas.
+#
+# REGLAS
+#   - No borres ni cambies las lineas que empiezan con ===
+#   - Marca secciones al inicio de una linea:
+#         [Verso 1]  [Coro]  [Puente]  [Final]
+#     Se convierten en las etiquetas doradas de la pagina.
+#   - [Introduccion hablada] se muestra en italica, aparte del canto.
+#   - Deja en blanco las canciones que aun no quieras publicar.
+#   - Las lineas que empiezan con # son notas y se ignoran.
+#
+# ENLACES A PLATAFORMAS
+#   Las lineas @spotify ya estan puestas (verificadas en tu perfil oficial).
+#   Puedes anadir las demas plataformas igual:
+#         @apple: https://music.apple.com/us/song/...
+#         @youtube: https://www.youtube.com/watch?v=...
+#         @youtubemusic: ...   @amazon: ...   @tidal: ...   @deezer: ...
+#
+# ===================================================================
+
+
+# ------------------------------------------------------------
+# Sencillos — Lanzamientos individuales
+# ------------------------------------------------------------
+
+=== Mil Motivos ===
+@spotify: https://open.spotify.com/track/6KeN3VTs0j6s7PajAYzGC4
+@nota: Esta letra corresponde a la versión bossa nova, pista 1 del álbum «Jesús: The Álbum». El sencillo de 2026 es un arreglo de salsa sobre la misma letra.
+@apple: https://music.apple.com/us/album/mil-motivos/1886495010?i=1886495011
+@tidal: https://listen.tidal.com/track/508476983
+@video: Video oficial · Salsa | https://youtu.be/N-95Eq4yhBE
+@video: Del álbum «Jesús: The Álbum» · Bossa nova | https://youtu.be/flWWmTSSZBM
+[Verso 1]
+Tengo mil motivos, para alabarte,
+Tengo mil motivos, para exaltarte mi Señor,
+Tengo mil motivos, para adorarte,
+Pues tú eres digno, de veneración.
+
+[Pre-coro]
+Por tu grandeza,
+Por tu poder,
+Por toda tu gloria,
+Que todos podemos ver.
+
+[Coro] x2
+Estoy en alabanza,
+Y en adoración,
+Que nadie se oponga,
+Pues yo alabo mi Señor.
+
+[Verso 2]
+Tengo mil maneras, para alabarte,
+Tengo mil maneras, para exaltarte mi Señor,
+Tengo mil maneras, para adorarte,
+Pues tú eres digno de veneración.
+
+[Pre-coro]
+Levantando mis manos,
+O arrodillado ante ti,
+O al igual que David,
+Solo danzando para ti.
+
+[Coro] x2
+Estoy en alabanza,
+Y en adoración,
+Que nadie se oponga,
+Pues yo alabo mi Señor.
+
+
+
+=== Frente al Pesebre ===
+@spotify: https://open.spotify.com/track/0dkELoKWbU4BMPe72DlBFh
+@apple: https://music.apple.com/us/album/frente-al-pesebre-en-vivo/1662181882?i=1662181883
+@tidal: https://listen.tidal.com/track/269263309
+@video: Video oficial | https://youtu.be/gbf566xYDZ4
+[Introducción hablada]
+La Navidad real es dejar que Jesús nazca en tu corazón cada día
+Que Jesús sea un regalo para ti
+Ese regalo que solamente lo hace nuestro Padre Dios
+Y que junto a Él lleguen tantas cosas a tu vida
+Junto a Él lleguen tantas cosas que
+Muchas veces nos hacen falta a nosotros
+Que nada material puede llenar, que nada económico puede llenar
+Muchas cosas que son justo del tamaño
+Del vacío que hay en nuestro corazón
+Que a veces pretendemos llenarlo con otras cosas
+Y ese vacío sigue ahí, del mismo tamaño o quizás más grande
+Y no te ha dado tiempo a pensar
+Que ese vacío que hay quizás hoy en tu corazón
+Es del mismo tamaño de Jesús
+Que si no lo dejas nacer ahí
+Él no podrá llenarlo
+
+[Coro] x2
+Frente al pesebre aquí en Belén
+Yo te esperaré
+
+[Verso]
+Para que me abraces, me digas te amo
+Y recibir tu sanación
+Y que me digas que estoy guardado
+Dentro de tu corazón
+
+[Coro final] x3
+Frente al pesebre aquí en Belén
+Yo te esperaré
+
+=== Que Baje Tu Gloria ===
+@spotify: https://open.spotify.com/track/6zOVnDHHS27FI53KCJmh8C
+@apple: https://music.apple.com/us/album/que-baj%C3%A9-tu-gloria-en-vivo/1820933796?i=1820933799
+@tidal: https://listen.tidal.com/track/442314914
+@video: Video oficial | https://youtu.be/eY5uii01D2M
+[Verso]
+En este lugar hay una presencia
+Se abren los cielos, se rebosa tu altar
+Y toda la tierra canta, canta, canta
+Levanta sus manos y grita sin parar
+
+[Coro]
+Que baje tu gloria
+Que baje tu gloria (Que baje tu gloria)
+Que baje tu gloria (Pídele)
+Que baje tu gloria
+
+[Puente]
+Y que rebose sobre mí
+Que fluya aquí
+Y que repose sobre mí
+Que fluya aquí (Pídele que baje)
+
+[Coro final]
+Que baje tu gloria (Que baje en este lugar, pídele)
+Que baje tu gloria
+Que baje tu gloria
+
+
+=== Navidad Con Jesús ===
+@spotify: https://open.spotify.com/track/52remvQXJpXVX1i0bEcEtC
+@apple: https://music.apple.com/us/album/navidad-con-jes%C3%BAs/1657810435?i=1657810436
+@tidal: https://listen.tidal.com/track/263869320
+@video: Video oficial | https://youtu.be/Bq95oEGz4po
+[Verso 1]
+¿Cuántos niños van sufriendo?
+¿Cuánta gente hay con la falta de pan?
+Otros con falta de amor
+Cuando es el mismo Dios que nos manda a ayudar
+
+[Pre-coro]
+Y es así (Y es así)
+Es así (Es así)
+Es así
+Dios nos manda a ayudar
+
+[Coro]
+Llegó Navidad
+Y Jesús llegó a tu corazón
+Llegó Navidad
+Y Jesús llegó a tu corazón
+¡Ay, santo!
+
+[Verso 2]
+Hoy regálale a tu vida
+La emoción de ver a otros disfrutar
+De lo que te ha dado Dios
+Porque Él mismo nos mandó que debemos ayudar
+
+[Pre-coro]
+Y es así (Y es así)
+Es así (Es así)
+Es así
+Dios nos manda a ayudar
+
+[Coro final] x6
+Llegó Navidad
+Y Jesús llegó a tu corazón
+
+=== Llena de Gracia ===
+@spotify: https://open.spotify.com/track/64bQ1xnEH47jIM1czT2bST
+@apple: https://music.apple.com/us/album/llena-de-gracia/1517187005?i=1517187726
+@tidal: https://listen.tidal.com/track/144219778
+@video: Video oficial | https://youtu.be/SLUQDRXqLeM
+[Verso]
+Imagino tu rostro
+Al pie de la cruz
+Rememorando
+A tu hijo Jesús
+Recordando sus pasos
+Y sus abrazos
+Y cada momento
+Lleno de amor
+
+[Puente]
+Y verlo venir
+Y dejarlo ir
+Eres obediente Madre
+De principio a fin
+
+[Coro] x4
+María
+¿Quien como tu?
+Llena de Gracia
+Rodeada de luz
+
+[Final]
+María
+
+
+
+=== Mi Luz Eres Tú ===
+@spotify: https://open.spotify.com/track/2b5HahGtotbcCQN8n22dnr
+@apple: https://music.apple.com/us/album/mi-luz-eres-t%C3%BA/1592779555?i=1592779556
+@tidal: https://listen.tidal.com/track/203015562
+@video: Video oficial | https://youtu.be/9DtcvEJbrQM
+[Verso 1]
+Con cada parte de mi ser
+En cada paso que yo dé
+En cada segundo de mi vida
+Que sea así todos los días
+
+[Coro]
+Y yo quiero alabarte
+Y yo quiero adorarte
+Y yo quiero alabarte
+Y yo quiero adorarte
+Porque mi luz eres tú
+Porque mi luz eres tú
+
+[Verso 2]
+Con cada parte de mi ser
+En cada paso que yo dé
+En cada segundo de mi vida
+Que sea así todos los días
+
+[Coro]
+Y yo quiero alabarte
+Y yo quiero adorarte
+Y yo quiero alabarte
+Y yo quiero adorarte
+Porque mi luz eres tú
+Porque mi luz eres tú
+
+[Final]
+Porque mi luz eres tú
+Porque mi luz eres tú
+
+
+
+=== Grande Solo Tú ===
+@spotify: https://open.spotify.com/track/0wDSNXicDg3jozhmOh45DJ
+@arreglos: Oliver Guzmán, Claudio Burgos
+@tidal: https://listen.tidal.com/track/107730466
+@video: Video oficial | https://youtu.be/TZjkfWvNNEw
+@video: En vivo · Congreso de Mujeres ISHA Bethel | https://youtu.be/LP9k7h1V4sU
+@video: Acústico en vivo | https://youtu.be/p6bq9iL9dOQ
+[Verso]
+Cuando te miro ante el altar
+Todas mis cargas ya no están
+Cuando me postro ante tu trono
+Aquí yo lo entrego todo
+
+[Coro] x2
+Poderoso eres Tú
+Majestuoso eres Tú
+Grande solo Tú
+
+[Verso]
+Cuando te miro ante el altar
+Todas mis cargas ya no están
+Cuando me postro ante tu trono
+Aquí yo lo entrego todo
+
+[Coro] x2
+Poderoso eres Tú
+Majestuoso eres Tú
+Grande solo Tú
+
+[Puente]
+Y no hay tormentas
+Que no puedas calmar
+Y de mis caídas
+Me vas a levantar
+Y es que grande
+Solo Tú
+
+[Coro final]
+Poderoso eres Tú
+Majestuoso eres Tú
+Grande solo Tú
+
+Poderoso eres Tú
+Majestuoso eres Tú
+Grande solo Tú
+Solo Tú
+Solo Tú
+Solo Tú
+
+
+
+=== Popurrí Católico (En Vivo) ===
+@spotify: https://open.spotify.com/track/45E6vL5rzSrp1TiTWy25Py
+@apple: https://music.apple.com/us/album/popurr%C3%AD-cat%C3%B3lico-en-vivo/1882445296?i=1882445297
+@tidal: https://listen.tidal.com/track/504308966
+@video: Video oficial | https://youtu.be/b1W2uBstFvc
+
+
+
+=== Y Cristo... Pa' Cuando? ===
+@spotify: https://open.spotify.com/track/0WLPNVCAG6wzPXtx0L3PNO
+@tidal: https://listen.tidal.com/track/85178374
+@amazon: https://music.amazon.com/albums/B07B2DWFYG
+@deezer: https://www.deezer.com/track/466630532
+@video: Video oficial | https://youtu.be/jonArPSD2MA
+[Intro]
+¡Ay Santo!
+
+[Verso 1]
+Sé que te gusta
+Te gusta a ti bailar
+Sé que te encanta
+Televisión mirar
+Y que te pasas todo el día en internet
+Entonces algo tienes tú que responder
+
+[Coro] x4
+Y Cristo...
+Y Cristo...
+Y Cristo...
+Pa' cuándo?
+
+[Verso 2]
+Quiero que sepas que fiera de Él no hay nada, nada
+Y que lo que tú haces sin Él no sirve para nada
+Entonces algo quiero preguntarte hoy
+Y quiero que respondas tú de corazón
+
+[Coro] x4
+Y Cristo...
+Y Cristo...
+Y Cristo...
+Pa' cuándo?
+
+[Verso 3]
+Sé que te gusta
+Te gusta a ti bailar
+Sé que te encanta
+Televisión mirar
+Y que te pasas todo el día en internet
+Entonces algo tienes tú que responder
+
+[Coro] x4
+Y Cristo...
+Y Cristo...
+Y Cristo...
+Pa' cuándo?
+
+[Cierre]
+Y que te pasas todo el día en internet
+Pa' Cuándo?
+
+Entonces tienes tú que responder
+Pa' Cuándo?
+
+Entonces algo quiero preguntarte hoy
+Pa' Cuándo?
+
+Y quiero que respondas tú de corazón
+Y Cristo...
+Pa' Cuándo?
+
+
+
+# ------------------------------------------------------------
+# Jesús: The Álbum — Álbum · 11 canciones
+# ------------------------------------------------------------
+
+# (Mil Motivos ya aparece arriba; su letra se publica una sola vez)
+
+=== El Aguijón ===
+@tipo: terceros
+@autores: autoría por confirmar
+@nota: Posible autoría de Alex Maysonet, según cancioneros de acordes — sin verificar, ya que esos sitios suelen indicar el intérprete y no el compositor.
+# ⚠ EN ESPERA — autoría por verificar (revisado 03-08-2026).
+#   Venía marcada "Dominio Público" en la misma metadata que resultó equivocada
+#   en «Tan Cerca de Mí». Se retira la letra hasta confirmar. La grabación sigue enlazada.
+@spotify: https://open.spotify.com/track/7rLJbNGNvTzqCeC7pYF1xb
+@apple: https://music.apple.com/us/album/el-aguij%C3%B3n/1340977146?i=1340977632
+@tidal: https://listen.tidal.com/track/83868715
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/HyzzxRX3q14
+
+
+=== Su Santo Espíritu ===
+@spotify: https://open.spotify.com/track/2dfP4P92s2ALv6oloQIVDc
+@apple: https://music.apple.com/us/album/su-santo-esp%C3%ADritu/1340977146?i=1340977633
+@tidal: https://listen.tidal.com/track/83868716
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/YrBHulXrC08
+[Verso]
+Siento una presencia,
+En este lugar,
+Siento algo tan grande,
+Que no lo puedo explicar.
+
+[Pre-coro]
+Clamo la presencia,
+Del Espíritu de Dios,
+Y él se apodera, se apodera,
+De todo mi interior.
+
+[Coro]
+Su Santo Espíritu,
+Se mueve sobre mí,
+Gracias, muchas gracias,
+Hoy me siento feliz.
+Su Santo Espíritu,
+Se mueve sobre mí,
+Gracias, muchas gracias,
+Por estar aquí.
+
+[Instrumental]
+
+[Verso]
+Siento una presencia,
+En este lugar,
+Siento algo tan grande,
+Que no lo puedo explicar.
+
+[Pre-coro]
+Clamo la presencia,
+Del Espíritu de Dios,
+Y él se apodera, se apodera,
+De todo mi interior.
+
+[Coro]
+Su Santo Espíritu,
+Se mueve sobre mí,
+Gracias, muchas gracias,
+Hoy me siento feliz.
+Su Santo Espíritu,
+Se mueve sobre mí,
+Gracias, muchas gracias,
+Por estar aquí.
+
+
+
+=== Te Quiere Amar ===
+@spotify: https://open.spotify.com/track/0h5YsCl4VLSjv02RDxqwB2
+@apple: https://music.apple.com/us/album/te-quiere-amar/1340977146?i=1340977634
+@tidal: https://listen.tidal.com/track/83868717
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/gHY7qOtUgE8
+[Verso 1]
+Es muy difícil de creer,
+Cuán grande es tu pesar,
+Esta tan cerca y no lo ves,
+El que te puede liberar,
+Y que tu carga es tan pesada,
+Y de Él tú no conoces nada.
+
+[Coro] x2
+Te quiere amar,
+Te quiere amar,
+Te quiere amar,
+Y tus penas Él borrar.
+
+[Verso 2]
+El bien lo dijo una vez,
+Escrito en su palabra esta,
+Que venga quien cansado este,
+Pues yo lo voy a aliviar,
+Pues su carga no es pesada,
+Dale la tuya que Él te llama,
+Te digo yo.
+
+[Coro] x2
+Te quiere amar,
+Te quiere amar,
+Te quiere amar,
+Y tus penas Él borrar.
+
+[Instrumental]
+
+[Coro final] x2
+Te quiere amar,
+Te quiere amar,
+Te quiere amar,
+Y tus penas Él borrar.
+
+
+
+=== Señor Quiero Caminar ===
+@tipo: terceros
+@autores: autoría por confirmar
+# ⚠ EN ESPERA — autoría sin confirmar.
+#   Musixmatch la marca "Dominio Público"; Marvin sospecha que el autor podría ser
+#   Manuel Martínez Perogil. Búsqueda web (03-08-2026): la canción aparece en
+#   cancioneros católicos de Argentina, España y Misioneros Oblatos SIEMPRE sin
+#   atribución. No se confirma el autor NI el dominio público.
+#   No publicar la letra hasta aclarar. La grabación de Marvin sí puede enlazarse.
+#   Para resolver: (1) revisar qué se declaró como autor al distribuir en CD Baby,
+#   (2) consultar el repertorio de SGAE si el autor es español,
+#   (3) preguntar en la comunidad donde se aprendió la canción.
+@spotify: https://open.spotify.com/track/43CJa1OdO5EL3rmny5mEOM
+@apple: https://music.apple.com/us/album/se%C3%B1or-quiero-caminar/1340977146?i=1340977635
+@tidal: https://listen.tidal.com/track/83868718
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/8mHk6f5qr1Y
+
+
+
+=== Toca al Señor ===
+@spotify: https://open.spotify.com/track/5V62vGEk5DdTDL1mmZ9bok
+@nota: La letra es la misma en las dos grabaciones: la original del álbum «Toca al Señor» (2006) y la de «Jesús: The Álbum». Ambas están enlazadas arriba, en Versiones grabadas.
+@apple: https://music.apple.com/us/album/toca-al-se%C3%B1or/1340977146?i=1340977636
+@tidal: https://listen.tidal.com/track/83868719
+@amazon: https://music.amazon.com/albums/B0799N3R55
+@deezer: https://www.deezer.com/track/454458512
+@video: Video oficial | https://youtu.be/3w4l6__7lNU
+@video: En vivo · Congreso de Mujeres ISHA Bethel | https://youtu.be/SLsGe1HpFns
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/NQV_EiOZDKc
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/4zTDH15PhnI
+@video: Acústico en vivo | https://youtu.be/bMZRW54Iw-o
+[Verso 1]
+Toca al Señor,
+Aquí está en este momento,
+Toca al Señor,
+Tócalo
+Toca al Señor.
+
+Toca al Señor,
+Que se está manifestando,
+Toca al Señor,
+Tócalo
+Toca al Señor.
+
+[Coro]
+Levántate y toca,
+Ven y recibe sanación,
+Que el Señor está en este lugar,
+Ha venido para liberar,
+Solo tienes que creerlo,
+Toca al Señor.
+
+[Instrumental]
+
+[Verso 2]
+Toca al Señor,
+Solo ven y experimenta,
+Toca al Señor,
+Tócalo
+Toca al Señor.
+
+Toca al Señor,
+Pues yo siento su presencia,
+Toca al Señor,
+Tócalo
+Toca al Señor.
+
+[Coro]
+Levántate y toca,
+Ven y recibe sanación,
+Que el Señor está en este lugar,
+Ha venido para liberar,
+Solo tienes que creerlo,
+Toca al Señor.
+
+[Instrumental]
+
+[Final]
+Que el Señor está en este lugar,
+Ha venido para liberar,
+Solo tienes que creerlo,
+Toca al Señor.
+Toca al Señor.
+
+
+
+=== Jesús ===
+@spotify: https://open.spotify.com/track/04oy72JMw7AQVaCHihoYaC
+@apple: https://music.apple.com/us/album/jes%C3%BAs/1340977146?i=1340977637
+@tidal: https://listen.tidal.com/track/83868720
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/1XZNOQ1q4No
+[Estribillo]
+Jesús hijo de David,
+Ten compasión de mí,
+Jesús hijo de David,
+Ten compasión de mí.
+
+[Verso]
+Mira Señor,
+Tu pueblo está aquí,
+Y está sediento de ti,
+Vino hasta aquí,
+Con toda su fe,
+Y te proclama su Rey.
+
+[Estribillo]
+Jesús hijo de David,
+Ten compasión de mí,
+Jesús hijo de David,
+Ten compasión de mí.
+
+[Instrumental]
+
+[Estribillo]
+Jesús hijo de David,
+Ten compasión de mí,
+Jesús hijo de David,
+Ten compasión de mí.
+
+[Puente] x2
+Ven a sanar,
+Ven a liberar,
+Hazte presente,
+En este lugar,
+
+[Estribillo] x2
+Jesús hijo de David,
+Ten compasión de mí,
+Jesús hijo de David,
+Ten compasión de mí.
+
+
+
+=== Tan Cerca de Mí ===
+@tipo: terceros
+@autores: Luis Alfredo Díaz
+@nota: Compuesta en Burgos, España, hace unas cinco décadas. Es uno de los cantos eucarísticos más difundidos en parroquias de habla hispana. Autoría confirmada por ACI Prensa y cancioneros litúrgicos; los nombres que aparecían en la metadata de distribución eran incorrectos.
+# ⚠ EN ESPERA — obra de terceros, NO publicar la letra.
+#   Marvin confirma que la canción no es suya. Los créditos nombran autores
+#   identificables: Antonio Mata Gómez y José Márquez Cabello.
+#   Estaba declarada como "dominio público" por error.
+#   La grabación de Marvin sí puede enlazarse (el fonograma es suyo);
+#   la letra pertenece a los autores.
+@spotify: https://open.spotify.com/track/3qxK5zpyrq6SxpysWbBjvT
+@apple: https://music.apple.com/us/album/tan-cerca-de-m%C3%AD/1340977146?i=1340977638
+@tidal: https://listen.tidal.com/track/83868721
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/xFOqhHs4MGU
+
+
+
+=== Siento una Paz ===
+@spotify: https://open.spotify.com/track/3O6KwFn1dk3gtjGzv4PXN5
+@feat: Elvis y Salvatore (El Dúo de la Victoria)
+@nota: La segunda estrofa retoma el «Nada te turbe, nada te espante» de Santa Teresa de Ávila (siglo XVI).
+@apple: https://music.apple.com/us/album/siento-una-paz/1340977146?i=1340977639
+@tidal: https://listen.tidal.com/track/83868722
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/-47vR_oixAw
+[Verso 1]
+No hay cadenas que yo no pueda romper,
+En el nombre de Jesús de Nazaret,
+No existen muros que no tengan que caer,
+Ante la presencia de Él.
+
+[Coro]
+Yo siento una paz,
+Dentro de mí,
+Cuando Él me dice,
+Yo estoy.
+Y siento una paz,
+En este lugar,
+Porque mi Dios,
+Acaba de llegar.
+Acaba de llegar.
+
+[Verso 2]
+Que nada te asuste,
+Que nada te espante,
+Quien a Dios tiene,
+Nada puede perturbarle.
+No existen problemas que ante todo su poder,
+No tengan que correr.
+
+[Coro]
+Yo siento una paz,
+Dentro de mí,
+Cuando Él me dice,
+Cuando Él me dice, ¡Yo estoy aquí!
+Y siento una paz,
+En este lugar,
+Porque mi Dios,
+Acaba de llegar.
+
+[Instrumental]
+
+[Coro final]
+Yo siento una paz,
+Dentro de mí,
+Cuando Él me dice,
+¡Yo estoy aquí!
+Y siento una paz,
+En este lugar,
+Porque mi Dios,
+Acaba de llegar.
+
+
+
+=== Padre Nuestro ===
+@spotify: https://open.spotify.com/track/2vJoS0Lsm5wjSJ0t4GkFML
+@texto: oración del Padrenuestro (texto litúrgico)
+@musica: Marvin Núñez Tavárez
+@nota: El texto es la oración del Padrenuestro tal como se reza en la liturgia; la composición musical es de Marvin Núñez. Al registrar o distribuir esta obra debe declararse únicamente la autoría de la música.
+@apple: https://music.apple.com/us/album/padre-nuestro/1340977146?i=1340977640
+@tidal: https://listen.tidal.com/track/83868723
+@video: Del álbum «Jesús: The Álbum» | https://youtu.be/rAWC86ttt8I
+[Estribillo]
+Padre nuestro que estás en el cielo,
+Santificado sea tu nombre,
+Venga a nosotros tu Reino,
+Hágase en mí tu voluntad,
+Aquí en la tierra como en el cielo.
+
+[Instrumental]
+
+[Estribillo]
+Padre nuestro que estás en el cielo,
+Santificado sea tu nombre,
+Venga a nosotros tu Reino,
+Hágase en mí tu voluntad,
+Aquí en la tierra como en el cielo.
+
+[Verso]
+Danos hoy nuestro pan de cada día,
+Perdona nuestras ofensas,
+Como también nosotros perdonamos,
+Aquellos que nos ofenden,
+No nos dejes caer en tentación,
+Y líbranos del mal.
+
+[Instrumental]
+
+[Final] x3
+Y líbranos del mal
+¡Amén!
+
+
+
+=== Un Selfie con Jesús ===
+@spotify: https://open.spotify.com/track/7KCFKANJgnQxbcUBZiUwr0
+@nota: Lanzada primero como sencillo en abril de 2015 y luego incluida en «Jesús: The Álbum». El cierre repite el coro varias veces, manteniendo su misma métrica.
+@apple: https://music.apple.com/us/album/un-selfie-con-jes%C3%BAs/1340977146?i=1340977641
+@video: Video oficial | https://youtu.be/_FwMO6tCaPQ
+[Verso 1]
+Hoy he venido a este lugar
+Y a mi Jesús voy a alabar
+Y aprovechando que estás tú
+Vamos a tomarnos un Selfie con Jesús
+¿Cómo dice?
+
+[Coro] x4
+Un Selfie
+Un Selfie
+Un Selfie
+Con Jesús
+
+[Verso 2]
+Abraza fuerte
+Quien hoy tienes al lado
+Porque Jesús se encuentra en ese hermano
+Y con la cámara que has traído tú
+Vamos a tomarnos Un Selfie con Jesús
+¿Cómo dice?
+
+[Coro] x4
+Un Selfie
+Un Selfie
+Un Selfie
+Con Jesús
+
+[Verso 3]
+Hoy he venido a este lugar
+Y a mi Jesús voy a alabar
+Y aprovechando que estás tú
+Vamos a tomarnos un Selfie con Jesús
+¿Cómo dice?
+
+[Coro] x4
+Un Selfie
+Un Selfie
+Un Selfie
+Con Jesús
+
+[Instrumental]
+
+[Coro final] (varias veces)
+Un Selfie
+Un Selfie
+Un Selfie
+Con Jesús
+
+
+
+# ------------------------------------------------------------
+# Toca al Señor — Álbum · 2006 · 11 canciones
+# ------------------------------------------------------------
+
+=== La Sangre de Cristo ===
+@spotify: https://open.spotify.com/track/3nSD5OUniQs2qY5uU9M5zG
+@nota: La canción repite toda esta secuencia una segunda vez.
+@apple: https://music.apple.com/us/album/la-sangre-de-cristo/1532105342?i=1532105438
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/bj4iIVh5vbo
+[Verso 1]
+Hay alguien que te compró,
+En el mercado de la perdición,
+Él te salvó, Él te liberó,
+Él es Yahveh tu Señor,
+Él envió a su hijo Jesús,
+Vino a morir por ti en una cruz,
+Que en el pecado no te perdieras,
+Más que vivieras la vida eterna.
+
+[Coro]
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene podeeer.
+
+[Respuesta]
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder.
+
+[Verso 2]
+Cuando Yahveh te compró,
+Fue a Jesús que Él nos envió,
+Él su Sangre derramó
+Y eses es el precio que tu vales hoy,
+Por eso tienes que alabarle,
+Por eso tienes que glorificarle,
+Porque su sangre es lo que tu vales,
+Y ahora todos vamos a gritarle.
+
+[Coro]
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene poder,
+La Sangre de Cristo tiene podeeer.
+
+[Respuesta]
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder... Tiene poder.
+Tiene poder, tiene poder.
+
+
+
+=== Dios Te Salve ===
+@spotify: https://open.spotify.com/track/2cbTE3jbQi8fLJ4A6zUMOW
+@texto: oración del Avemaría (texto litúrgico)
+@musica: Marvin Núñez Tavárez
+@nota: El texto es la oración del Avemaría tal como se reza en la liturgia; la composición musical es de Marvin Núñez. Al registrar o distribuir esta obra debe declararse únicamente la autoría de la música. La canción repite toda la secuencia una segunda vez.
+@apple: https://music.apple.com/us/album/dios-te-salve/1532105342?i=1532105443
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/OKfkytBMP-4
+[Estribillo]
+Dios te salve
+Dios te salve María
+Llena eres de gracia
+El Señor es contigo
+Y bendito es el fruto
+De tu vientre Jesús
+
+[Respuesta] x2
+Santa María
+Madre de Dios
+Ruega por nosotros pecadores
+En esta hora
+Y a la hora
+De nuestra muerte
+Amén
+
+
+
+=== Jesús de Nazaret ===
+@spotify: https://open.spotify.com/track/2nDUpGbY10WJGAuQcWqHJk
+@apple: https://music.apple.com/us/album/jes%C3%BAs-de-nazaret/1532105342?i=1532105445
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/6MlaYKFtQvk
+[Verso 1]
+Si sientes dolor en tu corazón
+Todo lo que tienes ya se perdió
+Caminas, caminas sin un rumbo
+Con Jesús todo esto ya terminó
+
+[Coro]
+Con Jesús de Nazaret
+No hay más pena y dolor
+Con Jesús de Nazaret
+El enemigo ya se marchó
+
+[Verso 2]
+Si crees que la muerte es lo mejor
+Para tus problemas no hay solución
+Tu vida da vueltas como un reloj
+Con Jesús todo esto ya terminó
+
+[Coro]
+Con Jesús de Nazaret
+No hay más pena y dolor
+Con Jesús de Nazaret
+El enemigo ya se marchó
+
+[Puente]
+Es Jesús quien te quiere ayudar
+Abre tu puerta y déjalo entrar
+
+[Coro]
+Con Jesús de Nazaret
+No hay más pena y dolor
+Con Jesús de Nazaret
+El enemigo ya se marchó
+
+[Final]
+Ya se marchó
+Con Jesús de Nazaret
+Con Jesús de Nazaret
+Con Jesús de Nazaret
+Ya se marchó
+
+
+
+=== Si Me Quieres Tentar ===
+@spotify: https://open.spotify.com/track/6PxqQ16qpdMSrrhGnhTr0d
+@nota: El coro recoge la respuesta de Jesús en las tentaciones del desierto: «No solo de pan vive el hombre» (Mt 4,4).
+@apple: https://music.apple.com/us/album/si-me-quieres-tentar/1532105342?i=1532105446
+@video: Acústico en vivo | https://youtu.be/N6ychkqYUKo
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/flE74h_Gakk
+[Verso 1]
+No me importó cuanto el mundo me ofreció
+No me importa cuanto hoy me ofrezca
+Y no me importará cuanto él me ofrecerá
+Mas ni hoy ni mañana, ni después ni nunca
+Nada me faltará
+
+[Coro]
+Si con hambre me quieres tentar
+Solo del pan el hombre no vivirá
+Si con sed me quieres agotar
+Cristo tiene agua viva y no me da sed jamás
+Si tienes un ejército
+Para ti yo solo tengo a Cristo
+Y nadie puede contra mí
+
+[Verso 2]
+No me importa si ofreces flores y Cristo espinas
+No me importan porque sé que ahí escondes todas tus mentiras
+Y no me importa cual sea tu lema
+No me importa porque sé que es Cristo quien da la vida eterna
+
+[Coro] x2
+Si con hambre me quieres tentar
+Solo del pan el hombre no vivirá
+Si con sed me quieres agotar
+Cristo tiene agua viva y no me da sed jamás
+Si tienes un ejército
+Para ti yo solo tengo a Cristo
+Y nadie puede contra mí
+
+[Final]
+Nadie puede contra mí
+Nadie puede contra, contra mí
+
+
+
+=== Con Bellas Palabras ===
+@spotify: https://open.spotify.com/track/5h4L4ivRonKqIPPUzPA7jm
+@nota: El coro cierra con una variante: la primera vez dice «Proclamando tu palabra» y la segunda «Pregonando tu palabra». En YouTube el video del álbum aparece titulado «Palabras del Corazón»; es la misma canción.
+@apple: https://music.apple.com/us/album/con-bellas-palabras/1532105342?i=1532105447
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/KQJdWR3Dq4o
+[Verso 1]
+Oye Jesús
+Tú eres mi luz
+Eres mi Dios
+Mi salvador
+Tú eres mi refugio
+Hijo del Padre
+Mi bastón
+
+[Coro]
+Con bellas palabras
+No basta mi Señor
+Si tan solo te las digo
+Y no vienen del corazón
+Cuánto te amo
+Te lo voy a demostrar
+Proclamando tu palabra
+Cada día sin cesar
+
+[Verso 2]
+Oye Jesús
+Mi redentor
+Eterno amigo
+Rey de reyes
+Alabado, glorificado
+Seas por siempre mi Señor
+
+[Coro final]
+Con bellas palabras
+No basta mi Señor
+Si tan solo te las digo
+Y no vienen del corazón
+Cuánto te amo
+Te lo voy a demostrar
+Pregonando tu palabra
+Cada día sin cesar
+
+
+
+# (Toca al Señor ya aparece arriba; su letra se publica una sola vez)
+
+=== Espíritu Santo ===
+@spotify: https://open.spotify.com/track/4VG2QiHyz01wegYMkSwBgm
+@nota: La canción repite toda esta secuencia una segunda vez. En el álbum el título aparece como «Espiritu Santos», aunque el canto dice «Espíritu Santo».
+@apple: https://music.apple.com/us/album/esp%C3%ADritu-santos/1532105342?i=1532105449
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/WEba0tK4DJo
+[Verso 1]
+Si sientes la brisa en este lugar
+Es el Espíritu Santo que acaba de llegar
+Si crees que tu cruz ya no es tan pesada
+Es el mismo Jesús quien la lleva cargada
+
+[Coro]
+Espíritu Santo
+Espíritu Santo
+Espíritu Santo
+Ya no puedo más
+Espíritu Santo
+Espíritu Santo
+Espíritu Santo
+Lléname de tu paz
+
+[Verso 2]
+Si ves una sonrisa plasmada en tu rostro
+Es la promesa del Padre que está entre nosotros
+Y si acaso usted nota que yo estoy cantando
+No crea que soy yo, es el Espíritu Santo
+
+[Coro]
+Espíritu Santo
+Espíritu Santo
+Espíritu Santo
+Ya no puedo más
+Espíritu Santo
+Espíritu Santo
+Espíritu Santo
+Lléname de tu paz
+
+
+
+=== Mi Ángel ===
+@spotify: https://open.spotify.com/track/2XiolQtTDPNMajH6kwg5CI
+@apple: https://music.apple.com/us/album/mi-%C3%A1ngel/1532105342?i=1532105450
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/AAdGkjc9wJI
+[Verso 1]
+Tal vez allá te acordarás
+De alguien que te ama de verdad
+Y más allá del cielo
+Mi amor llegará
+
+[Coro]
+Ay, mi ángel, ¿por qué te vas?
+Y me dejas atrás
+Me pregunto si a donde vas
+Tú de mí te acordarás
+
+[Verso 2]
+Ayer te vi y hoy no estás aquí
+Qué duro fue verte partir
+Con tu mirada tan tierna
+Me robaste el corazón
+
+[Coro]
+Ay, mi ángel, ¿por qué te vas?
+Y me dejas atrás
+Me pregunto si a donde vas
+Tú de mí te acordarás
+
+[Verso 1]
+Tal vez allá te acordarás
+De alguien que te ama de verdad
+Y más allá del cielo
+Mi amor llegará
+
+[Coro]
+Ay, mi ángel, ¿por qué te vas?
+Y me dejas atrás
+Me pregunto si a donde vas
+Tú de mí te acordarás
+
+
+
+=== Perdóname Jesús ===
+@spotify: https://open.spotify.com/track/0MYlI65yWKfhPUoOljBqgH
+@apple: https://music.apple.com/us/album/perd%C3%B3name-jes%C3%BAs/1532105342?i=1532105451
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/M7mAVIEQM2I
+[Coro] x2
+Perdóname
+Perdóname Jesús
+Perdóname oh Padre
+Como lo haces siempre tú
+
+[Verso 1]
+Y es que yo quiero sentir
+La fuerza de tu amor
+Se me hace imposible
+Tengo negro el corazón
+
+[Coro]
+Perdóname
+Perdóname Jesús
+Perdóname oh Padre
+Como lo haces siempre tú
+
+[Verso 2]
+Y es que no quiero ser igual
+A aquel tonto que antes fui
+Con pecados y maldades
+Nunca te reconocí
+
+[Coro]
+Perdóname
+Perdóname Jesús
+Perdóname oh Padre
+Como lo haces siempre tú
+
+
+
+=== Toca al Señor (Merengue) ===
+@spotify: https://open.spotify.com/track/4MMhBsMRkVHbWwpHMcbQdt
+@feat: Junior Arias
+@nota: Versión en merengue, pista 10 del álbum «Toca al Señor» (2006). El pregón final es un diálogo cantado entre Marvin y Junior Arias, al estilo del merengue.
+@apple: https://music.apple.com/us/album/toca-al-se%C3%B1or-merengue/1532105342?i=1532105452
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/ghvaTsN8MwM
+[Verso 1]
+Toca al Señor
+Aquí está en este momento
+Toca al Señor
+Tócalo
+Toca al Señor
+
+Toca al Señor
+Que se está manifestando
+Toca al Señor
+Tócalo
+Toca al Señor
+
+[Coro]
+Levántate y tócalo
+Ven y recibe sanación
+El Señor está en este lugar
+Ha venido para liberar
+Solo tienes que creerlo
+Toca al Señor
+
+[Verso 2]
+Toca al Señor
+Solo ven y experimenta
+Toca al Señor
+Tócalo
+Toca al Señor
+
+Toca al Señor
+Que yo siento su presencia
+Toca al Señor
+Tócalo
+Toca al Señor
+
+[Coro]
+Levántate y tócalo
+Ven y recibe sanación
+El Señor está en este lugar
+Ha venido para liberar
+Solo tienes que creerlo
+Toca al Señor
+
+[Pregón]
+¡Aleluya!
+Oye Junior
+¿Y quién dice que en la iglesia no se goza?
+Marvin, los que no están en ella
+¡Aleluya!
+Y vuelvo y repito
+Que esto tiene sabor
+Sabor a Cristo
+
+[Coro final]
+Levántate y tócalo
+Ven y recibe sanación
+El Señor está en este lugar
+Ha venido para liberar
+Solo tienes que creerlo
+Toca al Señor
+
+
+
+=== Cristo 911 ===
+@spotify: https://open.spotify.com/track/4O9DPMih9qiVKmeEMUqOMs
+@nota: Canción que da nombre al ministerio Cristo 911, fundado por Marvin en 2013.
+@apple: https://music.apple.com/us/album/cristo-911/1532105342?i=1532105453
+@video: Del álbum «Toca al Señor» (2006) | https://youtu.be/B21ZboGK3X8
+[Introducción hablada]
+Te voy a dar el número
+Para que te comuniques con Cristo
+Escúchalo
+
+[Verso 1]
+Hay un hermano que se muere del dolor
+Porque la sangre no le llega al corazón
+Y es la angustia que no la deja llegar
+Pero hay un número que él tiene que marcar
+
+[Coro] x4
+Cristo 911
+
+[Verso 2]
+Hay una hermana que le acaban de robar
+Le han robado su paz y tranquilidad
+Pero yo creo que ella debe de calmarse
+Escucho la sirena de quien viene al rescate
+
+[Coro] x4
+Cristo 911
+
+[Pregón]
+¡Swing bendito!
+¡Sabor a Cristo!
+Hermano, anímate
+Marca el número
+Para que veas cómo Dios se va a manifestar en tu vida
+¡Ay, santo!
+
+[Verso 1]
+Hay un hermano que se muere del dolor
+Porque la sangre no le llega al corazón
+Y es la angustia que no la deja llegar
+Pero hay un número que él tiene que marcar
+
+[Coro] x4
+Cristo 911
+
+[Verso 2]
+Hay una hermana que le acaban de robar
+Le han robado su paz y tranquilidad
+Pero yo creo que ella debe de calmarse
+Escucho la sirena de quien viene al rescate
+
+[Coro] x4
+Cristo 911
+
+[Cierre]
+¡Y que suene el mambo para Cristo!
+
+
+
