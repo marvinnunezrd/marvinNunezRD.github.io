@@ -74,4 +74,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://www.marvinnunezrd.com/sitemap.xml
+Sitemap: https://marvinnunezrd.com/sitemap.xml
