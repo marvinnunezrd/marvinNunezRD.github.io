@@ -180,6 +180,7 @@
     }
 
     items.forEach(function (ev) {
+      var isPrivate = ev.visibility === 'private' || !ev.summary;
       var start = new Date(ev.start.dateTime || ev.start.date + 'T12:00:00');
       var month = start.toLocaleDateString(lang, { month: 'short' }).replace('.', '').toUpperCase();
       var day = start.toLocaleDateString(lang, { day: '2-digit' });
@@ -187,13 +188,19 @@
       var timeStr = ev.start.dateTime
         ? start.toLocaleTimeString(lang, { hour: 'numeric', minute: '2-digit' })
         : '';
-      var place = [ev.location || '', timeStr].filter(Boolean).join(' · ');
+      var place = isPrivate ? timeStr : [ev.location || '', timeStr].filter(Boolean).join(' · ');
 
-      var a = document.createElement('a');
+      // Evento privado (marcado así en el calendario, o sin título porque
+      // Google no manda esos datos a una clave pública): se muestra para
+      // que no parezca un hueco vacío en la agenda, pero sin link ni botón,
+      // porque no hay nada que mostrar.
+      var a = document.createElement(isPrivate ? 'div' : 'a');
       a.className = 'event';
-      a.href = ev.htmlLink || '#';
-      a.target = '_blank';
-      a.rel = 'noopener noreferrer';
+      if (!isPrivate) {
+        a.href = ev.htmlLink || '#';
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer';
+      }
       a.innerHTML =
         '<div class="event__date">' +
           '<span class="event__month">' + month + '</span>' +
@@ -203,9 +210,9 @@
           '<div class="event__title"></div>' +
           (place ? '<div class="event__place"></div>' : '') +
         '</div>' +
-        '<span class="event__go">' + t('events.details') + ' →</span>';
+        (isPrivate ? '' : '<span class="event__go">' + t('events.details') + ' →</span>');
 
-      a.querySelector('.event__title').textContent = ev.summary || 'Evento';
+      a.querySelector('.event__title').textContent = isPrivate ? t('events.private') : ev.summary;
       if (place) a.querySelector('.event__place').textContent = place;
 
       container.appendChild(a);
@@ -215,7 +222,9 @@
   /* Schema.org Event — se genera solo, a partir de los mismos eventos
      que ya se muestran en pantalla. No hace falta tocarlo a mano. */
   function buildEventSchema(items) {
-    var eventos = items.map(function (ev) {
+    var eventos = items
+      .filter(function (ev) { return ev.visibility !== 'private' && ev.summary; })
+      .map(function (ev) {
       var venue = (ev.summary || '').split('•')[0].trim() || ev.summary || 'Evento';
       var isAllDay = !ev.start.dateTime;
       var evento = {
