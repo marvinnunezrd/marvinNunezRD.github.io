@@ -174,33 +174,32 @@
     var lang = document.documentElement.lang === 'en' ? 'en-US' : 'es-ES';
     container.innerHTML = '';
 
-    if (!items || !items.length) {
+    // Los eventos privados (marcados así en el calendario, o sin título
+    // porque Google no manda esos datos a una clave pública) no se publican.
+    var publicos = (items || []).filter(function (ev) {
+      return ev.visibility !== 'private' && ev.summary;
+    });
+
+    if (!publicos.length) {
       container.innerHTML = '<p class="event-empty">' + t('events.empty') + '</p>';
       return;
     }
 
-    items.forEach(function (ev) {
-      var isPrivate = ev.visibility === 'private' || !ev.summary;
+    publicos.forEach(function (ev) {
       var start = new Date(ev.start.dateTime || ev.start.date + 'T12:00:00');
       var month = start.toLocaleDateString(lang, { month: 'short' }).replace('.', '').toUpperCase();
       var day = start.toLocaleDateString(lang, { day: '2-digit' });
 
       var timeStr = ev.start.dateTime
         ? start.toLocaleTimeString(lang, { hour: 'numeric', minute: '2-digit' })
-        : '';
-      var place = isPrivate ? timeStr : [ev.location || '', timeStr].filter(Boolean).join(' · ');
+        : t('events.timeTbd');
+      var place = [ev.location || '', timeStr].filter(Boolean).join(' · ');
 
-      // Evento privado (marcado así en el calendario, o sin título porque
-      // Google no manda esos datos a una clave pública): se muestra para
-      // que no parezca un hueco vacío en la agenda, pero sin link ni botón,
-      // porque no hay nada que mostrar.
-      var a = document.createElement(isPrivate ? 'div' : 'a');
+      var a = document.createElement('a');
       a.className = 'event';
-      if (!isPrivate) {
-        a.href = ev.htmlLink || '#';
-        a.target = '_blank';
-        a.rel = 'noopener noreferrer';
-      }
+      a.href = ev.htmlLink || '#';
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
       a.innerHTML =
         '<div class="event__date">' +
           '<span class="event__month">' + month + '</span>' +
@@ -210,9 +209,9 @@
           '<div class="event__title"></div>' +
           (place ? '<div class="event__place"></div>' : '') +
         '</div>' +
-        (isPrivate ? '' : '<span class="event__go">' + t('events.details') + ' →</span>');
+        '<span class="event__go">' + t('events.details') + ' →</span>';
 
-      a.querySelector('.event__title').textContent = isPrivate ? t('events.private') : ev.summary;
+      a.querySelector('.event__title').textContent = ev.summary;
       if (place) a.querySelector('.event__place').textContent = place;
 
       container.appendChild(a);

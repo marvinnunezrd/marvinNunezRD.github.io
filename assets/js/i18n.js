@@ -40,7 +40,7 @@ window.I18N = {
     "events.empty": "No hay eventos publicados por el momento. Escríbeme para coordinar una fecha.",
     "events.error": "No se pudieron cargar los eventos. Intenta más tarde.",
     "events.details": "Detalles",
-    "events.private": "Evento privado",
+    "events.timeTbd": "hora por confirmar",
 
     /* Música */
     "music.eyebrow": "Discografía y streaming",
@@ -202,7 +202,7 @@ window.I18N = {
     "events.empty": "No events published right now. Reach out to schedule a date.",
     "events.error": "Events could not be loaded. Please try again later.",
     "events.details": "Details",
-    "events.private": "Private event",
+    "events.timeTbd": "time to be confirmed",
 
     /* Music */
     "music.eyebrow": "Discography & streaming",
