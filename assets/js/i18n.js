@@ -53,6 +53,21 @@ window.I18N = {
     "video.channel": "Ir al canal",
 
     /* Bio */
+    "bio.h1": "Biografía",
+    "bio.lead": "Músico, cantautor y predicador católico. Una vida puesta al servicio de la canción.",
+    "faq.title": "Preguntas frecuentes",
+    "bio.faq.q1": "¿Con qué ministerios de música colabora Marvin Núñez?",
+    "bio.faq.a1": "Forma parte de los Ministerios de Música de la Arquidiócesis de Nueva York y la Diócesis de Paterson, New Jersey.",
+    "bio.faq.q2": "¿Qué es Cristo 911?",
+    "bio.faq.a2": "Es la comunidad y ministerio musical que Marvin fundó en 2013.",
+    "bio.faq.q3": "¿Dónde puedo escuchar su música?",
+    "bio.faq.a3": "En Spotify, Apple Music, YouTube Music y Amazon Music, además de las demás plataformas listadas en la sección de Música del sitio.",
+    "invite.faq.q1": "¿Cómo invito a Marvin Núñez a mi parroquia o grupo de oración?",
+    "invite.faq.a1": "Completa el formulario de esta página con la fecha, el lugar y el tipo de evento. Marvin responde personalmente cada solicitud.",
+    "invite.faq.q2": "¿Qué tipo de eventos realiza?",
+    "invite.faq.a2": "Misas, retiros, congresos, conciertos y noches de adoración en parroquias, grupos de oración y comunidades católicas.",
+    "invite.faq.q3": "¿En qué zonas sirve?",
+    "invite.faq.a3": "Principalmente en Nueva Jersey, Nueva York y República Dominicana. También ha ministrado en otros países, como Colombia y Panamá, según la invitación.",
     "about.eyebrow": "Quién soy",
     "about.title": "Una vida puesta al servicio de la canción",
     "about.p1": "Nacido en Santiago de los Caballeros, República Dominicana, descubrí mi vocación musical en la Parroquia Cristo Rey del Universo. Desde entonces la guitarra y la Palabra han caminado juntas.",
@@ -134,6 +149,12 @@ window.I18N = {
     "press.copied": "¡Copiado!",
     "press.usage": "Uso permitido para promoción de eventos y notas de prensa. Por favor no modifiques los logotipos ni recortes las fotografías oficiales.",
 
+    /* Blog: títulos de artículos (un solo H1 por idioma activo) */
+    "blog01.h1": "El día que entendí que Dios me quería cantando para Él",
+    "blog02.h1": "Que baje tu gloria: la historia detrás de mi canción",
+    "blog03.h1": "A los pies de María: cómo nació «Llena de Gracia»",
+    "blog04.h1": "«¿Y para dónde vamos mañana?»",
+
     /* Genérico */
     "common.back": "Volver",
     "common.rights": "Todos los derechos reservados",
@@ -193,6 +214,21 @@ window.I18N = {
     "video.channel": "Go to channel",
 
     /* Bio */
+    "bio.h1": "Biography",
+    "bio.lead": "Musician, singer-songwriter, and Catholic preacher. A life placed at the service of song.",
+    "faq.title": "Frequently asked questions",
+    "bio.faq.q1": "Which music ministries does Marvin Núñez serve with?",
+    "bio.faq.a1": "He is part of the Music Ministries of the Archdiocese of New York and the Diocese of Paterson, New Jersey.",
+    "bio.faq.q2": "What is Cristo 911?",
+    "bio.faq.a2": "It's the music community and ministry Marvin founded in 2013.",
+    "bio.faq.q3": "Where can I listen to his music?",
+    "bio.faq.a3": "On Spotify, Apple Music, YouTube Music, and Amazon Music, along with the other platforms listed on the Music page.",
+    "invite.faq.q1": "How do I invite Marvin Núñez to my parish or prayer group?",
+    "invite.faq.a1": "Fill out the form on this page with the date, location, and type of event. Marvin personally replies to every request.",
+    "invite.faq.q2": "What kind of events does he do?",
+    "invite.faq.a2": "Masses, retreats, congresses, concerts, and nights of worship at parishes, prayer groups, and Catholic communities.",
+    "invite.faq.q3": "What areas does he serve?",
+    "invite.faq.a3": "Mainly New Jersey, New York, and the Dominican Republic. He has also ministered in other countries, such as Colombia and Panama, depending on the invitation.",
     "about.eyebrow": "About",
     "about.title": "A life placed at the service of song",
     "about.p1": "Born in Santiago de los Caballeros, Dominican Republic, I discovered my musical calling at Cristo Rey del Universo Parish. Since then, the guitar and the Word have walked together.",
@@ -273,6 +309,12 @@ window.I18N = {
     "press.copy": "Copy text",
     "press.copied": "Copied!",
     "press.usage": "Approved for event promotion and press coverage. Please do not modify the logos or crop the official photographs.",
+
+    /* Blog: article titles (a single H1 per active language) */
+    "blog01.h1": "The Day I Understood God Wanted Me Singing for Him",
+    "blog02.h1": "Que Baje Tu Gloria: The Story Behind My Song",
+    "blog03.h1": "At Mary's Feet: How «Llena de Gracia» Was Born",
+    "blog04.h1": "«So Where Are We Going Tomorrow?»",
 
     /* Generic */
     "common.back": "Back",

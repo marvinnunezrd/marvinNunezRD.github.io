@@ -53,6 +53,38 @@
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Cómo invito a Marvin Núñez a mi parroquia o grupo de oración?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Completa el formulario de esta página con la fecha, el lugar y el tipo de evento. Marvin responde personalmente cada solicitud."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué tipo de eventos realiza?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Misas, retiros, congresos, conciertos y noches de adoración en parroquias, grupos de oración y comunidades católicas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿En qué zonas sirve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Principalmente en Nueva Jersey, Nueva York y República Dominicana. También ha ministrado en otros países, como Colombia y Panamá, según la invitación."
+      }
+    }
+  ]
+}
+</script>
 <!-- Metricool -->
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"750508e4a1df10234c528a611fdb32b6"})});</script>
 </head>
@@ -124,7 +156,7 @@
   <div class="wrap">
     <div class="split reveal" style="align-items:start">
       <div>
-        <form class="form" data-ajax action="https://formspree.io/f/xzzebvaj" method="POST">
+        <form class="form" data-ajax data-ga-event="envio_invitacion" action="https://formspree.io/f/xzzebvaj" method="POST">
           <input type="hidden" name="_subject" value="Nueva invitación desde marvinnunezrd.com">
           <div class="field-row">
             <div class="field">
@@ -213,6 +245,26 @@
           </div>
         </div>
       </aside>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap reveal">
+    <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+    <div class="faq__list">
+      <details class="faq__item">
+        <summary data-i18n="invite.faq.q1">¿Cómo invito a Marvin Núñez a mi parroquia o grupo de oración?</summary>
+        <p data-i18n="invite.faq.a1">Completa el formulario de esta página con la fecha, el lugar y el tipo de evento. Marvin responde personalmente cada solicitud.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="invite.faq.q2">¿Qué tipo de eventos realiza?</summary>
+        <p data-i18n="invite.faq.a2">Misas, retiros, congresos, conciertos y noches de adoración en parroquias, grupos de oración y comunidades católicas.</p>
+      </details>
+      <details class="faq__item">
+        <summary data-i18n="invite.faq.q3">¿En qué zonas sirve?</summary>
+        <p data-i18n="invite.faq.a3">Principalmente en Nueva Jersey, Nueva York y República Dominicana. También ha ministrado en otros países, como Colombia y Panamá, según la invitación.</p>
+      </details>
     </div>
   </div>
 </section>

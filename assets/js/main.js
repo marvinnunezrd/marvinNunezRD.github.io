@@ -265,6 +265,9 @@
         })
           .then(function (res) {
             if (!res.ok) throw new Error('bad response');
+            if (form.hasAttribute('data-ga-event')) {
+              if (typeof gtag === 'function') gtag('event', form.getAttribute('data-ga-event'));
+            }
             var box = document.createElement('div');
             box.className = 'form-success';
             box.innerHTML = '<h3></h3><p class="mt-2"></p>';
@@ -325,6 +328,38 @@
     });
   }
 
+  /* ==========================================================
+     8. EVENTOS GA4: redes sociales y WhatsApp
+     ========================================================== */
+  function initSocialTracking() {
+    var RED_POR_DOMINIO = [
+      { match: 'instagram.com', red: 'instagram' },
+      { match: 'facebook.com', red: 'facebook' },
+      { match: 'tiktok.com', red: 'tiktok' },
+      { match: 'youtube.com', red: 'youtube' },
+      { match: 'youtu.be', red: 'youtube' },
+      { match: 'open.spotify.com', red: 'spotify' },
+      { match: 'music.apple.com', red: 'apple_music' }
+    ];
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.href || '';
+      if (typeof gtag !== 'function') return;
+
+      if (href.indexOf('wa.me') !== -1 || href.indexOf('whatsapp.com') !== -1) {
+        gtag('event', 'click_whatsapp');
+        return;
+      }
+      for (var i = 0; i < RED_POR_DOMINIO.length; i++) {
+        if (href.indexOf(RED_POR_DOMINIO[i].match) !== -1) {
+          gtag('event', 'click_red_social', { red: RED_POR_DOMINIO[i].red });
+          return;
+        }
+      }
+    });
+  }
+
   /* ---------- Arranque ---------- */
   function init() {
     initLang();
@@ -335,6 +370,7 @@
     initForms();
     initCopy();
     initYear();
+    initSocialTracking();
   }
 
   if (document.readyState === 'loading') {

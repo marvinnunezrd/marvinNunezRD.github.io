@@ -6,7 +6,7 @@ Solo toca las canciones que tengan texto; las vacias se quedan "Proximamente".
 """
 import os, re, html, unicodedata
 
-ROOT = "/sessions/funny-jolly-fermat/mnt/MarvinNunezRD/sitio-nuevo"
+ROOT = "/sessions/funny-jolly-fermat/mnt/MarvinNunezRD/03_Webmaster/sitio-nuevo"
 SRC = os.path.join(ROOT, "letras-para-completar.txt")
 
 
