@@ -212,6 +212,48 @@
     });
   }
 
+  /* Schema.org Event — se genera solo, a partir de los mismos eventos
+     que ya se muestran en pantalla. No hace falta tocarlo a mano. */
+  function buildEventSchema(items) {
+    var eventos = items.map(function (ev) {
+      var venue = (ev.summary || '').split('•')[0].trim() || ev.summary || 'Evento';
+      var isAllDay = !ev.start.dateTime;
+      var evento = {
+        '@type': 'Event',
+        'name': ev.summary || 'Evento',
+        'startDate': ev.start.dateTime || ev.start.date,
+        'eventStatus': 'https://schema.org/EventScheduled',
+        'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
+        'location': {
+          '@type': 'Place',
+          'name': venue,
+          'address': ev.location || venue
+        },
+        'performer': { '@id': 'https://marvinnunezrd.com/#marvin' },
+        'url': ev.htmlLink || 'https://marvinnunezrd.com/agenda/'
+      };
+      if (ev.end && (ev.end.dateTime || ev.end.date)) {
+        evento.endDate = ev.end.dateTime || ev.end.date;
+      }
+      if (isAllDay) delete evento.eventAttendanceMode; // sin hora exacta, mejor no afirmar modalidad
+      return evento;
+    });
+
+    var payload = {
+      '@context': 'https://schema.org',
+      '@graph': eventos
+    };
+
+    var script = document.getElementById('event-schema-dynamic');
+    if (!script) {
+      script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.id = 'event-schema-dynamic';
+      document.head.appendChild(script);
+    }
+    script.textContent = JSON.stringify(payload);
+  }
+
   function loadEvents(container) {
     var max = parseInt(container.dataset.max || '5', 10);
     var url = 'https://www.googleapis.com/calendar/v3/calendars/' +
@@ -228,6 +270,9 @@
       .then(function (data) {
         container._items = data.items || [];
         renderEvents(container, container._items);
+        if (container.dataset.schema === 'event' && container._items.length) {
+          buildEventSchema(container._items);
+        }
       })
       .catch(function () {
         container.innerHTML = '<p class="event-empty">' + t('events.error') + '</p>';
